@@ -4,7 +4,7 @@ This repository contains the code and data for the paper: https://arxiv.org/abs/
 
 Authors: **Moran Mizrahi**, **Chen Shani**, **Gabriel Stanovsky**, **Dan Jurafsky** and **Dafna Shahaf**. 
 <br>
-**The Hebrew University of Jerusalem** & **Stanford University**
+**The Hebrew University of Jerusalem** & **Stanford University**.
 
 <br>
 
