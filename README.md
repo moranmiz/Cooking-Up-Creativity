@@ -1,6 +1,6 @@
 # Cooking Up Creativity: Enhancing LLM Creativity through Structured Recombination
 
-This repository contains the code and data for the paper: https://arxiv.org/abs/2504.20643 (TACL'25)
+This repository contains the code and data for [our paper](https://arxiv.org/abs/2504.20643) (TACL'25, presented at EMNLP'25).
 
 Authors: **Moran Mizrahi**, **Chen Shani**, **Gabriel Stanovsky**, **Dan Jurafsky** and **Dafna Shahaf**. 
 <br>
@@ -56,7 +56,13 @@ model = SentenceTransformer('moranmiz/recipe-sbert-model')
 ```
 
 ### Sampling Ideas 
-[TBD] 
+
+We sampled 30 recipes for each of the 100 most popular dishes in the [Recipe1M+ dataset](https://pic2recipe.csail.mit.edu/), resulting in a total of 3,000 recipes. 
+
+To ensure both representativeness and diversity, we sampled, for each dish, 15 recipes **at random** (to capture the typical version of the dish), and selected 15 additional recipes that **maximize diversity** (using a greedy farthest-point algorithm applied to recipe embeddings produced by our fine-tuned SBERT model).
+
+Sampling code is under `code/sampling` (`sampled_recipes.py`). The final set of 3K sampled recipes is provided in `sampled_recipes.json`.
+
 
 ### Text to Tree 
 [TBD] 
