@@ -1,0 +1,71 @@
+digraph lasagna_212671 {
+	rankdir=BT ratio=auto
+	ground_beef[label=<ground beef<br /> <font color="darkorchid" point-size="10">beef</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	garlic[label=<garlic<br /> <font color="darkorchid" point-size="10">vegetable</font>> shape=box]
+	onion[label=<onion<br /> <font color="darkorchid" point-size="10">vegetable</font>> shape=box]
+	lasagna_noodles[label=<lasagna noodles<br /> <font color="darkorchid" point-size="10">pasta</font><br /> <font color="deeppink3" point-size="10">(structure)</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	tomato_paste[label=<tomato paste<br /> <font color="darkorchid" point-size="10">tomato</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	tomato_sauce[label=<tomato sauce<br /> <font color="darkorchid" point-size="10">tomato</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	cheddar_cheese1[label=<cheddar cheese<br /> <font color="darkorchid" point-size="10">cheese</font>> shape=box]
+	cheddar_cheese2[label=<cheddar cheese<br /> <font color="darkorchid" point-size="10">cheese</font>> shape=box]
+	mozzarella_cheese[label=<mozzarella cheese<br /> <font color="darkorchid" point-size="10">cheese</font>> shape=box]
+	garlic_toast[label=<garlic toast<br /> <font color="darkorchid" point-size="10">bread</font>> shape=box]
+	salt1[label=<salt1<br /> <font color="darkorchid" point-size="10">salt1</font>> shape=box]
+	salt2[label=<salt2<br /> <font color="darkorchid" point-size="10">salt2</font>> shape=box]
+	black_pepper[label=<black pepper<br /> <font color="darkorchid" point-size="10">spice</font>> shape=box]
+	i1[label=<mix<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i2[label=<cook<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i3[label=<boil<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i4[label=<drain<br /> <font color="springgreen4" point-size="10">separate</font>>]
+	i5[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i6[label=<cook<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i7[label=<taste<br /> <font color="springgreen4" point-size="10">enhance flavor</font>>]
+	i8[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i9[label=<drain<br /> <font color="springgreen4" point-size="10">separate</font>>]
+	i10[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i11[label=<bake<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i12[label=<layer<br /> <font color="springgreen4" point-size="10">assemble</font>>]
+	i13[label=<top<br /> <font color="springgreen4" point-size="10">garnish</font>>]
+	i14[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i15[label=<layer<br /> <font color="springgreen4" point-size="10">assemble</font>>]
+	i16[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i17[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i18[label=<top<br /> <font color="springgreen4" point-size="10">garnish</font>>]
+	i19[label=<bake<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i20[label=<cool<br /> <font color="springgreen4" point-size="10">cool</font>>]
+	i21[label=<serve<br /> <font color="springgreen4" point-size="10">finish</font>>]
+
+	ground_beef -> i1
+	onion -> i1
+	garlic -> i1
+	salt1 -> i1
+	black_pepper -> i1
+	i1 -> i2 # cook beef mixture
+	lasagna_noodles -> i3
+	salt2 -> i3 # boil noodles
+	i2 -> i4 # drain beef
+	i4 -> i5
+	tomato_sauce -> i5
+	tomato_paste -> i5 # add sauces to beef
+	i5 -> i6 # cook sauce
+	i7 -> i8 # add garlic salt if needed
+	i3 -> i9 # drain noodles
+	i9 -> i10 # add cold water to noodles
+	garlic_toast -> i11 # bake toast
+	i10 -> i12 # layer noodles
+	i12 -> i13
+	i13 -> i14
+	cheddar_cheese1 -> i14 # add cheddar cheese
+	i14 -> i15 # layer noodles
+	i15 -> i16
+	i16 -> i17
+	cheddar_cheese2 -> i17 # add cheddar cheese
+	i17 -> i18
+	mozzarella_cheese -> i18 # top with mozzarella
+	i18 -> i19 # bake lasagna
+	i19 -> i20 # cool lasagna
+	i20 -> i21 # serve with garlic bread and salad
+	i6 -> i7 # taste after cooking sauce
+	i8 -> i9 # proceed to drain noodles after adding garlic salt if needed
+	i11 -> i21 # serve with garlic bread after baking toast
+}

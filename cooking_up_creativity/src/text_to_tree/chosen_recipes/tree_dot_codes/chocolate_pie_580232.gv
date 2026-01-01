@@ -1,0 +1,53 @@
+digraph chocolate_pie_580232 {
+	rankdir=BT ratio=auto
+	coconut[label=<coconut<br /> <font color="darkorchid" point-size="10">coconut</font>> shape=box]
+	pecans[label=<pecans<br /> <font color="darkorchid" point-size="10">nut</font>> shape=box]
+	butter[label=<butter<br /> <font color="darkorchid" point-size="10">butter</font>> shape=box]
+	sweet_chocolate[label=<sweet chocolate<br /> <font color="darkorchid" point-size="10">chocolate</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	marshmallows[label=<marshmallows<br /> <font color="darkorchid" point-size="10">marshmallow</font>> shape=box]
+	sugar[label=<sugar<br /> <font color="darkorchid" point-size="10">sugar</font>> shape=box]
+	salt[label=<salt<br /> <font color="darkorchid" point-size="10">salt</font>> shape=box]
+	cream_cheese[label=<cream cheese<br /> <font color="darkorchid" point-size="10">cheese</font>> shape=box]
+	cool_whip[label=<cool whip<br /> <font color="darkorchid" point-size="10">whipped topping</font>> shape=box]
+	vanilla_extract[label=<vanilla extract<br /> <font color="darkorchid" point-size="10">flavoring</font>> shape=box]
+	i1[label=<combine<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i2[label=<press<br /> <font color="springgreen4" point-size="10">shape</font>>]
+	i3[label=<bake<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i4[label=<cool<br /> <font color="springgreen4" point-size="10">cool</font>>]
+	i5[label=<melt<br /> <font color="springgreen4" point-size="10">modify consistency</font>>]
+	i6[label=<stir<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i7[label=<remove<br /> <font color="springgreen4" point-size="10">separate</font>>]
+	i8[label=<beat<br /> <font color="springgreen4" point-size="10">combine / modify</font>>]
+	i9[label=<beat<br /> <font color="springgreen4" point-size="10">combine / modify</font>>]
+	i10[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i11[label=<cool<br /> <font color="springgreen4" point-size="10">cool</font>>]
+	i12[label=<fold<br /> <font color="springgreen4" point-size="10">combine / modify</font>>]
+	i13[label=<put<br /> <font color="springgreen4" point-size="10">place</font>>]
+	i14[label=<garnish<br /> <font color="springgreen4" point-size="10">garnish</font>>]
+	i15[label=<refrigerate<br /> <font color="springgreen4" point-size="10">cool</font>>]
+
+	coconut -> i1
+	pecans -> i1
+	butter -> i1 # crust ingredients are ready
+	i1 -> i2 # press crust into pie pan
+	i2 -> i3 # bake crust
+	i3 -> i4 # cool crust
+	sweet_chocolate -> i5
+	marshmallows -> i5
+	sugar -> i5
+	salt -> i5
+	i5 -> i6 # stir chocolate mixture
+	i6 -> i7 # remove from heat
+	cream_cheese -> i8 # beat cream cheese
+	i8 -> i9
+	i7 -> i9 # beat in chocolate mixture
+	vanilla_extract -> i10
+	i9 -> i10 # add vanilla
+	i10 -> i11 # cool mixture
+	cool_whip -> i12
+	i11 -> i12 # fold in Cool Whip
+	i12 -> i13 # put filling in pie shell
+	i4 -> i13 # use cooled crust
+	i13 -> i14 # garnish with chocolate
+	i14 -> i15 # refrigerate
+}

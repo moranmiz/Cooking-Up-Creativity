@@ -1,0 +1,63 @@
+digraph risotto_884507 {
+	rankdir=BT ratio=auto
+	chicken_stock[label=<chicken stock<br /> <font color="darkorchid" point-size="10">broth</font>> shape=box]
+	olive_oil[label=<olive oil<br /> <font color="darkorchid" point-size="10">oil</font>> shape=box]
+	scallions[label=<scallions<br /> <font color="darkorchid" point-size="10">vegetable</font>> shape=box]
+	garlic[label=<garlic<br /> <font color="darkorchid" point-size="10">vegetable</font>> shape=box]
+	arborio_rice[label=<arborio rice<br /> <font color="darkorchid" point-size="10">rice</font><br /> <font color="deeppink3" point-size="10">(structure)</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	white_wine[label=<white wine<br /> <font color="darkorchid" point-size="10">wine</font>> shape=box]
+	dill[label=<dill<br /> <font color="darkorchid" point-size="10">herb</font>> shape=box]
+	baby_spinach[label=<baby spinach<br /> <font color="darkorchid" point-size="10">vegetable</font>> shape=box]
+	feta_cheese1[label=<feta cheese<br /> <font color="darkorchid" point-size="10">cheese</font>> shape=box]
+	feta_cheese2[label=<feta cheese<br /> <font color="darkorchid" point-size="10">cheese</font>> shape=box]
+	lemon_juice[label=<lemon juice<br /> <font color="darkorchid" point-size="10">citrus</font>> shape=box]
+	salt[label=<salt<br /> <font color="darkorchid" point-size="10">salt</font>> shape=box]
+	pepper[label=<pepper<br /> <font color="darkorchid" point-size="10">spice</font>> shape=box]
+	i1[label=<heat<br /> <font color="springgreen4" point-size="10">surface heat</font>>]
+	i2[label=<simmer<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i3[label=<heat<br /> <font color="springgreen4" point-size="10">surface heat</font>>]
+	i4[label=<saute<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i5[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i6[label=<cook<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i7[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i8[label=<cook<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i9[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i10[label=<stir<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i11[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i12[label=<stir<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i13[label=<remove<br /> <font color="springgreen4" point-size="10">separate</font>>]
+	i14[label=<stir<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i15[label=<mix<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i16[label=<season<br /> <font color="springgreen4" point-size="10">enhance flavor</font>>]
+	i17[label=<top<br /> <font color="springgreen4" point-size="10">garnish</font>>]
+
+	chicken_stock -> i1
+	i1 -> i2 # stock is simmering
+	olive_oil -> i3
+	i3 -> i4 # oil is heated
+	scallions -> i4
+	i4 -> i5 # scallions are sautéed
+	garlic -> i5
+	i5 -> i6 # garlic is added
+	i6 -> i7 # garlic is cooked
+	arborio_rice -> i7
+	i7 -> i8 # rice is added
+	i8 -> i9 # rice is cooked until clicking
+	white_wine -> i9
+	dill -> i9
+	i9 -> i10 # wine and dill are added
+	i10 -> i11 # wine is absorbed
+	i2 -> i11 # use simmering stock
+	i11 -> i12 # stock is added gradually
+	i12 -> i13 # rice is cooked
+	i13 -> i14 # remove from heat
+	baby_spinach -> i14
+	feta_cheese1 -> i14
+	lemon_juice -> i14
+	i14 -> i15 # spinach, feta, and lemon juice are stirred in
+	i15 -> i16 # mixture is ready
+	salt -> i16
+	pepper -> i16
+	i16 -> i17 # seasoning is done
+	feta_cheese2 -> i17 # top with feta
+}

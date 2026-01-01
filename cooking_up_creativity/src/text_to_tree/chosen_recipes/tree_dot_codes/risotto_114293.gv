@@ -1,0 +1,41 @@
+digraph risotto_114293 {
+	rankdir=BT ratio=auto
+	olive_oil[label=<olive oil<br /> <font color="darkorchid" point-size="10">oil</font>> shape=box]
+	onion[label=<onion<br /> <font color="darkorchid" point-size="10">vegetable</font>> shape=box]
+	arborio_rice[label=<arborio rice<br /> <font color="darkorchid" point-size="10">rice</font><br /> <font color="deeppink3" point-size="10">(structure)</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	white_wine[label=<white wine<br /> <font color="darkorchid" point-size="10">wine</font>> shape=box]
+	chicken_stock[label=<chicken stock<br /> <font color="darkorchid" point-size="10">broth</font>> shape=box]
+	butter[label=<butter<br /> <font color="darkorchid" point-size="10">fat</font>> shape=box]
+	parmigiano_reggiano[label=<parmigiano reggiano<br /> <font color="darkorchid" point-size="10">cheese</font>> shape=box]
+	salt[label=<salt<br /> <font color="darkorchid" point-size="10">salt</font>> shape=box]
+	pepper[label=<pepper<br /> <font color="darkorchid" point-size="10">spice</font>> shape=box]
+	i1[label=<saute<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i2[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i3[label=<cook<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i4[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i5[label=<cook<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i6[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i7[label=<cook<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i8[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i9[label=<mix<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i10[label=<season<br /> <font color="springgreen4" point-size="10">enhance flavor</font>>]
+
+	olive_oil -> i1
+	onion -> i1 # saute onion in oil
+	i1 -> i2
+	arborio_rice -> i2 # add rice
+	i2 -> i3 # cook until transparent
+	i3 -> i4
+	white_wine -> i4 # add wine
+	i4 -> i5 # cook until absorbed
+	i5 -> i6
+	chicken_stock -> i6 # add stock gradually
+	i6 -> i7 # cook until al dente
+	i7 -> i8
+	butter -> i8
+	parmigiano_reggiano -> i8 # add butter and cheese
+	i8 -> i9 # mix
+	i9 -> i10
+	salt -> i10
+	pepper -> i10 # season
+}

@@ -1,0 +1,27 @@
+digraph dumplings_689101 {
+	rankdir=BT ratio=auto
+	white_flour1[label=<white flour<br /> <font color="darkorchid" point-size="10">flour</font><br /> <font color="deeppink3" point-size="10">(structure)</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	white_flour2[label=<white flour<br /> <font color="darkorchid" point-size="10">flour</font><br /> <font color="deeppink3" point-size="10">(structure)</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	baking_powder[label=<baking powder<br /> <font color="darkorchid" point-size="10">leavening agent</font><br /> <font color="deeppink3" point-size="10">(structure)</font>> shape=box]
+	salt[label=<salt<br /> <font color="darkorchid" point-size="10">salt</font>> shape=box]
+	shortening[label=<shortening<br /> <font color="darkorchid" point-size="10">fat</font><br /> <font color="deeppink3" point-size="10">(structure)</font>> shape=box]
+	i1[label=<place<br /> <font color="springgreen4" point-size="10">place</font>>]
+	i2[label=<mix<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i3[label=<cut<br /> <font color="springgreen4" point-size="10">cut</font>>]
+	i4[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i5[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i6[label=<roll<br /> <font color="springgreen4" point-size="10">shape</font>>]
+	i7[label=<cut<br /> <font color="springgreen4" point-size="10">cut</font>>]
+
+	white_flour1 -> i1
+	baking_powder -> i1
+	salt -> i1 # dry ingredients are ready
+	i1 -> i2 # mix dry ingredients
+	shortening -> i3
+	i2 -> i3 # cut in shortening
+	i3 -> i4 # dough is formed
+	i4 -> i5 # adjust dough consistency
+	white_flour2 -> i5 # add flour if tacky
+	i5 -> i6 # roll dough
+	i6 -> i7 # cut into squares
+}

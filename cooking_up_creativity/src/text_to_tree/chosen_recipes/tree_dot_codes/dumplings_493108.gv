@@ -1,0 +1,49 @@
+digraph dumplings_493108 {
+	rankdir=BT ratio=auto
+	butter[label=<butter<br /> <font color="darkorchid" point-size="10">fat</font>> shape=box]
+	prunes1[label=<prunes1<br /> <font color="darkorchid" point-size="10">fruit</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	prunes2[label=<prunes2<br /> <font color="darkorchid" point-size="10">fruit</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	thyme1[label=<thyme1<br /> <font color="darkorchid" point-size="10">herb</font>> shape=box]
+	thyme2[label=<thyme2<br /> <font color="darkorchid" point-size="10">herb</font>> shape=box]
+	plain_flour[label=<plain flour<br /> <font color="darkorchid" point-size="10">flour</font><br /> <font color="deeppink3" point-size="10">(structure)</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	buttermilk[label=<buttermilk<br /> <font color="darkorchid" point-size="10">dairy</font><br /> <font color="deeppink3" point-size="10">(structure)</font>> shape=box]
+	salt[label=<salt<br /> <font color="darkorchid" point-size="10">salt</font>> shape=box]
+	pearl_barley[label=<pearl barley<br /> <font color="darkorchid" point-size="10">grain</font><br /> <font color="deeppink3" point-size="10">(structure)</font>> shape=box]
+	cottage_cheese[label=<cottage cheese<br /> <font color="darkorchid" point-size="10">dairy</font>> shape=box]
+	i1[label=<mix<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i2[label=<knead<br /> <font color="springgreen4" point-size="10">combine / modify</font>>]
+	i3[label=<rest<br /> <font color="springgreen4" point-size="10">rest</font>>]
+	i4[label=<cook<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i5[label=<chop<br /> <font color="springgreen4" point-size="10">cut</font>>]
+	i6[label=<chop<br /> <font color="springgreen4" point-size="10">cut</font>>]
+	i7[label=<mix<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i8[label=<sprinkle<br /> <font color="springgreen4" point-size="10">garnish</font>>]
+	i9[label=<roll<br /> <font color="springgreen4" point-size="10">shape</font>>]
+	i10[label=<use<br /> <font color="springgreen4" point-size="10">use</font>>]
+	i11[label=<boil<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i12[label=<cook<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i13[label=<serve<br /> <font color="springgreen4" point-size="10">finish</font>>]
+
+	plain_flour -> i1
+	buttermilk -> i1
+	i1 -> i2 # knead dough
+	i2 -> i3 # rest dough
+	pearl_barley -> i4 # cook barley
+	prunes1 -> i5 # chop prunes
+	thyme1 -> i6 # chop thyme
+	cottage_cheese -> i7
+	i5 -> i7 # add prunes to filling
+	i6 -> i7 # add thyme to filling
+	i7 -> i8 # sprinkle salt
+	salt -> i8
+	i3 -> i9 # roll out dough
+	i8 -> i10 # use filling
+	i9 -> i10 # use dough
+	i10 -> i11 # prepare dumplings
+	i11 -> i12 # boil water
+	i12 -> i13 # cook dumplings
+	butter -> i13 # serve with butter
+	prunes2 -> i13 # serve with prunes
+	thyme2 -> i13 # serve with thyme
+	i4 -> i10 # use cooked barley in filling
+}

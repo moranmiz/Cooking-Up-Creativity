@@ -1,0 +1,75 @@
+digraph lasagna_51349 {
+	rankdir=BT ratio=auto
+	ground_beef[label=<ground beef<br /> <font color="darkorchid" point-size="10">beef</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	olive_oil[label=<olive oil<br /> <font color="darkorchid" point-size="10">oil</font>> shape=box]
+	carrot[label=<carrot<br /> <font color="darkorchid" point-size="10">vegetable</font>> shape=box]
+	celery[label=<celery<br /> <font color="darkorchid" point-size="10">vegetable</font>> shape=box]
+	onion[label=<onion<br /> <font color="darkorchid" point-size="10">vegetable</font>> shape=box]
+	garlic[label=<garlic<br /> <font color="darkorchid" point-size="10">vegetable</font>> shape=box]
+	salt[label=<salt<br /> <font color="darkorchid" point-size="10">salt</font>> shape=box]
+	tomato_sauce[label=<tomato sauce<br /> <font color="darkorchid" point-size="10">tomato</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	tomato_paste[label=<tomato paste<br /> <font color="darkorchid" point-size="10">tomato</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	honey[label=<honey<br /> <font color="darkorchid" point-size="10">sweetener</font>> shape=box]
+	chicken_broth[label=<chicken broth<br /> <font color="darkorchid" point-size="10">broth</font>> shape=box]
+	pecorino_romano_cheese[label=<pecorino romano cheese<br /> <font color="darkorchid" point-size="10">cheese</font>> shape=box]
+	asiago_cheese[label=<asiago cheese<br /> <font color="darkorchid" point-size="10">cheese</font>> shape=box]
+	lasagna_noodles[label=<lasagna noodles<br /> <font color="darkorchid" point-size="10">pasta</font><br /> <font color="deeppink3" point-size="10">(structure)</font><br /> <font color="dodgerblue4" point-size="10">(core)</font>> shape=box]
+	black_olives[label=<black olives<br /> <font color="darkorchid" point-size="10">olive</font>> shape=box]
+	i1[label=<preheat<br /> <font color="springgreen4" point-size="10">surface heat</font>>]
+	i2[label=<brown<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i3[label=<drain<br /> <font color="springgreen4" point-size="10">separate</font>>]
+	i4[label=<chop<br /> <font color="springgreen4" point-size="10">cut</font>>]
+	i5[label=<mince<br /> <font color="springgreen4" point-size="10">cut</font>>]
+	i6[label=<grate<br /> <font color="springgreen4" point-size="10">modify texture</font>>]
+	i7[label=<divide<br /> <font color="springgreen4" point-size="10">separate</font>>]
+	i8[label=<sweat<br /> <font color="springgreen4" point-size="10">sweat</font>>]
+	i9[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i10[label=<sweat<br /> <font color="springgreen4" point-size="10">sweat</font>>]
+	i11[label=<blend<br /> <font color="springgreen4" point-size="10">combine / modify</font>>]
+	i12[label=<incorporate<br /> <font color="springgreen4" point-size="10">incorporate</font>>]
+	i13[label=<mix<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i14[label=<divide<br /> <font color="springgreen4" point-size="10">separate</font>>]
+	i15[label=<put<br /> <font color="springgreen4" point-size="10">place</font>>]
+	i16[label=<add<br /> <font color="springgreen4" point-size="10">mix</font>>]
+	i17[label=<repeat<br /> <font color="springgreen4" point-size="10">repeat</font>>]
+	i18[label=<cover<br /> <font color="springgreen4" point-size="10">rest</font>>]
+	i19[label=<sprinkle<br /> <font color="springgreen4" point-size="10">garnish</font>>]
+	i20[label=<bake<br /> <font color="springgreen4" point-size="10">heat</font>>]
+	i21[label=<set<br /> <font color="springgreen4" point-size="10">rest / cool</font>>]
+
+	olive_oil -> i2
+	ground_beef -> i2
+	i2 -> i3 # beef is browned and drained
+	carrot -> i4
+	celery -> i4
+	onion -> i4
+	i4 -> i8 # vegetables are chopped
+	garlic -> i5
+	salt -> i5
+	i5 -> i9 # garlic is minced
+	pecorino_romano_cheese -> i6
+	asiago_cheese -> i6
+	i6 -> i7 # cheeses are grated
+	i7 -> i16 # cheeses are divided
+	i8 -> i9 # add chopped vegetables
+	i9 -> i10 # sweat vegetables
+	i10 -> i11 # blend vegetables
+	tomato_sauce -> i12
+	tomato_paste -> i12
+	honey -> i12
+	chicken_broth -> i12
+	i3 -> i12 # add browned beef
+	i11 -> i12 # add blended vegetables
+	i12 -> i13 # sauce is incorporated
+	i13 -> i14 # sauce is mixed
+	i14 -> i15 # sauce is divided
+	i15 -> i16 # layer with noodles and cheese
+	lasagna_noodles -> i16
+	i16 -> i17 # repeat layers
+	i17 -> i18 # cover with sauce
+	black_olives -> i19
+	i18 -> i19 # sprinkle olives
+	i19 -> i20 # bake
+	i1 -> i20 # use preheated oven
+	i20 -> i21 # set before serving
+}
