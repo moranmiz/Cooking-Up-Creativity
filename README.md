@@ -68,10 +68,8 @@ The folder `src/sampling` contains the sampling code (`sampled_recipes.py`) and 
 
 To translate recipe text into a tree representation, we first use an LLM to parse the ingredients and simplify the instructions, and then leverage the LLM’s coding capabilities to generate a directed tree in DOT, a standard graph description language.
 
-The folder `src/text_to_tree` contains the code for translating recipes into trees (`translate_to_tree.py`).
-
+The folder `src/text_to_tree` contains the code for translating recipes into trees (`translate_to_tree.py`). 
 This folder also includes a compressed JSON file with the translations for all 3K sampled recipes (`sampled_recipes_parsed.zip`). 
-
 Each entry in this JSON file follows this structure: 
 
 ```json
@@ -93,7 +91,7 @@ Each entry in this JSON file follows this structure:
   "is_tree": true
 }
 ```
-
+Where: 
 * `title`: the recipe title
 * `ingredient_list`: the recipe ingredient list
 * `instruction_list`: the recipe instruction list
