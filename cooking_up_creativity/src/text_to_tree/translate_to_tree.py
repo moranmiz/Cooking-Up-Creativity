@@ -10,15 +10,9 @@ from tqdm import tqdm
 from recipe_parsing import parse_ingredients, parse_instructions, MODEL_NAME, PARSING_SYSTEM_MESSAGE
 
 from cooking_up_creativity.src.call_model import call_model
+from cooking_up_creativity.src.constants import INGR_TYPE, ACTION_TYPE, INGR_ABSTR_COLOR, INGR_STRUCTURE_COLOR, \
+    INGR_CORE_COLOR, ACTION_ABSTR_COLOR
 
-
-# Constants:
-INGR_TYPE = "ingredient"
-ACTION_TYPE = "action"
-INGR_ABSTR_COLOR = "darkorchid"
-INGR_STRUCTURE_COLOR = "deeppink3"
-INGR_CORE_COLOR = "dodgerblue4"
-ACTION_ABSTR_COLOR = "springgreen4"
 
 # Directories:
 BASE = Path(__file__).resolve().parent
