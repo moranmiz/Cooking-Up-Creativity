@@ -70,7 +70,38 @@ To translate recipe text into a tree representation, we first use an LLM to pars
 
 The folder `src/text_to_tree` contains the code for translating recipes into trees (`translate_to_tree.py`).
 
-This folder also includes a compressed JSON file with the translations for all 3K sampled recipes (`sampled_recipes_parsed.zip`). Each entry in this file contains: the recipe title (`title`), its ingredient list (`ingredient_list`), its instruction list (`instruction_list`), and a parsed‑ingredients dictionary whose keys are ingredient names and whose values specify: (1) whether the ingredient contributes to the dish’s structure (e.g., lasagna sheets in lasagna) or flavor (e.g., lemon in lemon pie) (`ref`), (2) whether the ingredient is a core ingredient of the dish (`core`), and (3) a simplified abstraction of the ingredient (e.g., “basil” → herb, “walnut” → nut) (`abstr`). The entry further includes the parsed instructions (`parsed_instructions`), the tree in DOT format (`tree_dot_code`), the tree as a dictionary (`tree_dict`, used later for recombination), and a Boolean flag indicating whether the generated code is a valid tree (`is_tree`).
+This folder also includes a compressed JSON file with the translations for all 3K sampled recipes (`sampled_recipes_parsed.zip`). 
+
+Each entry in this JSON file follows this structure: 
+
+```json
+"817274": {
+  "title": "Low-Fat Bruschetta",
+  "ingredient_list": ["14 cup dry-pack sun-dried tomato", ...],
+  "instruction_list": ["Place the sun-dried tomatoes in a...", ...]
+  "parsed_ingredients": {
+    "sun-dried tomato": {
+      "ref": "taste",
+      "core": false,
+      "abstr": "tomato"
+    },
+      ...
+  }
+  "parsed_instructions": "Soften tomatoes in boiling water. Drain. Pat dry...",
+  "tree_dot_code": "digraph bruschetta_817274 {...}",
+  "tree_dict": {...},
+  "is_tree": true
+}
+```
+
+* `title`: the recipe title
+* `ingredient_list`: the recipe ingredient list
+* `instruction_list`: the recipe instruction list
+* `parsed_ingredients`: a dictionary whose keys are ingredient names and whose values specify: (1) whether the ingredient contributes to the dish’s structure (e.g., lasagna sheets in lasagna) or flavor (e.g., lemon in lemon pie) (`ref`), (2) whether the ingredient is a core ingredient of the dish (`core`), and (3) a simplified abstraction of the ingredient (e.g., “basil” → herb, “walnut” → nut) (`abstr`).
+* `parsed_instructions`: the parsed instructions
+* `tree_dot_code`: the tree in DOT format
+* `tree_dict`: the tree as a dictionary (used later for recombination)
+* `is_tree`: a boolean flag indicating whether the generated code is a valid tree.
 
 #### Example tree
 Below is an example visualization of a single recipe’s tree DOT code:​
