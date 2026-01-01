@@ -57,15 +57,27 @@ model = SentenceTransformer('moranmiz/recipe-sbert-model')
 
 ### Sampling Ideas 
 
-We sampled 30 recipes for each of the 100 most popular dishes in the [Recipe1M+ dataset](https://pic2recipe.csail.mit.edu/), resulting in a total of 3,000 recipes. 
+We sampled 30 recipes for each of the 100 most popular dishes in the [Recipe1M+ dataset](https://pic2recipe.csail.mit.edu/), yielding a total of 3,000 recipes. 
 
-To ensure both representativeness and diversity, we sampled, for each dish, 15 recipes **at random** (to capture the typical version of the dish), and selected 15 additional recipes that **maximize diversity** (using a greedy farthest-point algorithm applied to recipe embeddings produced by our fine-tuned SBERT model).
+For each dish, to balance representativeness and diversity, we sampled 15 recipes **at random** (to capture typical variants of the dish) and 15 recipes that **maximize diversity** (using a greedy farthest-point algorithm over recipe embeddings produced by our fine-tuned SBERT model).
 
-Sampling code is under `code/sampling` (`sampled_recipes.py`). The final set of 3K sampled recipes is provided in `sampled_recipes.json`.
+The folder `src/sampling` contains the sampling code (`sampled_recipes.py`) and the resulting set of 3K sampled recipes used in the paper (`sampled_recipes.json`).
 
 
 ### Text to Tree 
-[TBD] 
+
+To translate recipe text into a tree representation, we first use an LLM to parse the ingredients and simplify the instructions, and then leverage the LLM’s coding capabilities to generate a directed tree in DOT, a standard graph description language.
+
+The folder `src/text_to_tree` contains the code for translating recipes into trees (`translate_to_tree.py`).
+
+This folder also includes a compressed JSON file with the translations for all 3K sampled recipes (`sampled_recipes_parsed.zip`). Each entry in this file contains: the recipe title (`title`), its ingredient list (`ingredient_list`), its instruction list (`instruction_list`), and a parsed‑ingredients dictionary whose keys are ingredient names and whose values specify: (1) whether the ingredient contributes to the dish’s structure (e.g., lasagna sheets in lasagna) or flavor (e.g., lemon in lemon pie) (`ref`), (2) whether the ingredient is a core ingredient of the dish (`core`), and (3) a simplified abstraction of the ingredient (e.g., “basil” → herb, “walnut” → nut) (`abstr`). The entry further includes the parsed instructions (`parsed_instructions`), the tree in DOT format (`tree_dot_code`), the tree as a dictionary (`tree_dict`, used later for recombination), and a Boolean flag indicating whether the generated code is a valid tree (`is_tree`).
+
+#### Example tree
+Below is an example visualization of a single recipe’s tree DOT code:​
+
+<img width="1337" height="907" alt="bruschetta_217157" src="https://github.com/user-attachments/assets/a580710e-7d98-4bc9-a570-e80d7d1cd20d" />
+
+Leaf nodes correspond to ingredients (boxed nodes), and internal nodes represent the actions performed on them (circular nodes). For each ingredient, the label shows its name (black), its abstraction (purple), whether it is a core ingredient (blue), and whether it contributes to the dish structure (pink). For each action node, the label shows the cooking verb and its category (e.g., “heat” for “bake” or “toast”, in green).
 
 ### Generate Ideas 
 [TBD] 
