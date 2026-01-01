@@ -102,7 +102,7 @@ Where:
 * `is_tree`: a boolean flag indicating whether the generated code is a valid tree.
 
 #### Example tree
-Below is an example visualization of a single recipe’s tree DOT code:​
+Below is an example visualization of a single recipe’s tree DOT code (bruschetta):​
 
 <img width="1337" height="907" alt="bruschetta_217157" src="https://github.com/user-attachments/assets/a580710e-7d98-4bc9-a570-e80d7d1cd20d" />
 
