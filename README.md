@@ -101,7 +101,40 @@ Where:
 * `tree_dict`: the tree as a dictionary (used later for recombination)
 * `is_tree`: a boolean flag indicating whether the generated code is a valid tree.
 
-#### Example tree
+#### Tree representation (`tree_dict`)
+
+Recipes are represented as directed trees encoded in a dictionary called `tree_dict`.
+Each entry corresponds to a single node in the tree, identified by a unique key.
+Nodes are of two types: **ingredient nodes** (`type: "ingredient`) or **action nodes** (`type: "action`). 
+Each node stores both semantic and structural information needed for later recombination.
+
+In this example _italian bread_ is an ingredient node, marked as a _core_ ingredient that contributes to the structure of the dish via `extra_info`, with an abstract category of _bread_ (`abstr`). The node _toast_ is an action node that operates on it (`"children": ["italian_bread"]`).
+
+```json
+"tree_dict": {
+  "italian_bread": {
+    "label": "italian bread",
+    "root": false,
+    "type": "ingredient",
+    "abstr": "bread",
+    "extra_info": ["structure", "core"],
+    "parent": "i1",
+    "children": []
+  },
+  …
+  "i1": {
+    "label": "toast",
+    "root": false,
+    "type": "action",
+    "abstr": "heat",
+    "parent": "i2",
+    "children": ["italian_bread"]
+  },
+  …
+}
+```
+
+#### Tree visualization
 Below is an example visualization of a single recipe’s tree DOT code (bruschetta):​
 
 <img width="1337" height="907" alt="bruschetta_217157" src="https://github.com/user-attachments/assets/a580710e-7d98-4bc9-a570-e80d7d1cd20d" />
