@@ -141,6 +141,14 @@ Below is an example visualization of a single recipe’s tree DOT code (bruschet
 
 Leaf nodes correspond to ingredients (boxed nodes), and internal nodes represent the actions performed on them (circular nodes). For each ingredient, the label shows its name (black), its abstraction (purple), whether it is a core ingredient (blue), and whether it contributes to the dish structure (pink). For each action node, the label shows the cooking verb and its category (e.g., “heat” for “bake” or “toast”, in green).
 
+To visualize a tree from DOT code, use Graphviz:
+```python
+import graphviz
+
+graph = graphviz.Source(dot_code)
+graph.render(filename=file_name, directory=file_path, format='png', cleanup=True)
+```
+
 ### Generate Ideas 
 [TBD] 
 
