@@ -150,7 +150,24 @@ graph.render(filename=file_name, directory=file_path, format='png', cleanup=True
 ```
 
 ### Generate Ideas 
-[TBD] 
+To generate new recipe ideas, we **recombine existing recipe trees** using a tree edit-distance framework. Specifically, we apply the **Zhang–Shasha tree edit-distance algorithm** and extract **intermediate representations** that arise during the transformation between two recipe trees. Rather than using only the final transformed tree, we focus on trees that appear **midway through the edit sequence**, which combine structural and semantic elements from both source recipes.
+
+The folder `src/generate_ideas` contains the code for generating novel recipe trees (`tree_edit_distance.py`) for given pairs of dishes. For each pair of dishes (e.g., _chocolate pie_ and _lasagna_), the function `combine_two_dishes`retrieves the trees of the sampled recipes for each dish, computes tree edit-distance transformations between all recipe pairs, and generates multiple intermediate trees by shuffling edit operations and stopping at different points along the transformation process. This results in multiple structurally distinct recombinations for each recipe pair.
+
+The output of this step is a JSON file containing all generated tree ideas, structured as follows:
+```json
+“chocolate_pie_to_lasagna”: {
+	“chocolate_pie_580232_to_lasagna_51349_v1”: {
+		“tree_dict” : {...}
+		“tree_dot_code: “digraph G {...}”
+  }
+}
+```
+Where:
+* The top-level key corresponds to a pair of source dishes
+* Each inner key represents a specific recombination instance
+* `tree_dict` is the dictionary-based tree representation as described in previous section
+* `tree_dot_code` is the DOT code that represents the generated tree
 
 ### Evaluate Ideas 
 [TBD] 
