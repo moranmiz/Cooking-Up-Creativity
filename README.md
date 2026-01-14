@@ -156,17 +156,17 @@ The folder `src/generate_ideas` contains the code for generating novel recipe tr
 
 The output of this step is a JSON file containing all generated tree ideas, structured as follows:
 ```json
-“chocolate_pie_to_lasagna”: {
-	“chocolate_pie_580232_to_lasagna_51349_v1”: {
-		“tree_dict” : {...}
-		“tree_dot_code: “digraph G {...}”
+"chocolate_pie_to_lasagna": {
+	"chocolate_pie_580232_to_lasagna_51349_v1": {
+		"tree_dict" : {...}
+		"tree_dot_code": "digraph G {...}"
   }
 }
 ```
 Where:
 * The top-level key corresponds to a pair of source dishes
 * Each inner key represents a specific recombination instance
-* `tree_dict` is the dictionary-based tree representation as described in previous section
+* `tree_dict` is the dictionary representation of the generated tree 
 * `tree_dot_code` is the DOT code that represents the generated tree
 
 ### Evaluate Ideas 
