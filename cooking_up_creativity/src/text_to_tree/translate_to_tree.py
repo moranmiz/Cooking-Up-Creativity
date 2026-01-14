@@ -1,10 +1,7 @@
 import traceback
-import graphviz
 import re
 import json
-import os
 import Levenshtein
-from pathlib import Path
 from tqdm import tqdm
 
 from recipe_parsing import parse_ingredients, parse_instructions, MODEL_NAME, PARSING_SYSTEM_MESSAGE
@@ -13,13 +10,6 @@ from cooking_up_creativity.src.call_model import call_model
 from cooking_up_creativity.src.constants import INGR_TYPE, ACTION_TYPE, INGR_ABSTR_COLOR, INGR_STRUCTURE_COLOR, \
     INGR_CORE_COLOR, ACTION_ABSTR_COLOR
 
-
-# Directories:
-BASE = Path(__file__).resolve().parent
-chosen_recipe_dir_path = os.path.join(BASE, "chosen_recipes")
-plain_text_dir = os.path.join(chosen_recipe_dir_path, "recipe_plain_texts")
-dot_dir = os.path.join(chosen_recipe_dir_path, "tree_dot_codes")
-pngs_dir = os.path.join(chosen_recipe_dir_path, "tree_pngs")
 
 # A collection of 250 most common action verbs grouped into categories:
 with open("cooking_verbs_to_categories.json", 'r') as f:
@@ -651,56 +641,29 @@ def verify_and_correct_recipe_translations(sampled_recipes: dict, tries: int = 3
     return sampled_recipes
 
 
-def create_chosen_recipe_info_files(sampled_recipes: dict, recipe_ids: list):
+def translate_recipes_to_trees(sampled_recipes: dict, tries: int = 3) -> dict:
+
     """
-    Create files with recipe plain texts, tree DOT codes, and tree PNGs for chosen recipes.
+    Translate all recipes in sampled_recipes to tree representations in DOT code.
 
-    :param sampled_recipes: dictionary of sampled recipes with tree translations
-    :param recipe_ids: the IDs of the chosen recipes to create files for
-    :return: None
+    :param sampled_recipes: dictionary of sampled recipes
+    :param tries: number of tries for calling the model (for each recipe)
+    :return: the dictionary of sampled recipes with tree representations added
     """
-    if not os.path.exists(chosen_recipe_dir_path):
-        os.makedirs(chosen_recipe_dir_path)
 
-    if not os.path.exists(plain_text_dir):
-        os.makedirs(plain_text_dir)
+    print("Parsing all recipe ingredients...")
+    sampled_recipes_ingr_parsed = parse_ingredients(sampled_recipes, tries=tries)
 
-    if not os.path.exists(dot_dir):
-        os.makedirs(dot_dir)
+    print("Parsing all recipe instructions...")
+    sampled_recipes_parsed = parse_instructions(sampled_recipes_ingr_parsed, tries=tries)
 
-    if not os.path.exists(pngs_dir):
-        os.makedirs(pngs_dir)
+    print("Create initial tree translations into DOT code...")
+    sampled_recipes_initial_trees = add_recipe_initial_translations(sampled_recipes, tries=tries)
 
-    for dish_name in sampled_recipes:
-        for recipe_id in sampled_recipes[dish_name]:
-            if recipe_id in recipe_ids:
+    print("Verify and correct all trees...")
+    sampled_recipes_final_trees = verify_and_correct_recipe_translations(sampled_recipes_initial_trees, tries=tries)
 
-                file_name = dish_name.replace(" ", "_") + "_" + recipe_id
-
-                title = sampled_recipes[dish_name][recipe_id]["title"]
-                ingredient_list = sampled_recipes[dish_name][recipe_id]["ingredient_list"]
-                instruction_list = sampled_recipes[dish_name][recipe_id]["instruction_list"]
-                tree_dot_code = sampled_recipes[dish_name][recipe_id]["tree_dot_code"]
-
-                recipe_plain_text = "Title: " + title + "\n\n" + "Ingredients:\n" + '\n'.join(ingredient_list) \
-                                    + "\n\nDirections:\n" + '\n'.join(instruction_list)
-
-                plain_path = os.path.join(plain_text_dir, file_name + ".txt")
-
-                with open(plain_path, 'w', encoding="utf8") as f:
-                    f.write(recipe_plain_text)
-
-                dot_path = os.path.join(dot_dir, file_name + ".gv")
-
-                with open(dot_path, 'w', encoding="utf8") as f:
-                    f.write(tree_dot_code)
-
-                try:
-                    graph = graphviz.Source(tree_dot_code)
-                    graph.render(filename=file_name, directory=pngs_dir, format='png', cleanup=True)
-                except:
-                    print("Error in creating PNG from DOT code:", dish_name, recipe_id)
-                    traceback.print_exc()
+    return sampled_recipes_final_trees
 
 
 if __name__ == '__main__':
@@ -711,29 +674,11 @@ if __name__ == '__main__':
     with open(sampled_recipes_path, 'r', encoding='utf8') as f:
         sampled_recipes = json.load(f)
 
-    print("Parsing all recipe ingredients...")
-    sampled_recipes_ingr_parsed = parse_ingredients(sampled_recipes, tries=3)
-
-    print("Parsing all recipe instructions...")
-    sampled_recipes_parsed = parse_instructions(sampled_recipes_ingr_parsed, tries=3)
-
-    print("Create initial tree translations into DOT code...")
-    sampled_recipes_initial_trees = add_recipe_initial_translations(sampled_recipes, tries=3)
-
-    print("Verify and correct all trees...")
-    sampled_recipes_final_trees = verify_and_correct_recipe_translations(sampled_recipes_initial_trees, tries=3)
+    # Translate recipes to trees:
+    sampled_recipes_trees = translate_recipes_to_trees(sampled_recipes, tries=3)
 
     # Save parsed outputs into a new JSON file:
     out_path = sampled_recipes_path.replace(".json", "_parsed.json")
     with open(out_path, 'w', encoding='utf8') as f:
-        json.dump(sampled_recipes_final_trees, f, indent=4, ensure_ascii=False)
-
-    # Optional:
-    # Save recipe tree dot code and png files for chosen recipes (in directory: "chosen_recipes")
-    recipe_ids = []  # list of recipe IDs to save info for
-    for dish_name in sampled_recipes_final_trees:
-        for recipe_id in sampled_recipes_final_trees[dish_name]:
-            recipe_ids += [recipe_id]
-
-    create_chosen_recipe_info_files(sampled_recipes_final_trees, recipe_ids)
+        json.dump(sampled_recipes_trees, f, indent=4, ensure_ascii=False)
 
