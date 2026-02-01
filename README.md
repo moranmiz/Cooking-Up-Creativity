@@ -1,6 +1,6 @@
 # Cooking Up Creativity: Enhancing LLM Creativity through Structured Recombination
 
-This repository contains the code and data for [our paper](https://arxiv.org/abs/2504.20643) (TACL'25, presented at EMNLP'25).
+This repository contains the code and data for [our paper](https://arxiv.org/abs/2504.20643) (accepted to TACL, presented at EMNLP'25).
 
 Authors: **Moran Mizrahi**, **Chen Shani**, **Gabriel Stanovsky**, **Dan Jurafsky** and **Dafna Shahaf**. 
 <br>
