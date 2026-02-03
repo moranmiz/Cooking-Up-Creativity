@@ -658,7 +658,7 @@ def translate_recipes_to_trees(sampled_recipes: dict, tries: int = 3) -> dict:
     sampled_recipes_parsed = parse_instructions(sampled_recipes_ingr_parsed, tries=tries)
 
     print("Create initial tree translations into DOT code...")
-    sampled_recipes_initial_trees = add_recipe_initial_translations(sampled_recipes, tries=tries)
+    sampled_recipes_initial_trees = add_recipe_initial_translations(sampled_recipes_parsed, tries=tries)
 
     print("Verify and correct all trees...")
     sampled_recipes_final_trees = verify_and_correct_recipe_translations(sampled_recipes_initial_trees, tries=tries)
