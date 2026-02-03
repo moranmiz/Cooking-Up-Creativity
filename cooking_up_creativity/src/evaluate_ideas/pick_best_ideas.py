@@ -67,26 +67,22 @@ def get_elements_in_tree_dict(tree_dict: dict, ingrs_separately: bool = False) -
     return elements
 
 
-def dish_elements_ratio(dot_code: str) -> tuple:
+def dish_elements_ratio(tree_dict: dict) -> tuple:
     """
     Returns the ratio of elements in the new recipe from dish A and dish B.
 
-    :param dot_code: the dot code of the generated recipe
+    :param tree_dict: the tree dictionary of the generated recipe
     :return: a tuple (ratio_a, ratio_b) where ratio_a is the ratio of elements from dish A and ratio_b is the ratio of
-             elements from dish B
+             elements from dish B in the tree
     """
 
     elements = {"dish_A": 0, "dish_B": 0}
 
-    dot_code = dot_code.split("\n")
-
-    for line in dot_code:
-        if "[" in line:  # a node declaration
-            element = line.split("[")[0].strip()
-            if element.endswith("_a"):
-                elements["dish_A"] += 1
-            elif element.endswith("_b"):
-                elements["dish_B"] += 1
+    for element in tree_dict:
+        if element.endswith("_a"):
+            elements["dish_A"] += 1
+        elif element.endswith("_b"):
+            elements["dish_B"] += 1
 
     ratio_a = elements["dish_A"] / (elements["dish_A"] + elements["dish_B"])
     ratio_b = 1.0 - ratio_a
@@ -140,32 +136,121 @@ def contain_essentials(recipe_ingrs: list, dish_name: str) -> tuple:
     return contain_essentials, essentials_in_recipe
 
 
-def remove_bad_ingredients_from_tree(tree_dot_code: str, bad_ingrs_labels: list) -> str:
+def remove_bad_ingredients_from_tree(tree_dict: dict, bad_ingrs_labels: list) -> dict:
     """
-    Removes bad ingredient elements from the given tree DOT code.
+    Removes bad ingredient elements from the given tree dictionary.
 
-    :param tree_dot_code: a DOT representation of a recipe tree
+    :param tree_dict: the tree dictionary that represents the recipe idea
     :param bad_ingrs_labels: a list of bad ingredient labels to remove from the tree
-    :return: the updated DOT representation of the recipe tree with bad ingredients removed
+    :return: an updated tree dictionary with the bad ingredients removed
     """
 
-    dot_code_lines = tree_dot_code.split("\n")
+    updated_tree_dict = {}
 
-    lines_to_remove = []
+    for node_name in tree_dict:
 
-    for line in dot_code_lines:
-        for bad_label in bad_ingrs_labels:
-            if line.strip().startswith(bad_label):
-                bad_removed = line.replace(bad_label, "").strip()
-                if bad_removed.startswith("[") or bad_removed.startswith("->"):
-                    lines_to_remove += [line]
+        children = tree_dict[node_name]['children']
+        children = [c for c in children if c not in bad_ingrs_labels]
 
-    updated_dot_code = '\n'.join([line for line in dot_code_lines if line not in lines_to_remove])
+        if node_name not in bad_ingrs_labels:
+            updated_tree_dict[node_name] = tree_dict[node_name].copy()
+            updated_tree_dict[node_name]['children'] = children
 
-    return updated_dot_code
+    return updated_tree_dict
 
 
-def is_valuable_idea(tree_dict: dict, tree_dot_code: str, dish_pair: str) -> tuple:
+def create_simplified_dot_code_rec(tree_dict: dict, sub_tree_root: str, ingr_names: dict = {},
+                                   action_num: int = 1) -> tuple:
+    """
+    Recursive function to create simplified dot code from tree_dict.
+
+    :param tree_dict: the tree dictionary
+    :param sub_tree_root: the current subtree root
+    :param ingr_names: a dictionary of ingredient names
+    :param action_num: the current action number
+    :return: a tuple (text_till_now, text_till_now_ingr, text_till_now_actions, text_till_now_edges,
+    ingr_names, action_num) where text_till_now is the text representation of the recipe so far,
+    text_till_now_ingr is the DOT code for ingredient nodes, text_till_now_actions is the DOT code
+    for action nodes, text_till_now_edges is the DOT code for edges, ingr_names is the updated
+    ingredient names dictionary, and action_num is the updated action number
+    """
+
+    if not tree_dict[sub_tree_root]["children"]:
+        if tree_dict[sub_tree_root]["type"] == "action":
+            tree_dict[sub_tree_root]["new_node_name"] = "i" + str(action_num)
+            action_num += 1
+            action_label = tree_dict[sub_tree_root]["label"]
+            action_label = ''.join([i for i in action_label if not i.isdigit()])
+            return tree_dict[sub_tree_root]["label"].title() + ". ", "", "\t" + tree_dict[sub_tree_root]["new_node_name"] + "[label=\"" + action_label + "\"];\n", "", ingr_names, action_num
+    else:
+        ingr_children = []
+        text_till_now = ""
+        text_till_now_ingr = ""
+        text_till_now_actions = ""
+        text_till_now_edges = ""
+        for child in tree_dict[sub_tree_root]["children"]:
+            if tree_dict[child]["type"] == "action":
+                text_to_add, text_ingr, text_actions, text_edges, ingr_names, action_num = create_simplified_dot_code_rec(tree_dict, child, ingr_names, action_num)
+                text_till_now += text_to_add
+                text_till_now_ingr += text_ingr
+                text_till_now_actions += text_actions
+                text_till_now_edges += text_edges
+            else:
+                new_ingr_node_name = child[:-2]
+                new_ingr_node_name = ''.join([i for i in new_ingr_node_name if not i.isdigit()])
+
+                if new_ingr_node_name not in ingr_names:
+                    ingr_names[new_ingr_node_name] = [child]  # old node name
+                    tree_dict[child]["new_node_name"] = new_ingr_node_name
+                elif new_ingr_node_name in ingr_names:
+                    ingr_names[new_ingr_node_name] += [child]
+                    tree_dict[child]["new_node_name"] = new_ingr_node_name + str(len(ingr_names[new_ingr_node_name]))
+
+                ingr_children += [child]
+
+        tree_dict[sub_tree_root]["new_node_name"] = "i" + str(action_num)
+        action_num += 1
+        text_till_now += tree_dict[sub_tree_root]["label"].title()
+        action_label = tree_dict[sub_tree_root]["label"]
+        action_label = ''.join([i for i in action_label if not i.isdigit()])
+        text_till_now_actions += "\t" + tree_dict[sub_tree_root]["new_node_name"] + "[label=\"" + action_label + "\"];\n"
+        if ingr_children:
+            text_till_now += " " + ', '.join([tree_dict[child]["label"] for child in ingr_children])
+            for ingr in ingr_children:
+                ingr_label = tree_dict[ingr]["label"]
+                ingr_label = ''.join([i for i in ingr_label if not i.isdigit()])
+                text_till_now_ingr += "\t" + tree_dict[ingr]["new_node_name"] + "[label=\"" + ingr_label + "\"];\n"
+
+        for child in tree_dict[sub_tree_root]["children"]:
+            text_till_now_edges += "\t" + tree_dict[child]["new_node_name"] + " -> " + tree_dict[sub_tree_root]["new_node_name"] + ";\n"
+        text_till_now += ". "
+
+        return text_till_now, text_till_now_ingr, text_till_now_actions, text_till_now_edges, ingr_names, action_num
+
+
+def create_simplified_dot_code(tree_dict: dict) -> str:
+    """
+    Creates a simplified dot code for the given tree dictionary.
+    To convert the tree dictionary into DOT, we traverse the tree using DFS. This ordering makes
+    the resulting DOT graph easier for both humans and LLMs to interpret, since related operations
+    appear close together and parents are defined before their children.
+
+    :param tree_dict: the tree dictionary
+    :return: the simplified dot code as a string
+    """
+
+    tree_root = [node for node in tree_dict if tree_dict[node]["parent"] == None][0]
+    simplified_out = create_simplified_dot_code_rec(tree_dict, tree_root)
+    text_till_now_ingr = simplified_out[1]
+    text_till_now_actions = simplified_out[2]
+    text_till_now_edges = simplified_out[3]
+
+    simplified_dot = "digraph G {\n\n\trankdir=BT ratio=auto;\n\n" + text_till_now_ingr + "\n" + text_till_now_actions + "\n" + text_till_now_edges + "}"
+
+    return simplified_dot
+
+
+def is_valuable_idea(tree_dict: dict, dish_pair: str) -> tuple:
     """
     Check whether the recipe represented by tree_dict and tree_dot_code is valuable. If necessary, corrects
     the recipe by removing bad ingredients that collide in taste.
@@ -183,7 +268,7 @@ def is_valuable_idea(tree_dict: dict, tree_dot_code: str, dish_pair: str) -> tup
     # preserves cross-dish inspiration, we require that at least 30% of its elements come from each of the
     # original dishes):
 
-    element_ratio_a, element_ratio_b = dish_elements_ratio(tree_dot_code)
+    element_ratio_a, element_ratio_b = dish_elements_ratio(tree_dict)
 
     if element_ratio_a < MIN_ELEMENT_RATIO:
         return False, None, None
@@ -210,13 +295,14 @@ def is_valuable_idea(tree_dict: dict, tree_dot_code: str, dish_pair: str) -> tup
     top_items_order = essentials_in_recipe_a + essentials_in_recipe_b + top_items_order
     ingrs_to_remove = cause_taste_collisions(ingr_elements, top_items_order)
 
-    # remove bad ingredient elements also from the tree DOT code:
-    bad_ingrs_labels = [all_elements[ingr] for ingr in ingrs_to_remove]
-    updated_tree_code = remove_bad_ingredients_from_tree(tree_dot_code, bad_ingrs_labels)
-
     updated_tree_elements = [e for e in all_elements if e not in ingrs_to_remove]
 
-    return True, updated_tree_code, updated_tree_elements
+    # remove bad ingredient elements from the tree and create a simplified DOT representation of the tree:
+    bad_ingrs_labels = [all_elements[ingr] for ingr in ingrs_to_remove]
+    updated_tree_dict = remove_bad_ingredients_from_tree(tree_dict, bad_ingrs_labels)
+    simplified_tree_code = create_simplified_dot_code(updated_tree_dict)
+
+    return True, simplified_tree_code, updated_tree_elements
 
 
 def ensure_value_rank_by_novelty(generated_ideas: dict) -> dict:
@@ -238,7 +324,7 @@ def ensure_value_rank_by_novelty(generated_ideas: dict) -> dict:
             tree_dot_code = generated_ideas_dict[dish_pair][generated_id]["tree_dot_code"]
 
             # ensure value and remove ingredients that do not pair well in taste:
-            is_valuable, updated_dot_code, updated_elements = is_valuable_idea(tree_dict, tree_dot_code, dish_pair)
+            is_valuable, simplified_dot_code, updated_elements = is_valuable_idea(tree_dict, dish_pair)
 
             if is_valuable:
                 # compute the novelty score and
@@ -248,7 +334,7 @@ def ensure_value_rank_by_novelty(generated_ideas: dict) -> dict:
                 valuable_ideas[generated_id]["dish_pair"] = dish_pair
                 valuable_ideas[generated_id]["recipe_a"] = generated_id.split("_to_")[0]
                 valuable_ideas[generated_id]["recipe_b"] = '_'.join(generated_id.split("_to_")[1].split("_")[:-1])
-                valuable_ideas[generated_id]["tree_dot_code"] = updated_dot_code
+                valuable_ideas[generated_id]["tree_dot_code"] = simplified_dot_code
                 valuable_ideas[generated_id]["tree_novelty_score"] = novelty_score
                 valuable_ideas[generated_id]["element_novelty_scores"] = element_scores
 
@@ -303,7 +389,7 @@ if __name__ == '__main__':
 
     valuable_ranked_ideas = ensure_value_rank_by_novelty(generated_ideas_dict)
 
-    best_ideas = pick_top_k_ideas(valuable_ranked_ideas, top_k=10, method="different_origin")
+    best_ideas = pick_top_k_ideas(valuable_ranked_ideas, top_k=3, method="different_origin")
 
     with open(generated_ideas_path.replace(".json", "_best_ideas.json"), 'w') as f:
         json.dump(best_ideas, f, indent=4)
