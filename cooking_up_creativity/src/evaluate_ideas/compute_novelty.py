@@ -15,13 +15,13 @@ This dictionary maps two elements (sorted alphabetically and separated by ' | ')
 that include both elements in Recipe1M Dataset (https://github.com/torralba-lab/im2recipe).
 An element could be either an ingredient or a cooking verb. 
 """
-with open("element_pairs_1M_recipes.json", 'r') as f:
+with open("../resources/element_pairs_1M_recipes.json", 'r') as f:
     element_pairs_1M_recipes = json.load(f)
 
 """
 This dictionary maps each ingredient to the number of recipes that include it in Recipe1M Dataset.
 """
-with open("ingredient_counts_1M_recipes.json", "r", encoding='utf8') as f:
+with open("../resources/ingredient_counts_1M_recipes.json", "r", encoding='utf8') as f:
     ingr_counts_1M_recipes = json.load(f)
 
 

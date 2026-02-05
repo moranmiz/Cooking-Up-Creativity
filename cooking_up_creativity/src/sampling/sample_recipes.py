@@ -33,7 +33,7 @@ def organize_1M_recipes_dataset(data_path: str) -> dict:
 
 
 # The following JSON file contains all the words that appear in dish names on Allrecipes.com
-with open("words_in_dish_names_all_recipes_site.json", 'r') as f:
+with open("../resources/words_in_dish_names_all_recipes_site.json", 'r') as f:
     relevant_words = set(json.load(f))
 
 
@@ -260,7 +260,7 @@ if __name__ == '__main__':
 
     recipe_data = organize_1M_recipes_dataset(recipe_data_path)
 
-    with open("100_most_popular_dishes.txt", 'r', encoding='utf8') as f:
+    with open("../resources/100_most_popular_dishes.txt", 'r', encoding='utf8') as f:
         dish_names = [line.strip() for line in f.readlines()]
 
     sampled_recipes = {}

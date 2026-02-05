@@ -20,7 +20,7 @@ LEMMATIZER = WordNetLemmatizer()
 This dictionary maps raw ingredient names to their standardized synonym names. 
 The raw ingredient synonyms are based on the flavorDB dataset (https://cosylab.iiitd.edu.in/flavordb/).
 """
-with open("raw_ingredients_synonyms_mapping.json", "r", encoding='utf8') as f:
+with open("../resources/raw_ingredients_synonyms_mapping.json", "r", encoding='utf8') as f:
     raw_ingredients_synonyms_dict = json.load(f)
 
 """
@@ -28,7 +28,7 @@ This dictionary maps two raw ingredient names (separated by ' | ') to their flav
 The flavor pairing scores are calculated based on the number of flavor molecules they share in flavorDB. 
 The scores are normalized between 0 and 1. 
 """
-with open("raw_ingredients_pairing_scores.json", "r", encoding='utf8') as f:
+with open("../resources/raw_ingredients_pairing_scores.json", "r", encoding='utf8') as f:
     raw_ingredients_pairing_scores = json.load(f)
 
 """
@@ -36,7 +36,7 @@ This dictionary includes mappings from ingredient names to possible raw ingredie
 For each ingredient name found in the Recipe1M Dataset, we searched 
 for its possible raw ingredient names using the flavorDB dataset and FoodData dataset (https://fdc.nal.usda.gov/).
 """
-with open("general_ingr_to_raw_ingrs.json", "r", encoding='utf8') as f:
+with open("../resources/general_ingr_to_raw_ingrs.json", "r", encoding='utf8') as f:
     general_ingr_to_raw_ingrs = json.load(f)
 
 

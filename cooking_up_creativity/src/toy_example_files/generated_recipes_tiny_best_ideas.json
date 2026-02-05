@@ -1,0 +1,149 @@
+{
+    "chocolate_pie_580232_to_lasagna_51349_v3": {
+        "dish_pair": "chocolate_pie_to_lasagna",
+        "recipe_a": "chocolate_pie_580232",
+        "recipe_b": "lasagna_51349",
+        "tree_dot_code": "digraph G {\n\trankdir=BT ratio=auto;\n\tcoconut_a[label=<coconut<br /> <font color=\"darkorchid\" point-size=\"10\">coconut</font>> shape=box];\n\tpecans_a[label=<pecans<br /> <font color=\"darkorchid\" point-size=\"10\">nut</font>> shape=box];\n\tbutter_a[label=<butter<br /> <font color=\"darkorchid\" point-size=\"10\">butter</font>> shape=box];\n\tsweet_chocolate_a[label=<sweet chocolate<br /> <font color=\"darkorchid\" point-size=\"10\">chocolate</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box];\n\tmarshmallows_a[label=<marshmallows<br /> <font color=\"darkorchid\" point-size=\"10\">marshmallow</font>> shape=box];\n\tsalt_a[label=<salt<br /> <font color=\"darkorchid\" point-size=\"10\">salt</font>> shape=box];\n\tcool_whip_a[label=<cool whip<br /> <font color=\"darkorchid\" point-size=\"10\">whipped topping</font>> shape=box];\n\tvanilla_extract_a[label=<vanilla extract<br /> <font color=\"darkorchid\" point-size=\"10\">flavoring</font>> shape=box];\n\ti2_a [label=<press<br /> <font color=\"springgreen4\" point-size=\"10\">shape</font>>];\n\ti3_a [label=<bake<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>];\n\ti5_a [label=<melt<br /> <font color=\"springgreen4\" point-size=\"10\">modify consistency</font>>];\n\ti6_a [label=<stir<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>];\n\ti7_a [label=<remove<br /> <font color=\"springgreen4\" point-size=\"10\">separate</font>>];\n\ti8_a [label=<beat<br /> <font color=\"springgreen4\" point-size=\"10\">combine / modify</font>>];\n\ti9_a [label=<beat<br /> <font color=\"springgreen4\" point-size=\"10\">combine / modify</font>>];\n\ti10_a [label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>];\n\ti11_a [label=<cool<br /> <font color=\"springgreen4\" point-size=\"10\">cool</font>>];\n\ti12_a [label=<fold<br /> <font color=\"springgreen4\" point-size=\"10\">combine / modify</font>>];\n\ti13_a [label=<put<br /> <font color=\"springgreen4\" point-size=\"10\">place</font>>];\n\ti14_a [label=<garnish<br /> <font color=\"springgreen4\" point-size=\"10\">garnish</font>>];\n\ti15_a [label=<refrigerate<br /> <font color=\"springgreen4\" point-size=\"10\">cool</font>>];\n\tlasagna_noodles_b[label=<lasagna noodles<br /> <font color=\"darkorchid\" point-size=\"10\">pasta</font>> shape=box];\n\ttomato_paste_b[label=<tomato paste<br /> <font color=\"darkorchid\" point-size=\"10\">tomato</font>> shape=box];\n\ttomato_sauce_b[label=<tomato sauce<br /> <font color=\"darkorchid\" point-size=\"10\">tomato</font>> shape=box];\n\ti6_b [label=<grate<br /> <font color=\"springgreen4\" point-size=\"10\">modify texture</font>>];\n\tolive_oil_b[label=<olive oil<br /> <font color=\"darkorchid\" point-size=\"10\">oil</font>> shape=box];\n\ti5_b [label=<mince<br /> <font color=\"springgreen4\" point-size=\"10\">cut</font>>];\n\tgarlic_b[label=<garlic<br /> <font color=\"darkorchid\" point-size=\"10\">vegetable</font>> shape=box];\n\ti12_b [label=<incorporate<br /> <font color=\"springgreen4\" point-size=\"10\">incorporate</font>>];\n\ti3_b [label=<drain<br /> <font color=\"springgreen4\" point-size=\"10\">separate</font>>];\n\ti14_b [label=<divide<br /> <font color=\"springgreen4\" point-size=\"10\">separate</font>>];\n\tbutter_a -> i2_a;\n\tcoconut_a -> i2_a;\n\tpecans_a -> i2_a;\n\ti2_a -> i3_a;\n\tmarshmallows_a -> i5_a;\n\ti5_b -> i5_a;\n\tsweet_chocolate_a -> i5_a;\n\ti5_a -> i6_a;\n\ti6_a -> i7_a;\n\ti8_a -> i9_a;\n\ti7_a -> i9_a;\n\ti12_b -> i10_a;\n\tvanilla_extract_a -> i10_a;\n\ti14_b -> i11_a;\n\tcool_whip_a -> i12_a;\n\ti11_a -> i12_a;\n\ti3_a -> i13_a;\n\ti12_a -> i13_a;\n\ti6_b -> i14_a;\n\tlasagna_noodles_b -> i14_a;\n\ti13_a -> i14_a;\n\ti14_a -> i15_a;\n\tgarlic_b -> i5_b;\n\tsalt_a -> i5_b;\n\ti9_a -> i12_b;\n\ti3_b -> i12_b;\n\ttomato_paste_b -> i12_b;\n\ttomato_sauce_b -> i12_b;\n\tolive_oil_b -> i3_b;\n\ti10_a -> i14_b;\n}",
+        "tree_novelty_score": 51.90829929721457,
+        "element_novelty_scores": [
+            [
+                "cool whip",
+                6.429232889831236
+            ],
+            [
+                "marshmallow",
+                5.843352334031763
+            ],
+            [
+                "noodle",
+                5.587835987941078
+            ],
+            [
+                "mince",
+                5.563176897096282
+            ],
+            [
+                "garlic",
+                5.472619384960281
+            ],
+            [
+                "tomato",
+                5.470608611725507
+            ],
+            [
+                "vanilla",
+                4.607651176311563
+            ],
+            [
+                "pecan",
+                4.35558403760338
+            ],
+            [
+                "chocolate",
+                4.295714467483516
+            ],
+            [
+                "grate",
+                4.282523510229965
+            ]
+        ]
+    },
+    "dumplings_493108_to_apple_salad_337770_v2": {
+        "dish_pair": "apple_salad_to_dumplings",
+        "recipe_a": "dumplings_493108",
+        "recipe_b": "apple_salad_337770",
+        "tree_dot_code": "digraph G {\n\trankdir=BT ratio=auto;\n\tplain_flour_a[label=<plain flour<br /> <font color=\"darkorchid\" point-size=\"10\">flour</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box];\n\tbuttermilk_a[label=<buttermilk<br /> <font color=\"darkorchid\" point-size=\"10\">dairy</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font>> shape=box];\n\tpearl_barley_a[label=<pearl barley<br /> <font color=\"darkorchid\" point-size=\"10\">grain</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font>> shape=box];\n\ti1_a [label=<mix<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>];\n\ti4_a [label=<cook<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>];\n\ti5_a [label=<chop<br /> <font color=\"springgreen4\" point-size=\"10\">cut</font>>];\n\ti7_a [label=<mix<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>];\n\ti13_a [label=<serve<br /> <font color=\"springgreen4\" point-size=\"10\">finish</font>>];\n\tprunes1_a[label=<prunes<br /> <font color=\"darkorchid\" point-size=\"10\">fruit</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box];\n\tthyme2_a[label=<thyme<br /> <font color=\"darkorchid\" point-size=\"10\">herb</font>> shape=box];\n\tapples_b[label=<apples<br /> <font color=\"darkorchid\" point-size=\"10\">fruit</font>> shape=box];\n\tgrapes_b[label=<grapes<br /> <font color=\"darkorchid\" point-size=\"10\">fruit</font>> shape=box];\n\ti3_b [label=<stir<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>];\n\tpeanuts_b[label=<peanuts<br /> <font color=\"darkorchid\" point-size=\"10\">nut</font>> shape=box];\n\tmaraschino_cherries_b[label=<maraschino cherries<br /> <font color=\"darkorchid\" point-size=\"10\">fruit</font>> shape=box];\n\tcool_whip_b[label=<cool whip<br /> <font color=\"darkorchid\" point-size=\"10\">whipped topping</font>> shape=box];\n\tsugar_b[label=<sugar<br /> <font color=\"darkorchid\" point-size=\"10\">sugar</font>> shape=box];\n\tapples_b -> i1_a;\n\tbuttermilk_a -> i1_a;\n\tgrapes_b -> i1_a;\n\tmaraschino_cherries_b -> i1_a;\n\tpeanuts_b -> i1_a;\n\tplain_flour_a -> i1_a;\n\tpearl_barley_a -> i4_a;\n\tprunes1_a -> i5_a;\n\ti5_a -> i7_a;\n\tcool_whip_b -> i7_a;\n\tsugar_b -> i7_a;\n\ti4_a -> i13_a;\n\ti1_a -> i13_a;\n\ti3_b -> i13_a;\n\tthyme2_a -> i13_a;\n\ti7_a -> i3_b;\n}",
+        "tree_novelty_score": 46.912030560237845,
+        "element_novelty_scores": [
+            [
+                "cool whip",
+                6.006134736104454
+            ],
+            [
+                "barley",
+                5.525689044499583
+            ],
+            [
+                "peanut",
+                5.061676090735331
+            ],
+            [
+                "prune",
+                4.930834039835211
+            ],
+            [
+                "buttermilk",
+                4.629813758688606
+            ],
+            [
+                "thyme",
+                4.56806069597631
+            ],
+            [
+                "grape",
+                4.472083476914914
+            ],
+            [
+                "cherry",
+                4.014876959432617
+            ],
+            [
+                "chop",
+                3.9291593659329473
+            ],
+            [
+                "apple",
+                3.7737023921178694
+            ]
+        ]
+    },
+    "dumplings_689101_to_apple_salad_759766_v4": {
+        "dish_pair": "apple_salad_to_dumplings",
+        "recipe_a": "dumplings_689101",
+        "recipe_b": "apple_salad_759766",
+        "tree_dot_code": "digraph G {\n\trankdir=BT ratio=auto;\n\tbaking_powder_a[label=<baking powder<br /> <font color=\"darkorchid\" point-size=\"10\">leavening agent</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font>> shape=box];\n\tshortening_a[label=<shortening<br /> <font color=\"darkorchid\" point-size=\"10\">fat</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font>> shape=box];\n\ti1_a [label=<place<br /> <font color=\"springgreen4\" point-size=\"10\">place</font>>];\n\ti3_a [label=<cut<br /> <font color=\"springgreen4\" point-size=\"10\">cut</font>>];\n\ti4_a [label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>];\n\ti5_a [label=<toss<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>];\n\ti6_a [label=<roll<br /> <font color=\"springgreen4\" point-size=\"10\">shape</font>>];\n\ti7_a [label=<cut<br /> <font color=\"springgreen4\" point-size=\"10\">cut</font>>];\n\twhite_flour2_a[label=<white flour<br /> <font color=\"darkorchid\" point-size=\"10\">flour</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box];\n\tapples_b[label=<apples<br /> <font color=\"darkorchid\" point-size=\"10\">fruit</font>> shape=box];\n\tcelery_root_b[label=<celery root<br /> <font color=\"darkorchid\" point-size=\"10\">vegetable</font>> shape=box];\n\tcider_vinegar_b[label=<cider vinegar<br /> <font color=\"darkorchid\" point-size=\"10\">vinegar</font>> shape=box];\n\ti4_b [label=<pierce<br /> <font color=\"springgreen4\" point-size=\"10\">shape</font>>];\n\ti14_b [label=<whisk<br /> <font color=\"springgreen4\" point-size=\"10\">combine / modify</font>>];\n\ti17_b [label=<sprinkle<br /> <font color=\"springgreen4\" point-size=\"10\">garnish</font>>];\n\ti2_b [label=<simmer<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>];\n\ti11_b [label=<slice<br /> <font color=\"springgreen4\" point-size=\"10\">cut</font>>];\n\ti8_b [label=<place<br /> <font color=\"springgreen4\" point-size=\"10\">place</font>>];\n\tchives_b[label=<chives<br /> <font color=\"darkorchid\" point-size=\"10\">herb</font>> shape=box];\n\ti12_b [label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>];\n\tblack_pepper_b[label=<black pepper<br /> <font color=\"darkorchid\" point-size=\"10\">spice</font>> shape=box];\n\ti1_b [label=<boil<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>];\n\ti13_b [label=<toss<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>];\n\ti15_b [label=<whisk<br /> <font color=\"springgreen4\" point-size=\"10\">combine / modify</font>>];\n\ti9_b [label=<rinse<br /> <font color=\"springgreen4\" point-size=\"10\">wash</font>>];\n\tmustard_b[label=<mustard<br /> <font color=\"darkorchid\" point-size=\"10\">condiment</font>> shape=box];\n\tkosher_salt_b[label=<kosher salt<br /> <font color=\"darkorchid\" point-size=\"10\">salt</font>> shape=box];\n\ti7_b [label=<cut<br /> <font color=\"springgreen4\" point-size=\"10\">cut</font>>];\n\tbaking_powder_a -> i1_a;\n\ti1_a -> i3_a;\n\ti9_b -> i3_a;\n\tshortening_a -> i3_a;\n\ti11_b -> i4_a;\n\ti12_b -> i5_a;\n\ti4_a -> i5_a;\n\ti8_b -> i5_a;\n\twhite_flour2_a -> i5_a;\n\ti5_a -> i6_a;\n\ti17_b -> i6_a;\n\ti6_a -> i7_a;\n\ti2_b -> i4_b;\n\tblack_pepper_b -> i14_b;\n\tcider_vinegar_b -> i14_b;\n\tkosher_salt_b -> i14_b;\n\tmustard_b -> i14_b;\n\tchives_b -> i17_b;\n\ti13_b -> i17_b;\n\ti15_b -> i17_b;\n\ti1_b -> i2_b;\n\ti3_a -> i11_b;\n\ti7_b -> i8_b;\n\tcelery_root_b -> i1_b;\n\ti14_b -> i15_b;\n\tapples_b -> i9_b;\n\ti4_b -> i7_b;\n}",
+        "tree_novelty_score": 33.381943530982355,
+        "element_novelty_scores": [
+            [
+                "shortening",
+                4.1282584563006575
+            ],
+            [
+                "baking powder",
+                3.877988853237121
+            ],
+            [
+                "pierce",
+                3.3858203802210247
+            ],
+            [
+                "chive",
+                3.341266358643187
+            ],
+            [
+                "rinse",
+                3.2902701549441
+            ],
+            [
+                "celery",
+                3.2374866488829364
+            ],
+            [
+                "mustard",
+                3.117511872647357
+            ],
+            [
+                "vinegar",
+                3.023484876452927
+            ],
+            [
+                "apple",
+                2.999543767809826
+            ],
+            [
+                "roll",
+                2.9803121618432247
+            ]
+        ]
+    }
+}

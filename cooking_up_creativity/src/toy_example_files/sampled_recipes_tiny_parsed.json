@@ -1,0 +1,3342 @@
+{
+    "lasagna": {
+        "51349": {
+            "title": "Larry's Lean Lasagna",
+            "ingredient_list": [
+                "1 lb lean ground beef",
+                "1 tablespoon olive oil",
+                "1 carrot",
+                "1 stalk celery",
+                "1 onion",
+                "4 garlic cloves",
+                "12 teaspoon kosher salt",
+                "8 ounces tomato sauce",
+                "2 ounces tomato paste",
+                "1 tablespoon honey",
+                "1 cup chicken broth",
+                "3 ounces fresh grated pecorino romano cheese",
+                "3 ounces fresh grated asiago cheese",
+                "6 lasagna noodles, uncooked",
+                "3 tablespoons chopped black olives"
+            ],
+            "instruction_list": [
+                "Preheat the oven to 350 degrees.",
+                "Brown the beef in a medium hot skillet with the olive oil.",
+                "Drain and reserve.",
+                "Finely chop the vegetables and mince the garlic with the salt.",
+                "Grate and combine the two cheeses and divide into 3 equal portions.",
+                "Sweat the carrot and celery until soft and add the onion and garlic.",
+                "Continue to sweat for a minute or two.",
+                "Blend with a submersible blender to a smooth consistency.",
+                "Incorporate the sauce, paste, honey, beef, and broth and mix well.",
+                "Divide into 4 equal portions.",
+                "Put one portion of the sauce in the bottom of a medium casserole.",
+                "Add two of the noodles and one portion of the cheeses.",
+                "Repeat two more times and finally cover all with the fourth portion of sauce.",
+                "Sprinkle the chopped olives on top and bake for one hour.",
+                "Let it set up for 15 minutes before serving."
+            ],
+            "parsed_ingredients": {
+                "ground beef": {
+                    "ref": "taste",
+                    "core": true,
+                    "abstr": "beef"
+                },
+                "olive oil": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "oil"
+                },
+                "carrot": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "vegetable"
+                },
+                "celery": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "vegetable"
+                },
+                "onion": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "vegetable"
+                },
+                "garlic": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "vegetable"
+                },
+                "salt": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "salt"
+                },
+                "tomato sauce": {
+                    "ref": "taste",
+                    "core": true,
+                    "abstr": "tomato"
+                },
+                "tomato paste": {
+                    "ref": "taste",
+                    "core": true,
+                    "abstr": "tomato"
+                },
+                "honey": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "sweetener"
+                },
+                "chicken broth": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "broth"
+                },
+                "pecorino romano cheese": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "cheese"
+                },
+                "asiago cheese": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "cheese"
+                },
+                "lasagna noodles": {
+                    "ref": "structure",
+                    "core": true,
+                    "abstr": "pasta"
+                },
+                "black olives": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "olive"
+                }
+            },
+            "parsed_instructions": "Preheat oven. Brown beef in skillet with oil. Drain. Chop vegetables. Mince garlic with salt. Grate cheeses. Divide cheeses. Sweat carrot and celery. Add onion and garlic. Sweat. Blend to smooth consistency. Incorporate sauce, paste, honey, beef, and broth. Mix. Divide sauce. Put sauce in casserole. Add noodles and cheese. Repeat. Cover with sauce. Sprinkle olives. Bake. Set before serving.",
+            "tree_dot_code": "digraph lasagna_51349 {\n\trankdir=BT ratio=auto\n\tground_beef[label=<ground beef<br /> <font color=\"darkorchid\" point-size=\"10\">beef</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\tolive_oil[label=<olive oil<br /> <font color=\"darkorchid\" point-size=\"10\">oil</font>> shape=box]\n\tcarrot[label=<carrot<br /> <font color=\"darkorchid\" point-size=\"10\">vegetable</font>> shape=box]\n\tcelery[label=<celery<br /> <font color=\"darkorchid\" point-size=\"10\">vegetable</font>> shape=box]\n\tonion[label=<onion<br /> <font color=\"darkorchid\" point-size=\"10\">vegetable</font>> shape=box]\n\tgarlic[label=<garlic<br /> <font color=\"darkorchid\" point-size=\"10\">vegetable</font>> shape=box]\n\tsalt[label=<salt<br /> <font color=\"darkorchid\" point-size=\"10\">salt</font>> shape=box]\n\ttomato_sauce[label=<tomato sauce<br /> <font color=\"darkorchid\" point-size=\"10\">tomato</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\ttomato_paste[label=<tomato paste<br /> <font color=\"darkorchid\" point-size=\"10\">tomato</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\thoney[label=<honey<br /> <font color=\"darkorchid\" point-size=\"10\">sweetener</font>> shape=box]\n\tchicken_broth[label=<chicken broth<br /> <font color=\"darkorchid\" point-size=\"10\">broth</font>> shape=box]\n\tpecorino_romano_cheese[label=<pecorino romano cheese<br /> <font color=\"darkorchid\" point-size=\"10\">cheese</font>> shape=box]\n\tasiago_cheese[label=<asiago cheese<br /> <font color=\"darkorchid\" point-size=\"10\">cheese</font>> shape=box]\n\tlasagna_noodles[label=<lasagna noodles<br /> <font color=\"darkorchid\" point-size=\"10\">pasta</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\tblack_olives[label=<black olives<br /> <font color=\"darkorchid\" point-size=\"10\">olive</font>> shape=box]\n\ti1[label=<preheat<br /> <font color=\"springgreen4\" point-size=\"10\">surface heat</font>>]\n\ti2[label=<brown<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti3[label=<drain<br /> <font color=\"springgreen4\" point-size=\"10\">separate</font>>]\n\ti4[label=<chop<br /> <font color=\"springgreen4\" point-size=\"10\">cut</font>>]\n\ti5[label=<mince<br /> <font color=\"springgreen4\" point-size=\"10\">cut</font>>]\n\ti6[label=<grate<br /> <font color=\"springgreen4\" point-size=\"10\">modify texture</font>>]\n\ti7[label=<divide<br /> <font color=\"springgreen4\" point-size=\"10\">separate</font>>]\n\ti8[label=<sweat<br /> <font color=\"springgreen4\" point-size=\"10\">sweat</font>>]\n\ti9[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti10[label=<sweat<br /> <font color=\"springgreen4\" point-size=\"10\">sweat</font>>]\n\ti11[label=<blend<br /> <font color=\"springgreen4\" point-size=\"10\">combine / modify</font>>]\n\ti12[label=<incorporate<br /> <font color=\"springgreen4\" point-size=\"10\">incorporate</font>>]\n\ti13[label=<mix<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti14[label=<divide<br /> <font color=\"springgreen4\" point-size=\"10\">separate</font>>]\n\ti15[label=<put<br /> <font color=\"springgreen4\" point-size=\"10\">place</font>>]\n\ti16[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti17[label=<repeat<br /> <font color=\"springgreen4\" point-size=\"10\">repeat</font>>]\n\ti18[label=<cover<br /> <font color=\"springgreen4\" point-size=\"10\">rest</font>>]\n\ti19[label=<sprinkle<br /> <font color=\"springgreen4\" point-size=\"10\">garnish</font>>]\n\ti20[label=<bake<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti21[label=<set<br /> <font color=\"springgreen4\" point-size=\"10\">rest / cool</font>>]\n\n\tolive_oil -> i2\n\tground_beef -> i2\n\ti2 -> i3 # beef is browned and drained\n\tcarrot -> i4\n\tcelery -> i4\n\tonion -> i4\n\ti4 -> i8 # vegetables are chopped\n\tgarlic -> i5\n\tsalt -> i5\n\ti5 -> i9 # garlic is minced\n\tpecorino_romano_cheese -> i6\n\tasiago_cheese -> i6\n\ti6 -> i7 # cheeses are grated\n\ti7 -> i16 # cheeses are divided\n\ti8 -> i9 # add chopped vegetables\n\ti9 -> i10 # sweat vegetables\n\ti10 -> i11 # blend vegetables\n\ttomato_sauce -> i12\n\ttomato_paste -> i12\n\thoney -> i12\n\tchicken_broth -> i12\n\ti3 -> i12 # add browned beef\n\ti11 -> i12 # add blended vegetables\n\ti12 -> i13 # sauce is incorporated\n\ti13 -> i14 # sauce is mixed\n\ti14 -> i15 # sauce is divided\n\ti15 -> i16 # layer with noodles and cheese\n\tlasagna_noodles -> i16\n\ti16 -> i17 # repeat layers\n\ti17 -> i18 # cover with sauce\n\tblack_olives -> i19\n\ti18 -> i19 # sprinkle olives\n\ti19 -> i20 # bake\n\ti1 -> i20 # use preheated oven\n\ti20 -> i21 # set before serving\n}",
+            "tree_dict": {
+                "ground_beef": {
+                    "label": "ground beef",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "beef",
+                    "extra_info": [
+                        "core"
+                    ],
+                    "parent": "i2",
+                    "children": []
+                },
+                "olive_oil": {
+                    "label": "olive oil",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "oil",
+                    "parent": "i2",
+                    "children": []
+                },
+                "carrot": {
+                    "label": "carrot",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "vegetable",
+                    "parent": "i4",
+                    "children": []
+                },
+                "celery": {
+                    "label": "celery",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "vegetable",
+                    "parent": "i4",
+                    "children": []
+                },
+                "onion": {
+                    "label": "onion",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "vegetable",
+                    "parent": "i4",
+                    "children": []
+                },
+                "garlic": {
+                    "label": "garlic",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "vegetable",
+                    "parent": "i5",
+                    "children": []
+                },
+                "salt": {
+                    "label": "salt",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "salt",
+                    "parent": "i5",
+                    "children": []
+                },
+                "tomato_sauce": {
+                    "label": "tomato sauce",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "tomato",
+                    "extra_info": [
+                        "core"
+                    ],
+                    "parent": "i12",
+                    "children": []
+                },
+                "tomato_paste": {
+                    "label": "tomato paste",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "tomato",
+                    "extra_info": [
+                        "core"
+                    ],
+                    "parent": "i12",
+                    "children": []
+                },
+                "honey": {
+                    "label": "honey",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "sweetener",
+                    "parent": "i12",
+                    "children": []
+                },
+                "chicken_broth": {
+                    "label": "chicken broth",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "broth",
+                    "parent": "i12",
+                    "children": []
+                },
+                "pecorino_romano_cheese": {
+                    "label": "pecorino romano cheese",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "cheese",
+                    "parent": "i6",
+                    "children": []
+                },
+                "asiago_cheese": {
+                    "label": "asiago cheese",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "cheese",
+                    "parent": "i6",
+                    "children": []
+                },
+                "lasagna_noodles": {
+                    "label": "lasagna noodles",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "pasta",
+                    "extra_info": [
+                        "structure",
+                        "core"
+                    ],
+                    "parent": "i16",
+                    "children": []
+                },
+                "black_olives": {
+                    "label": "black olives",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "olive",
+                    "parent": "i19",
+                    "children": []
+                },
+                "i1": {
+                    "label": "preheat",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "surface heat",
+                    "parent": "i20",
+                    "children": []
+                },
+                "i2": {
+                    "label": "brown",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i3",
+                    "children": [
+                        "ground_beef",
+                        "olive_oil"
+                    ]
+                },
+                "i3": {
+                    "label": "drain",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "separate",
+                    "parent": "i12",
+                    "children": [
+                        "i2"
+                    ]
+                },
+                "i4": {
+                    "label": "chop",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "cut",
+                    "parent": "i8",
+                    "children": [
+                        "carrot",
+                        "celery",
+                        "onion"
+                    ]
+                },
+                "i5": {
+                    "label": "mince",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "cut",
+                    "parent": "i9",
+                    "children": [
+                        "garlic",
+                        "salt"
+                    ]
+                },
+                "i6": {
+                    "label": "grate",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "modify texture",
+                    "parent": "i7",
+                    "children": [
+                        "pecorino_romano_cheese",
+                        "asiago_cheese"
+                    ]
+                },
+                "i7": {
+                    "label": "divide",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "separate",
+                    "parent": "i16",
+                    "children": [
+                        "i6"
+                    ]
+                },
+                "i8": {
+                    "label": "sweat",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "sweat",
+                    "parent": "i9",
+                    "children": [
+                        "i4"
+                    ]
+                },
+                "i9": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i10",
+                    "children": [
+                        "i5",
+                        "i8"
+                    ]
+                },
+                "i10": {
+                    "label": "sweat",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "sweat",
+                    "parent": "i11",
+                    "children": [
+                        "i9"
+                    ]
+                },
+                "i11": {
+                    "label": "blend",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "combine / modify",
+                    "parent": "i12",
+                    "children": [
+                        "i10"
+                    ]
+                },
+                "i12": {
+                    "label": "incorporate",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "incorporate",
+                    "parent": "i13",
+                    "children": [
+                        "tomato_sauce",
+                        "tomato_paste",
+                        "honey",
+                        "chicken_broth",
+                        "i3",
+                        "i11"
+                    ]
+                },
+                "i13": {
+                    "label": "mix",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i14",
+                    "children": [
+                        "i12"
+                    ]
+                },
+                "i14": {
+                    "label": "divide",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "separate",
+                    "parent": "i15",
+                    "children": [
+                        "i13"
+                    ]
+                },
+                "i15": {
+                    "label": "put",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "place",
+                    "parent": "i16",
+                    "children": [
+                        "i14"
+                    ]
+                },
+                "i16": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i17",
+                    "children": [
+                        "lasagna_noodles",
+                        "i7",
+                        "i15"
+                    ]
+                },
+                "i17": {
+                    "label": "repeat",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "repeat",
+                    "parent": "i18",
+                    "children": [
+                        "i16"
+                    ]
+                },
+                "i18": {
+                    "label": "cover",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "rest",
+                    "parent": "i19",
+                    "children": [
+                        "i17"
+                    ]
+                },
+                "i19": {
+                    "label": "sprinkle",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "garnish",
+                    "parent": "i20",
+                    "children": [
+                        "black_olives",
+                        "i18"
+                    ]
+                },
+                "i20": {
+                    "label": "bake",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i21",
+                    "children": [
+                        "i1",
+                        "i19"
+                    ]
+                },
+                "i21": {
+                    "label": "set",
+                    "root": true,
+                    "type": "action",
+                    "abstr": "rest / cool",
+                    "parent": null,
+                    "children": [
+                        "i20"
+                    ]
+                }
+            },
+            "is_tree": true
+        },
+        "212671": {
+            "title": "Lasagna",
+            "ingredient_list": [
+                "2 lb ground beef",
+                "3 tsp fresh garlic",
+                "2 tbsp minced or chopped onion",
+                "1 box lasagna noodles",
+                "1 can tomato paste (large)",
+                "1 1/2 can tomato sauce ( large)",
+                "1 packages finely shredded cheddar cheese",
+                "1 packages finely shredded mozarrella cheese",
+                "1 box garlic toast",
+                "1 tbsp salt",
+                "1 tbsp ground black pepper"
+            ],
+            "instruction_list": [
+                "Mix beef, onions,garlic, salt & pepper.",
+                "Cook on med high",
+                "Boil noodles criss crossing each one w a pinch of salt so they don't stick as much",
+                "Drain beef.",
+                "Add tomato sauce & paste, cook on low-med for 20 minutes.",
+                "Taste if not to our liking add a Lil garlic salt.",
+                "I use garlic salt w parsley.",
+                "Drain noodles & add cold water",
+                "Bake toast for 8-10 minutes",
+                "Layer ur pan with noodles.",
+                "Top w meat mixture.",
+                "Add some cheddar cheese.",
+                "Layer more noodles.",
+                "Add the remaining meat mixture.",
+                "Add cheddar cheese.",
+                "Top w Mozzarella.",
+                "Bake at 350 for 15-20 minutes.",
+                "Let cool & serve w garlic bread & salad"
+            ],
+            "parsed_ingredients": {
+                "ground beef": {
+                    "ref": "taste",
+                    "core": true,
+                    "abstr": "beef"
+                },
+                "garlic": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "vegetable"
+                },
+                "onion": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "vegetable"
+                },
+                "lasagna noodles": {
+                    "ref": "structure",
+                    "core": true,
+                    "abstr": "pasta"
+                },
+                "tomato paste": {
+                    "ref": "taste",
+                    "core": true,
+                    "abstr": "tomato"
+                },
+                "tomato sauce": {
+                    "ref": "taste",
+                    "core": true,
+                    "abstr": "tomato"
+                },
+                "cheddar cheese": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "cheese"
+                },
+                "mozzarella cheese": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "cheese"
+                },
+                "garlic toast": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "bread"
+                },
+                "salt": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "salt"
+                },
+                "black pepper": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "spice"
+                }
+            },
+            "parsed_instructions": "Mix beef, onions, garlic, salt, and pepper. Cook. Boil noodles with salt. Drain beef. Add tomato sauce and paste. Cook. Taste. Add garlic salt if needed. Drain noodles. Add cold water. Bake toast. Layer noodles in pan. Top with meat. Add cheddar cheese. Layer noodles. Add meat. Add cheddar cheese. Top with mozzarella. Bake. Cool. Serve with garlic bread and salad.",
+            "tree_dot_code": "digraph lasagna_212671 {\n\trankdir=BT ratio=auto\n\tground_beef[label=<ground beef<br /> <font color=\"darkorchid\" point-size=\"10\">beef</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\tgarlic[label=<garlic<br /> <font color=\"darkorchid\" point-size=\"10\">vegetable</font>> shape=box]\n\tonion[label=<onion<br /> <font color=\"darkorchid\" point-size=\"10\">vegetable</font>> shape=box]\n\tlasagna_noodles[label=<lasagna noodles<br /> <font color=\"darkorchid\" point-size=\"10\">pasta</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\ttomato_paste[label=<tomato paste<br /> <font color=\"darkorchid\" point-size=\"10\">tomato</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\ttomato_sauce[label=<tomato sauce<br /> <font color=\"darkorchid\" point-size=\"10\">tomato</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\tcheddar_cheese1[label=<cheddar cheese<br /> <font color=\"darkorchid\" point-size=\"10\">cheese</font>> shape=box]\n\tcheddar_cheese2[label=<cheddar cheese<br /> <font color=\"darkorchid\" point-size=\"10\">cheese</font>> shape=box]\n\tmozzarella_cheese[label=<mozzarella cheese<br /> <font color=\"darkorchid\" point-size=\"10\">cheese</font>> shape=box]\n\tgarlic_toast[label=<garlic toast<br /> <font color=\"darkorchid\" point-size=\"10\">bread</font>> shape=box]\n\tsalt1[label=<salt1<br /> <font color=\"darkorchid\" point-size=\"10\">salt1</font>> shape=box]\n\tsalt2[label=<salt2<br /> <font color=\"darkorchid\" point-size=\"10\">salt2</font>> shape=box]\n\tblack_pepper[label=<black pepper<br /> <font color=\"darkorchid\" point-size=\"10\">spice</font>> shape=box]\n\ti1[label=<mix<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti2[label=<cook<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti3[label=<boil<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti4[label=<drain<br /> <font color=\"springgreen4\" point-size=\"10\">separate</font>>]\n\ti5[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti6[label=<cook<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti7[label=<taste<br /> <font color=\"springgreen4\" point-size=\"10\">enhance flavor</font>>]\n\ti8[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti9[label=<drain<br /> <font color=\"springgreen4\" point-size=\"10\">separate</font>>]\n\ti10[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti11[label=<bake<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti12[label=<layer<br /> <font color=\"springgreen4\" point-size=\"10\">assemble</font>>]\n\ti13[label=<top<br /> <font color=\"springgreen4\" point-size=\"10\">garnish</font>>]\n\ti14[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti15[label=<layer<br /> <font color=\"springgreen4\" point-size=\"10\">assemble</font>>]\n\ti16[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti17[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti18[label=<top<br /> <font color=\"springgreen4\" point-size=\"10\">garnish</font>>]\n\ti19[label=<bake<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti20[label=<cool<br /> <font color=\"springgreen4\" point-size=\"10\">cool</font>>]\n\ti21[label=<serve<br /> <font color=\"springgreen4\" point-size=\"10\">finish</font>>]\n\n\tground_beef -> i1\n\tonion -> i1\n\tgarlic -> i1\n\tsalt1 -> i1\n\tblack_pepper -> i1\n\ti1 -> i2 # cook beef mixture\n\tlasagna_noodles -> i3\n\tsalt2 -> i3 # boil noodles\n\ti2 -> i4 # drain beef\n\ti4 -> i5\n\ttomato_sauce -> i5\n\ttomato_paste -> i5 # add sauces to beef\n\ti5 -> i6 # cook sauce\n\ti7 -> i8 # add garlic salt if needed\n\ti3 -> i9 # drain noodles\n\ti9 -> i10 # add cold water to noodles\n\tgarlic_toast -> i11 # bake toast\n\ti10 -> i12 # layer noodles\n\ti12 -> i13\n\ti13 -> i14\n\tcheddar_cheese1 -> i14 # add cheddar cheese\n\ti14 -> i15 # layer noodles\n\ti15 -> i16\n\ti16 -> i17\n\tcheddar_cheese2 -> i17 # add cheddar cheese\n\ti17 -> i18\n\tmozzarella_cheese -> i18 # top with mozzarella\n\ti18 -> i19 # bake lasagna\n\ti19 -> i20 # cool lasagna\n\ti20 -> i21 # serve with garlic bread and salad\n\ti6 -> i7 # taste after cooking sauce\n\ti8 -> i9 # proceed to drain noodles after adding garlic salt if needed\n\ti11 -> i21 # serve with garlic bread after baking toast\n}",
+            "tree_dict": {
+                "ground_beef": {
+                    "label": "ground beef",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "beef",
+                    "extra_info": [
+                        "core"
+                    ],
+                    "parent": "i1",
+                    "children": []
+                },
+                "garlic": {
+                    "label": "garlic",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "vegetable",
+                    "parent": "i1",
+                    "children": []
+                },
+                "onion": {
+                    "label": "onion",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "vegetable",
+                    "parent": "i1",
+                    "children": []
+                },
+                "lasagna_noodles": {
+                    "label": "lasagna noodles",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "pasta",
+                    "extra_info": [
+                        "structure",
+                        "core"
+                    ],
+                    "parent": "i3",
+                    "children": []
+                },
+                "tomato_paste": {
+                    "label": "tomato paste",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "tomato",
+                    "extra_info": [
+                        "core"
+                    ],
+                    "parent": "i5",
+                    "children": []
+                },
+                "tomato_sauce": {
+                    "label": "tomato sauce",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "tomato",
+                    "extra_info": [
+                        "core"
+                    ],
+                    "parent": "i5",
+                    "children": []
+                },
+                "mozzarella_cheese": {
+                    "label": "mozzarella cheese",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "cheese",
+                    "parent": "i18",
+                    "children": []
+                },
+                "garlic_toast": {
+                    "label": "garlic toast",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "bread",
+                    "parent": "i11",
+                    "children": []
+                },
+                "black_pepper": {
+                    "label": "black pepper",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "spice",
+                    "parent": "i1",
+                    "children": []
+                },
+                "i1": {
+                    "label": "mix",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i2",
+                    "children": [
+                        "ground_beef",
+                        "garlic",
+                        "onion",
+                        "black_pepper",
+                        "salt1"
+                    ]
+                },
+                "i2": {
+                    "label": "cook",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i4",
+                    "children": [
+                        "i1"
+                    ]
+                },
+                "i3": {
+                    "label": "boil",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i9",
+                    "children": [
+                        "lasagna_noodles",
+                        "salt2"
+                    ]
+                },
+                "i4": {
+                    "label": "drain",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "separate",
+                    "parent": "i5",
+                    "children": [
+                        "i2"
+                    ]
+                },
+                "i5": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i6",
+                    "children": [
+                        "tomato_paste",
+                        "tomato_sauce",
+                        "i4"
+                    ]
+                },
+                "i6": {
+                    "label": "cook",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i7",
+                    "children": [
+                        "i5"
+                    ]
+                },
+                "i7": {
+                    "label": "taste",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "enhance flavor",
+                    "parent": "i8",
+                    "children": [
+                        "i6"
+                    ]
+                },
+                "i8": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i9",
+                    "children": [
+                        "i7"
+                    ]
+                },
+                "i9": {
+                    "label": "drain",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "separate",
+                    "parent": "i10",
+                    "children": [
+                        "i3",
+                        "i8"
+                    ]
+                },
+                "i10": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i12",
+                    "children": [
+                        "i9"
+                    ]
+                },
+                "i11": {
+                    "label": "bake",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i21",
+                    "children": [
+                        "garlic_toast"
+                    ]
+                },
+                "i12": {
+                    "label": "layer",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "assemble",
+                    "parent": "i13",
+                    "children": [
+                        "i10"
+                    ]
+                },
+                "i13": {
+                    "label": "top",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "garnish",
+                    "parent": "i14",
+                    "children": [
+                        "i12"
+                    ]
+                },
+                "i14": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i15",
+                    "children": [
+                        "i13",
+                        "cheddar_cheese1"
+                    ]
+                },
+                "i15": {
+                    "label": "layer",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "assemble",
+                    "parent": "i16",
+                    "children": [
+                        "i14"
+                    ]
+                },
+                "i16": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i17",
+                    "children": [
+                        "i15"
+                    ]
+                },
+                "i17": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i18",
+                    "children": [
+                        "i16",
+                        "cheddar_cheese2"
+                    ]
+                },
+                "i18": {
+                    "label": "top",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "garnish",
+                    "parent": "i19",
+                    "children": [
+                        "mozzarella_cheese",
+                        "i17"
+                    ]
+                },
+                "i19": {
+                    "label": "bake",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i20",
+                    "children": [
+                        "i18"
+                    ]
+                },
+                "i20": {
+                    "label": "cool",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "cool",
+                    "parent": "i21",
+                    "children": [
+                        "i19"
+                    ]
+                },
+                "i21": {
+                    "label": "serve",
+                    "root": true,
+                    "type": "action",
+                    "abstr": "finish",
+                    "parent": null,
+                    "children": [
+                        "i11",
+                        "i20"
+                    ]
+                },
+                "cheddar_cheese1": {
+                    "label": "cheddar cheese",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "cheese",
+                    "parent": "i14",
+                    "children": []
+                },
+                "cheddar_cheese2": {
+                    "label": "cheddar cheese",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "cheese",
+                    "parent": "i17",
+                    "children": []
+                },
+                "salt1": {
+                    "label": "salt",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "salt1",
+                    "parent": "i1",
+                    "children": []
+                },
+                "salt2": {
+                    "label": "salt",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "salt2",
+                    "parent": "i3",
+                    "children": []
+                }
+            },
+            "is_tree": true
+        }
+    },
+    "chocolate pie": {
+        "580232": {
+            "title": "Chocolate Fluff Pie",
+            "ingredient_list": [
+                "3 cups flaked coconut",
+                "34 cup toasted pecans",
+                "12 cup melted butter",
+                "4 ounces sweet chocolate",
+                "2 cups miniature marshmallows",
+                "2 tablespoons sugar",
+                "1 pinch salt",
+                "8 ounces cream cheese, softened",
+                "4 cups Cool Whip, thawed",
+                "12 teaspoon vanilla extract"
+            ],
+            "instruction_list": [
+                "crust: Combine all crust ingredients.",
+                "Press into a 10-inch glass pie pan.",
+                "Bake 15 minutes.",
+                "Let cool on wire rack.",
+                "filling: Melt chocolate in double boiler with marshmallows, sugar, salt and milk.",
+                "Stir until melted.",
+                "Remove from heat.",
+                "Beat cream cheese until smooth then beat in chocolate mixture; mixing well.",
+                "Add vanilla extract.",
+                "Set aside to cool.",
+                "Fold in Cool Whip.",
+                "Put into cooled pie shell.",
+                "Garnish with shaved chocolate.",
+                "Refrigerate overnight."
+            ],
+            "parsed_ingredients": {
+                "coconut": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "coconut"
+                },
+                "pecans": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "nut"
+                },
+                "butter": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "butter"
+                },
+                "sweet chocolate": {
+                    "ref": "taste",
+                    "core": true,
+                    "abstr": "chocolate"
+                },
+                "marshmallows": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "marshmallow"
+                },
+                "sugar": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "sugar"
+                },
+                "salt": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "salt"
+                },
+                "cream cheese": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "cheese"
+                },
+                "cool whip": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "whipped topping"
+                },
+                "vanilla extract": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "flavoring"
+                }
+            },
+            "parsed_instructions": "Combine crust ingredients. Press into pie pan. Bake. Cool. Melt chocolate with marshmallows, sugar, salt, and milk. Stir. Remove from heat. Beat cream cheese. Beat in chocolate mixture. Add vanilla. Cool. Fold in Cool Whip. Put in pie shell. Garnish with chocolate. Refrigerate.",
+            "tree_dot_code": "digraph chocolate_pie_580232 {\n\trankdir=BT ratio=auto\n\tcoconut[label=<coconut<br /> <font color=\"darkorchid\" point-size=\"10\">coconut</font>> shape=box]\n\tpecans[label=<pecans<br /> <font color=\"darkorchid\" point-size=\"10\">nut</font>> shape=box]\n\tbutter[label=<butter<br /> <font color=\"darkorchid\" point-size=\"10\">butter</font>> shape=box]\n\tsweet_chocolate[label=<sweet chocolate<br /> <font color=\"darkorchid\" point-size=\"10\">chocolate</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\tmarshmallows[label=<marshmallows<br /> <font color=\"darkorchid\" point-size=\"10\">marshmallow</font>> shape=box]\n\tsugar[label=<sugar<br /> <font color=\"darkorchid\" point-size=\"10\">sugar</font>> shape=box]\n\tsalt[label=<salt<br /> <font color=\"darkorchid\" point-size=\"10\">salt</font>> shape=box]\n\tcream_cheese[label=<cream cheese<br /> <font color=\"darkorchid\" point-size=\"10\">cheese</font>> shape=box]\n\tcool_whip[label=<cool whip<br /> <font color=\"darkorchid\" point-size=\"10\">whipped topping</font>> shape=box]\n\tvanilla_extract[label=<vanilla extract<br /> <font color=\"darkorchid\" point-size=\"10\">flavoring</font>> shape=box]\n\ti1[label=<combine<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti2[label=<press<br /> <font color=\"springgreen4\" point-size=\"10\">shape</font>>]\n\ti3[label=<bake<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti4[label=<cool<br /> <font color=\"springgreen4\" point-size=\"10\">cool</font>>]\n\ti5[label=<melt<br /> <font color=\"springgreen4\" point-size=\"10\">modify consistency</font>>]\n\ti6[label=<stir<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti7[label=<remove<br /> <font color=\"springgreen4\" point-size=\"10\">separate</font>>]\n\ti8[label=<beat<br /> <font color=\"springgreen4\" point-size=\"10\">combine / modify</font>>]\n\ti9[label=<beat<br /> <font color=\"springgreen4\" point-size=\"10\">combine / modify</font>>]\n\ti10[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti11[label=<cool<br /> <font color=\"springgreen4\" point-size=\"10\">cool</font>>]\n\ti12[label=<fold<br /> <font color=\"springgreen4\" point-size=\"10\">combine / modify</font>>]\n\ti13[label=<put<br /> <font color=\"springgreen4\" point-size=\"10\">place</font>>]\n\ti14[label=<garnish<br /> <font color=\"springgreen4\" point-size=\"10\">garnish</font>>]\n\ti15[label=<refrigerate<br /> <font color=\"springgreen4\" point-size=\"10\">cool</font>>]\n\n\tcoconut -> i1\n\tpecans -> i1\n\tbutter -> i1 # crust ingredients are ready\n\ti1 -> i2 # press crust into pie pan\n\ti2 -> i3 # bake crust\n\ti3 -> i4 # cool crust\n\tsweet_chocolate -> i5\n\tmarshmallows -> i5\n\tsugar -> i5\n\tsalt -> i5\n\ti5 -> i6 # stir chocolate mixture\n\ti6 -> i7 # remove from heat\n\tcream_cheese -> i8 # beat cream cheese\n\ti8 -> i9\n\ti7 -> i9 # beat in chocolate mixture\n\tvanilla_extract -> i10\n\ti9 -> i10 # add vanilla\n\ti10 -> i11 # cool mixture\n\tcool_whip -> i12\n\ti11 -> i12 # fold in Cool Whip\n\ti12 -> i13 # put filling in pie shell\n\ti4 -> i13 # use cooled crust\n\ti13 -> i14 # garnish with chocolate\n\ti14 -> i15 # refrigerate\n}",
+            "tree_dict": {
+                "coconut": {
+                    "label": "coconut",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "coconut",
+                    "parent": "i1",
+                    "children": []
+                },
+                "pecans": {
+                    "label": "pecans",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "nut",
+                    "parent": "i1",
+                    "children": []
+                },
+                "butter": {
+                    "label": "butter",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "butter",
+                    "parent": "i1",
+                    "children": []
+                },
+                "sweet_chocolate": {
+                    "label": "sweet chocolate",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "chocolate",
+                    "extra_info": [
+                        "core"
+                    ],
+                    "parent": "i5",
+                    "children": []
+                },
+                "marshmallows": {
+                    "label": "marshmallows",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "marshmallow",
+                    "parent": "i5",
+                    "children": []
+                },
+                "sugar": {
+                    "label": "sugar",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "sugar",
+                    "parent": "i5",
+                    "children": []
+                },
+                "salt": {
+                    "label": "salt",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "salt",
+                    "parent": "i5",
+                    "children": []
+                },
+                "cream_cheese": {
+                    "label": "cream cheese",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "cheese",
+                    "parent": "i8",
+                    "children": []
+                },
+                "cool_whip": {
+                    "label": "cool whip",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "whipped topping",
+                    "parent": "i12",
+                    "children": []
+                },
+                "vanilla_extract": {
+                    "label": "vanilla extract",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "flavoring",
+                    "parent": "i10",
+                    "children": []
+                },
+                "i1": {
+                    "label": "combine",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i2",
+                    "children": [
+                        "coconut",
+                        "pecans",
+                        "butter"
+                    ]
+                },
+                "i2": {
+                    "label": "press",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "shape",
+                    "parent": "i3",
+                    "children": [
+                        "i1"
+                    ]
+                },
+                "i3": {
+                    "label": "bake",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i4",
+                    "children": [
+                        "i2"
+                    ]
+                },
+                "i4": {
+                    "label": "cool",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "cool",
+                    "parent": "i13",
+                    "children": [
+                        "i3"
+                    ]
+                },
+                "i5": {
+                    "label": "melt",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "modify consistency",
+                    "parent": "i6",
+                    "children": [
+                        "sweet_chocolate",
+                        "marshmallows",
+                        "sugar",
+                        "salt"
+                    ]
+                },
+                "i6": {
+                    "label": "stir",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i7",
+                    "children": [
+                        "i5"
+                    ]
+                },
+                "i7": {
+                    "label": "remove",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "separate",
+                    "parent": "i9",
+                    "children": [
+                        "i6"
+                    ]
+                },
+                "i8": {
+                    "label": "beat",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "combine / modify",
+                    "parent": "i9",
+                    "children": [
+                        "cream_cheese"
+                    ]
+                },
+                "i9": {
+                    "label": "beat",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "combine / modify",
+                    "parent": "i10",
+                    "children": [
+                        "i7",
+                        "i8"
+                    ]
+                },
+                "i10": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i11",
+                    "children": [
+                        "vanilla_extract",
+                        "i9"
+                    ]
+                },
+                "i11": {
+                    "label": "cool",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "cool",
+                    "parent": "i12",
+                    "children": [
+                        "i10"
+                    ]
+                },
+                "i12": {
+                    "label": "fold",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "combine / modify",
+                    "parent": "i13",
+                    "children": [
+                        "cool_whip",
+                        "i11"
+                    ]
+                },
+                "i13": {
+                    "label": "put",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "place",
+                    "parent": "i14",
+                    "children": [
+                        "i4",
+                        "i12"
+                    ]
+                },
+                "i14": {
+                    "label": "garnish",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "garnish",
+                    "parent": "i15",
+                    "children": [
+                        "i13"
+                    ]
+                },
+                "i15": {
+                    "label": "refrigerate",
+                    "root": true,
+                    "type": "action",
+                    "abstr": "cool",
+                    "parent": null,
+                    "children": [
+                        "i14"
+                    ]
+                }
+            },
+            "is_tree": true
+        },
+        "578509": {
+            "title": "Triple Chocolate S'more Pie",
+            "ingredient_list": [
+                "1 14 cups graham cracker crumbs",
+                "14 cup sugar",
+                "13 cup melted butter",
+                "1 cup milk chocolate chips",
+                "1 cup white chocolate chips",
+                "1 cup dark chocolate chips",
+                "1 12 cups sweetened condensed milk",
+                "1 12 teaspoons vanilla extract",
+                "1 12 cups miniature marshmallows"
+            ],
+            "instruction_list": [
+                "For the crust: Preheat the oven to 375 degrees F.",
+                "Spray the inside of a 9-inch pie pan with non-stick cooking spray.",
+                "In a bowl, combine graham cracker crumbs, sugar, and melted butter.",
+                "Press mixture firmly into sprayed pie pan, covering bottom and sides.",
+                "Bake for 6 to 8 minutes.",
+                "Set aside to cool.",
+                "For filling: In a microwave safe bowl, combine milk chocolate chips, 1/2 cup condensed milk, and 1/2 teaspoon vanilla.",
+                "Microwave for 2 minutes on medium (50 percent) power.",
+                "OR combine milk chocolate chips, 1/2 cup condensed milk, and 1/2 tsp.",
+                "vanilla and melt in a double boiler.",
+                "Stir until all chips are melted and pour into bottom of cooled crust.",
+                "Set in refrigerator while preparing second layer.",
+                "For second layer, repeat above process using the vanilla chips.",
+                "Pour over milk chocolate layer.",
+                "Set in refrigerator while preparing third layer.",
+                "For third layer repeat above process using the dark chocolate chips.",
+                "Pour over white chocolate layer.",
+                "Preheat the broiler.",
+                "Evenly cover top with miniature marshmallows.",
+                "Place under broiler for a few minutes just until marshmallows are lightly browned.",
+                "Refrigerate at least 1 hour."
+            ],
+            "parsed_ingredients": {
+                "graham cracker crumbs": {
+                    "ref": "structure",
+                    "core": false,
+                    "abstr": "crumb"
+                },
+                "sugar": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "sugar"
+                },
+                "butter": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "butter"
+                },
+                "milk chocolate chips": {
+                    "ref": "taste",
+                    "core": true,
+                    "abstr": "chocolate"
+                },
+                "white chocolate chips": {
+                    "ref": "taste",
+                    "core": true,
+                    "abstr": "chocolate"
+                },
+                "dark chocolate chips": {
+                    "ref": "taste",
+                    "core": true,
+                    "abstr": "chocolate"
+                },
+                "sweetened condensed milk": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "milk"
+                },
+                "vanilla extract": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "flavoring"
+                },
+                "marshmallows": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "marshmallow"
+                }
+            },
+            "parsed_instructions": "Preheat oven. Spray pie pan. Combine crumbs, sugar, and butter. Press into pan. Bake. Cool. Combine chocolate chips, milk, and vanilla. Microwave or melt. Stir. Pour into crust. Refrigerate. Repeat with vanilla chips. Pour over chocolate. Refrigerate. Repeat with dark chocolate. Pour over white chocolate. Preheat broiler. Cover with marshmallows. Broil. Refrigerate.",
+            "tree_dot_code": "digraph chocolate_pie_578509 {\n\trankdir=BT ratio=auto\n\tgraham_cracker_crumbs[label=<graham cracker crumbs<br /> <font color=\"darkorchid\" point-size=\"10\">crumb</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font>> shape=box]\n\tsugar[label=<sugar<br /> <font color=\"darkorchid\" point-size=\"10\">sugar</font>> shape=box]\n\tbutter[label=<butter<br /> <font color=\"darkorchid\" point-size=\"10\">butter</font>> shape=box]\n\tmilk_chocolate_chips[label=<milk chocolate chips<br /> <font color=\"darkorchid\" point-size=\"10\">chocolate</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\twhite_chocolate_chips[label=<white chocolate chips<br /> <font color=\"darkorchid\" point-size=\"10\">chocolate</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\tdark_chocolate_chips[label=<dark chocolate chips<br /> <font color=\"darkorchid\" point-size=\"10\">chocolate</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\tsweetened_condensed_milk1[label=<sweetened condensed milk<br /> <font color=\"darkorchid\" point-size=\"10\">milk</font>> shape=box]\n\tsweetened_condensed_milk2[label=<sweetened condensed milk<br /> <font color=\"darkorchid\" point-size=\"10\">milk</font>> shape=box]\n\tsweetened_condensed_milk3[label=<sweetened condensed milk<br /> <font color=\"darkorchid\" point-size=\"10\">milk</font>> shape=box]\n\tvanilla_extract1[label=<vanilla extract<br /> <font color=\"darkorchid\" point-size=\"10\">flavoring</font>> shape=box]\n\tvanilla_extract2[label=<vanilla extract<br /> <font color=\"darkorchid\" point-size=\"10\">flavoring</font>> shape=box]\n\tvanilla_extract3[label=<vanilla extract<br /> <font color=\"darkorchid\" point-size=\"10\">flavoring</font>> shape=box]\n\tmarshmallows[label=<marshmallows<br /> <font color=\"darkorchid\" point-size=\"10\">marshmallow</font>> shape=box]\n\ti1[label=<preheat<br /> <font color=\"springgreen4\" point-size=\"10\">surface heat</font>>]\n\ti2[label=<spray<br /> <font color=\"springgreen4\" point-size=\"10\">prepare surface</font>>]\n\ti3[label=<combine<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti4[label=<press<br /> <font color=\"springgreen4\" point-size=\"10\">shape</font>>]\n\ti5[label=<bake<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti6[label=<cool<br /> <font color=\"springgreen4\" point-size=\"10\">cool</font>>]\n\ti7[label=<combine<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti8[label=<microwave<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti9[label=<stir<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti10[label=<pour<br /> <font color=\"springgreen4\" point-size=\"10\">transfer</font>>]\n\ti11[label=<refrigerate<br /> <font color=\"springgreen4\" point-size=\"10\">cool</font>>]\n\ti12[label=<repeat<br /> <font color=\"springgreen4\" point-size=\"10\">repeat</font>>]\n\ti13[label=<pour<br /> <font color=\"springgreen4\" point-size=\"10\">transfer</font>>]\n\ti14[label=<refrigerate<br /> <font color=\"springgreen4\" point-size=\"10\">cool</font>>]\n\ti15[label=<repeat<br /> <font color=\"springgreen4\" point-size=\"10\">repeat</font>>]\n\ti16[label=<pour<br /> <font color=\"springgreen4\" point-size=\"10\">transfer</font>>]\n\ti17[label=<preheat<br /> <font color=\"springgreen4\" point-size=\"10\">surface heat</font>>]\n\ti18[label=<cover<br /> <font color=\"springgreen4\" point-size=\"10\">rest</font>>]\n\ti19[label=<broil<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti20[label=<refrigerate<br /> <font color=\"springgreen4\" point-size=\"10\">cool</font>>]\n\n\tgraham_cracker_crumbs -> i3\n\tsugar -> i3\n\tbutter -> i3\n\ti3 -> i4 # crust mixture is ready\n\ti4 -> i5 # press into pan and bake\n\ti1 -> i5 # use preheated oven\n\ti5 -> i6 # cool crust\n\tmilk_chocolate_chips -> i7\n\tsweetened_condensed_milk1 -> i7\n\tvanilla_extract1 -> i7\n\ti7 -> i8 # chocolate mixture is ready\n\ti9 -> i10 # pour into crust\n\ti6 -> i10 # use cooled crust\n\ti10 -> i11 # refrigerate\n\twhite_chocolate_chips -> i12\n\tsweetened_condensed_milk2 -> i12\n\tvanilla_extract2 -> i12\n\ti11 -> i13 # use refrigerated chocolate layer\n\ti13 -> i14 # refrigerate\n\tdark_chocolate_chips -> i15\n\tsweetened_condensed_milk3 -> i15\n\tvanilla_extract3 -> i15\n\ti14 -> i16 # use refrigerated white chocolate layer\n\ti16 -> i17 # preheat broiler\n\tmarshmallows -> i18\n\ti18 -> i19 # cover with marshmallows and broil\n\ti17 -> i19 # use preheated broiler\n\ti19 -> i20 # refrigerate\n\ti2 -> i4 # spray pie pan before pressing crust\n\ti8 -> i9 # stir melted chocolate mixture\n\ti12 -> i13 # pour vanilla chip mixture over chocolate\n\ti15 -> i16 # pour dark chocolate mixture over white chocolate\n}",
+            "tree_dict": {
+                "graham_cracker_crumbs": {
+                    "label": "graham cracker crumbs",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "crumb",
+                    "extra_info": [
+                        "structure"
+                    ],
+                    "parent": "i3",
+                    "children": []
+                },
+                "sugar": {
+                    "label": "sugar",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "sugar",
+                    "parent": "i3",
+                    "children": []
+                },
+                "butter": {
+                    "label": "butter",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "butter",
+                    "parent": "i3",
+                    "children": []
+                },
+                "milk_chocolate_chips": {
+                    "label": "milk chocolate chips",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "chocolate",
+                    "extra_info": [
+                        "core"
+                    ],
+                    "parent": "i7",
+                    "children": []
+                },
+                "white_chocolate_chips": {
+                    "label": "white chocolate chips",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "chocolate",
+                    "extra_info": [
+                        "core"
+                    ],
+                    "parent": "i12",
+                    "children": []
+                },
+                "dark_chocolate_chips": {
+                    "label": "dark chocolate chips",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "chocolate",
+                    "extra_info": [
+                        "core"
+                    ],
+                    "parent": "i15",
+                    "children": []
+                },
+                "marshmallows": {
+                    "label": "marshmallows",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "marshmallow",
+                    "parent": "i18",
+                    "children": []
+                },
+                "i1": {
+                    "label": "preheat",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "surface heat",
+                    "parent": "i5",
+                    "children": []
+                },
+                "i2": {
+                    "label": "spray",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "prepare surface",
+                    "parent": "i4",
+                    "children": []
+                },
+                "i3": {
+                    "label": "combine",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i4",
+                    "children": [
+                        "graham_cracker_crumbs",
+                        "sugar",
+                        "butter"
+                    ]
+                },
+                "i4": {
+                    "label": "press",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "shape",
+                    "parent": "i5",
+                    "children": [
+                        "i2",
+                        "i3"
+                    ]
+                },
+                "i5": {
+                    "label": "bake",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i6",
+                    "children": [
+                        "i1",
+                        "i4"
+                    ]
+                },
+                "i6": {
+                    "label": "cool",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "cool",
+                    "parent": "i10",
+                    "children": [
+                        "i5"
+                    ]
+                },
+                "i7": {
+                    "label": "combine",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i8",
+                    "children": [
+                        "milk_chocolate_chips",
+                        "sweetened_condensed_milk1",
+                        "vanilla_extract1"
+                    ]
+                },
+                "i8": {
+                    "label": "microwave",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i9",
+                    "children": [
+                        "i7"
+                    ]
+                },
+                "i9": {
+                    "label": "stir",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i10",
+                    "children": [
+                        "i8"
+                    ]
+                },
+                "i10": {
+                    "label": "pour",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "transfer",
+                    "parent": "i11",
+                    "children": [
+                        "i6",
+                        "i9"
+                    ]
+                },
+                "i11": {
+                    "label": "refrigerate",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "cool",
+                    "parent": "i13",
+                    "children": [
+                        "i10"
+                    ]
+                },
+                "i12": {
+                    "label": "repeat",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "repeat",
+                    "parent": "i13",
+                    "children": [
+                        "white_chocolate_chips",
+                        "sweetened_condensed_milk2",
+                        "vanilla_extract2"
+                    ]
+                },
+                "i13": {
+                    "label": "pour",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "transfer",
+                    "parent": "i14",
+                    "children": [
+                        "i11",
+                        "i12"
+                    ]
+                },
+                "i14": {
+                    "label": "refrigerate",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "cool",
+                    "parent": "i16",
+                    "children": [
+                        "i13"
+                    ]
+                },
+                "i15": {
+                    "label": "repeat",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "repeat",
+                    "parent": "i16",
+                    "children": [
+                        "dark_chocolate_chips",
+                        "sweetened_condensed_milk3",
+                        "vanilla_extract3"
+                    ]
+                },
+                "i16": {
+                    "label": "pour",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "transfer",
+                    "parent": "i17",
+                    "children": [
+                        "i14",
+                        "i15"
+                    ]
+                },
+                "i17": {
+                    "label": "preheat",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "surface heat",
+                    "parent": "i19",
+                    "children": [
+                        "i16"
+                    ]
+                },
+                "i18": {
+                    "label": "cover",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "rest",
+                    "parent": "i19",
+                    "children": [
+                        "marshmallows"
+                    ]
+                },
+                "i19": {
+                    "label": "broil",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i20",
+                    "children": [
+                        "i17",
+                        "i18"
+                    ]
+                },
+                "i20": {
+                    "label": "refrigerate",
+                    "root": true,
+                    "type": "action",
+                    "abstr": "cool",
+                    "parent": null,
+                    "children": [
+                        "i19"
+                    ]
+                },
+                "sweetened_condensed_milk1": {
+                    "label": "sweetened condensed milk",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "milk",
+                    "parent": "i7",
+                    "children": []
+                },
+                "sweetened_condensed_milk2": {
+                    "label": "sweetened condensed milk",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "milk",
+                    "parent": "i12",
+                    "children": []
+                },
+                "sweetened_condensed_milk3": {
+                    "label": "sweetened condensed milk",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "milk",
+                    "parent": "i15",
+                    "children": []
+                },
+                "vanilla_extract1": {
+                    "label": "vanilla extract",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "flavoring",
+                    "parent": "i7",
+                    "children": []
+                },
+                "vanilla_extract2": {
+                    "label": "vanilla extract",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "flavoring",
+                    "parent": "i12",
+                    "children": []
+                },
+                "vanilla_extract3": {
+                    "label": "vanilla extract",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "flavoring",
+                    "parent": "i15",
+                    "children": []
+                }
+            },
+            "is_tree": true
+        }
+    },
+    "apple salad": {
+        "337770": {
+            "title": "Apple Salad",
+            "ingredient_list": [
+                "8 medium apples (chopped)",
+                "1 (8 ounce) jar maraschino cherries (cut in half)",
+                "2 stalks celery (chopped)",
+                "1 cup red seedless grapes (cut in half)",
+                "1 cup coarsely chopped peanuts",
+                "34-1 cup Miracle Whip",
+                "2 cups Cool Whip",
+                "14-12 cup sugar"
+            ],
+            "instruction_list": [
+                "Mix first 5 ingredients together.",
+                "Mix dressing ingredients together well and stir into salad.",
+                "Eat immediately as nuts go soft after it sits for a while."
+            ],
+            "parsed_ingredients": {
+                "apples": {
+                    "ref": "taste",
+                    "core": true,
+                    "abstr": "fruit"
+                },
+                "maraschino cherries": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "fruit"
+                },
+                "celery": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "vegetable"
+                },
+                "grapes": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "fruit"
+                },
+                "peanuts": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "nut"
+                },
+                "miracle whip": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "dressing"
+                },
+                "cool whip": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "whipped topping"
+                },
+                "sugar": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "sugar"
+                }
+            },
+            "parsed_instructions": "Mix ingredients. Mix dressing. Stir into salad. Eat immediately.",
+            "tree_dot_code": "digraph apple_salad_337770 {\n\trankdir=BT ratio=auto\n\tapples[label=<apples<br /> <font color=\"darkorchid\" point-size=\"10\">fruit</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\tmaraschino_cherries[label=<maraschino cherries<br /> <font color=\"darkorchid\" point-size=\"10\">fruit</font>> shape=box]\n\tcelery[label=<celery<br /> <font color=\"darkorchid\" point-size=\"10\">vegetable</font>> shape=box]\n\tgrapes[label=<grapes<br /> <font color=\"darkorchid\" point-size=\"10\">fruit</font>> shape=box]\n\tpeanuts[label=<peanuts<br /> <font color=\"darkorchid\" point-size=\"10\">nut</font>> shape=box]\n\tmiracle_whip[label=<miracle whip<br /> <font color=\"darkorchid\" point-size=\"10\">dressing</font>> shape=box]\n\tcool_whip[label=<cool whip<br /> <font color=\"darkorchid\" point-size=\"10\">whipped topping</font>> shape=box]\n\tsugar[label=<sugar<br /> <font color=\"darkorchid\" point-size=\"10\">sugar</font>> shape=box]\n\ti1[label=<mix<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti2[label=<mix<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti3[label=<stir<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti4[label=<eat<br /> <font color=\"springgreen4\" point-size=\"10\">finish</font>>]\n\n\tapples -> i1\n\tmaraschino_cherries -> i1\n\tcelery -> i1\n\tgrapes -> i1\n\tpeanuts -> i1 # salad ingredients are mixed\n\tmiracle_whip -> i2\n\tcool_whip -> i2\n\tsugar -> i2 # dressing is mixed\n\ti1 -> i3\n\ti2 -> i3 # stir dressing into salad\n\ti3 -> i4 # eat immediately\n}",
+            "tree_dict": {
+                "apples": {
+                    "label": "apples",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "fruit",
+                    "extra_info": [
+                        "core"
+                    ],
+                    "parent": "i1",
+                    "children": []
+                },
+                "maraschino_cherries": {
+                    "label": "maraschino cherries",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "fruit",
+                    "parent": "i1",
+                    "children": []
+                },
+                "celery": {
+                    "label": "celery",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "vegetable",
+                    "parent": "i1",
+                    "children": []
+                },
+                "grapes": {
+                    "label": "grapes",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "fruit",
+                    "parent": "i1",
+                    "children": []
+                },
+                "peanuts": {
+                    "label": "peanuts",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "nut",
+                    "parent": "i1",
+                    "children": []
+                },
+                "miracle_whip": {
+                    "label": "miracle whip",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "dressing",
+                    "parent": "i2",
+                    "children": []
+                },
+                "cool_whip": {
+                    "label": "cool whip",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "whipped topping",
+                    "parent": "i2",
+                    "children": []
+                },
+                "sugar": {
+                    "label": "sugar",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "sugar",
+                    "parent": "i2",
+                    "children": []
+                },
+                "i1": {
+                    "label": "mix",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i3",
+                    "children": [
+                        "apples",
+                        "maraschino_cherries",
+                        "celery",
+                        "grapes",
+                        "peanuts"
+                    ]
+                },
+                "i2": {
+                    "label": "mix",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i3",
+                    "children": [
+                        "miracle_whip",
+                        "cool_whip",
+                        "sugar"
+                    ]
+                },
+                "i3": {
+                    "label": "stir",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i4",
+                    "children": [
+                        "i1",
+                        "i2"
+                    ]
+                },
+                "i4": {
+                    "label": "eat",
+                    "root": true,
+                    "type": "action",
+                    "abstr": "finish",
+                    "parent": null,
+                    "children": [
+                        "i3"
+                    ]
+                }
+            },
+            "is_tree": true
+        },
+        "759766": {
+            "title": "Celery Root & Apple Salad",
+            "ingredient_list": [
+                "A 2-pound whole celery root, rinsed well but not peeled",
+                "1 pound firm, crisp apples (see above for varieties)",
+                "3 tablespoons cider vinegar",
+                "1 tablespoon German-style mustard",
+                "1 1/2 teaspoons kosher salt",
+                "Freshly ground black pepper to taste",
+                "1/4 cup extra-virgin olive oil",
+                "1 tablespoon chopped fresh chives",
+                "A large bowl for dressing, tossing, and serving"
+            ],
+            "instruction_list": [
+                "Put the celery root in a large saucepan with cold water to cover, and heat to a boil.",
+                "Lower the heat a bit, and simmer the celery root for about an hour or so, until cooked through and tender.",
+                "As it cooks, keep the root submerged by weighting it with a plate or pot lid.",
+                "When you can easily pierce the celery root with a skewer, drain it in a colander and cool.",
+                "To peel the celery root: scrape off the skin with the dull side of a paring knife, and cut out the bits of skin in the folds and any tough, knobby parts.",
+                "Cut the celery root in half, and slice each half into thin half-moons; put these in the large bowl.",
+                "(If the celery root is a bit fibrous, cut the slices into thin matchsticks.)",
+                "Rinse the apples well, but dont peel them.",
+                "Slice them in half, through the stem and bottom ends, and cut out the seeds and cores.",
+                "Slice the halves crosswise into half-moons, about 1/8 inch thick, add to the bowl, and gently toss the celery root and apple slices together.",
+                "For the dressing: whisk together the vinegar, mustard, salt, and pepper in a small bowl, then whisk in the olive oil gradually, until smooth and emulsified.",
+                "Pour the dressing over the celery root and apple, sprinkle the chives on top, and tumble to coat all the slices with dressing.",
+                "Serve at room temperature."
+            ],
+            "parsed_ingredients": {
+                "celery root": {
+                    "ref": "structure",
+                    "core": true,
+                    "abstr": "vegetable"
+                },
+                "apples": {
+                    "ref": "taste",
+                    "core": true,
+                    "abstr": "fruit"
+                },
+                "cider vinegar": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "vinegar"
+                },
+                "mustard": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "condiment"
+                },
+                "kosher salt": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "salt"
+                },
+                "black pepper": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "spice"
+                },
+                "olive oil": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "oil"
+                },
+                "chives": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "herb"
+                },
+                "bowl": {
+                    "ref": "structure",
+                    "core": false,
+                    "abstr": "utensil"
+                }
+            },
+            "parsed_instructions": "Boil celery root in water. Simmer until tender. Submerge with a plate. Pierce with a skewer. Drain and cool. Scrape off skin. Cut into half-moons. Place in bowl. Rinse apples. Slice and core apples. Slice into half-moons. Add to bowl. Toss celery root and apples. Whisk vinegar, mustard, salt, and pepper. Whisk in olive oil. Pour dressing over salad. Sprinkle chives. Coat slices. Serve.",
+            "tree_dot_code": "digraph apple_salad_759766 {\n\trankdir=BT ratio=auto\n\tcelery_root[label=<celery root<br /> <font color=\"darkorchid\" point-size=\"10\">vegetable</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\tapples[label=<apples<br /> <font color=\"darkorchid\" point-size=\"10\">fruit</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\tcider_vinegar[label=<cider vinegar<br /> <font color=\"darkorchid\" point-size=\"10\">vinegar</font>> shape=box]\n\tmustard[label=<mustard<br /> <font color=\"darkorchid\" point-size=\"10\">condiment</font>> shape=box]\n\tkosher_salt[label=<kosher salt<br /> <font color=\"darkorchid\" point-size=\"10\">salt</font>> shape=box]\n\tblack_pepper[label=<black pepper<br /> <font color=\"darkorchid\" point-size=\"10\">spice</font>> shape=box]\n\tolive_oil[label=<olive oil<br /> <font color=\"darkorchid\" point-size=\"10\">oil</font>> shape=box]\n\tchives[label=<chives<br /> <font color=\"darkorchid\" point-size=\"10\">herb</font>> shape=box]\n\tbowl[label=<bowl<br /> <font color=\"darkorchid\" point-size=\"10\">utensil</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font>> shape=box]\n\ti1[label=<boil<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti2[label=<simmer<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti3[label=<plate<br /> <font color=\"springgreen4\" point-size=\"10\">finish</font>>]\n\ti4[label=<pierce<br /> <font color=\"springgreen4\" point-size=\"10\">shape</font>>]\n\ti5[label=<drain<br /> <font color=\"springgreen4\" point-size=\"10\">separate</font>>]\n\ti6[label=<scrape<br /> <font color=\"springgreen4\" point-size=\"10\">transfer</font>>]\n\ti7[label=<cut<br /> <font color=\"springgreen4\" point-size=\"10\">cut</font>>]\n\ti8[label=<place<br /> <font color=\"springgreen4\" point-size=\"10\">place</font>>]\n\ti9[label=<rinse<br /> <font color=\"springgreen4\" point-size=\"10\">wash</font>>]\n\ti10[label=<slice<br /> <font color=\"springgreen4\" point-size=\"10\">cut</font>>]\n\ti11[label=<slice<br /> <font color=\"springgreen4\" point-size=\"10\">cut</font>>]\n\ti12[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti13[label=<toss<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti14[label=<whisk<br /> <font color=\"springgreen4\" point-size=\"10\">combine / modify</font>>]\n\ti15[label=<whisk<br /> <font color=\"springgreen4\" point-size=\"10\">combine / modify</font>>]\n\ti16[label=<pour<br /> <font color=\"springgreen4\" point-size=\"10\">transfer</font>>]\n\ti17[label=<sprinkle<br /> <font color=\"springgreen4\" point-size=\"10\">garnish</font>>]\n\ti18[label=<coat<br /> <font color=\"springgreen4\" point-size=\"10\">apply</font>>]\n\ti19[label=<serve<br /> <font color=\"springgreen4\" point-size=\"10\">finish</font>>]\n\n\tcelery_root -> i1\n\ti1 -> i2\n\ti2 -> i3\n\ti3 -> i4\n\ti4 -> i5\n\ti5 -> i6\n\ti6 -> i7\n\ti7 -> i8 # celery root is prepared and placed in bowl\n\tbowl -> i8\n\tapples -> i9\n\ti9 -> i10\n\ti10 -> i11\n\ti11 -> i12 # apples are prepared and added to bowl\n\ti8 -> i13\n\ti12 -> i13 # toss celery root and apples\n\tcider_vinegar -> i14\n\tmustard -> i14\n\tkosher_salt -> i14\n\tblack_pepper -> i14 # dressing base is ready\n\ti14 -> i15\n\tolive_oil -> i15 # dressing is complete\n\ti15 -> i16\n\ti13 -> i16 # pour dressing over salad\n\tchives -> i17\n\ti16 -> i17 # sprinkle chives\n\ti17 -> i18 # coat slices\n\ti18 -> i19 # serve\n}",
+            "tree_dict": {
+                "celery_root": {
+                    "label": "celery root",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "vegetable",
+                    "extra_info": [
+                        "structure",
+                        "core"
+                    ],
+                    "parent": "i1",
+                    "children": []
+                },
+                "apples": {
+                    "label": "apples",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "fruit",
+                    "extra_info": [
+                        "core"
+                    ],
+                    "parent": "i9",
+                    "children": []
+                },
+                "cider_vinegar": {
+                    "label": "cider vinegar",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "vinegar",
+                    "parent": "i14",
+                    "children": []
+                },
+                "mustard": {
+                    "label": "mustard",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "condiment",
+                    "parent": "i14",
+                    "children": []
+                },
+                "kosher_salt": {
+                    "label": "kosher salt",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "salt",
+                    "parent": "i14",
+                    "children": []
+                },
+                "black_pepper": {
+                    "label": "black pepper",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "spice",
+                    "parent": "i14",
+                    "children": []
+                },
+                "olive_oil": {
+                    "label": "olive oil",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "oil",
+                    "parent": "i15",
+                    "children": []
+                },
+                "chives": {
+                    "label": "chives",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "herb",
+                    "parent": "i17",
+                    "children": []
+                },
+                "bowl": {
+                    "label": "bowl",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "utensil",
+                    "extra_info": [
+                        "structure"
+                    ],
+                    "parent": "i8",
+                    "children": []
+                },
+                "i1": {
+                    "label": "boil",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i2",
+                    "children": [
+                        "celery_root"
+                    ]
+                },
+                "i2": {
+                    "label": "simmer",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i3",
+                    "children": [
+                        "i1"
+                    ]
+                },
+                "i3": {
+                    "label": "plate",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "finish",
+                    "parent": "i4",
+                    "children": [
+                        "i2"
+                    ]
+                },
+                "i4": {
+                    "label": "pierce",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "shape",
+                    "parent": "i5",
+                    "children": [
+                        "i3"
+                    ]
+                },
+                "i5": {
+                    "label": "drain",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "separate",
+                    "parent": "i6",
+                    "children": [
+                        "i4"
+                    ]
+                },
+                "i6": {
+                    "label": "scrape",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "transfer",
+                    "parent": "i7",
+                    "children": [
+                        "i5"
+                    ]
+                },
+                "i7": {
+                    "label": "cut",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "cut",
+                    "parent": "i8",
+                    "children": [
+                        "i6"
+                    ]
+                },
+                "i8": {
+                    "label": "place",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "place",
+                    "parent": "i13",
+                    "children": [
+                        "bowl",
+                        "i7"
+                    ]
+                },
+                "i9": {
+                    "label": "rinse",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "wash",
+                    "parent": "i10",
+                    "children": [
+                        "apples"
+                    ]
+                },
+                "i10": {
+                    "label": "slice",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "cut",
+                    "parent": "i11",
+                    "children": [
+                        "i9"
+                    ]
+                },
+                "i11": {
+                    "label": "slice",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "cut",
+                    "parent": "i12",
+                    "children": [
+                        "i10"
+                    ]
+                },
+                "i12": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i13",
+                    "children": [
+                        "i11"
+                    ]
+                },
+                "i13": {
+                    "label": "toss",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i16",
+                    "children": [
+                        "i8",
+                        "i12"
+                    ]
+                },
+                "i14": {
+                    "label": "whisk",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "combine / modify",
+                    "parent": "i15",
+                    "children": [
+                        "cider_vinegar",
+                        "mustard",
+                        "kosher_salt",
+                        "black_pepper"
+                    ]
+                },
+                "i15": {
+                    "label": "whisk",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "combine / modify",
+                    "parent": "i16",
+                    "children": [
+                        "olive_oil",
+                        "i14"
+                    ]
+                },
+                "i16": {
+                    "label": "pour",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "transfer",
+                    "parent": "i17",
+                    "children": [
+                        "i13",
+                        "i15"
+                    ]
+                },
+                "i17": {
+                    "label": "sprinkle",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "garnish",
+                    "parent": "i18",
+                    "children": [
+                        "chives",
+                        "i16"
+                    ]
+                },
+                "i18": {
+                    "label": "coat",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "apply",
+                    "parent": "i19",
+                    "children": [
+                        "i17"
+                    ]
+                },
+                "i19": {
+                    "label": "serve",
+                    "root": true,
+                    "type": "action",
+                    "abstr": "finish",
+                    "parent": null,
+                    "children": [
+                        "i18"
+                    ]
+                }
+            },
+            "is_tree": true
+        }
+    },
+    "dumplings": {
+        "689101": {
+            "title": "Slippery Dumplings",
+            "ingredient_list": [
+                "1 cup white flour",
+                "1 teaspoon baking powder",
+                "1 teaspoon salt",
+                "1 12 teaspoons shortening"
+            ],
+            "instruction_list": [
+                "Place dry ingredients in a bowl.",
+                "Mix dry ingredients.",
+                "Cut shortening into dry ingredients.",
+                "Add water slowly, just enough to make a stiff dough.",
+                "If the dough is tacky, add a small amount of flour until it is stiff.",
+                "Roll dough out very thinly, about 1/2 centimeter thick.",
+                "With a sharp knife cut the dough into small squares, about 1 1/2 inch wide by 2 inches high."
+            ],
+            "parsed_ingredients": {
+                "white flour": {
+                    "ref": "structure",
+                    "core": true,
+                    "abstr": "flour"
+                },
+                "baking powder": {
+                    "ref": "structure",
+                    "core": false,
+                    "abstr": "leavening agent"
+                },
+                "salt": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "salt"
+                },
+                "shortening": {
+                    "ref": "structure",
+                    "core": false,
+                    "abstr": "fat"
+                }
+            },
+            "parsed_instructions": "Place dry ingredients in bowl. Mix. Cut in shortening. Add water to make dough. Add flour if tacky. Roll dough thin. Cut into squares.",
+            "tree_dot_code": "digraph dumplings_689101 {\n\trankdir=BT ratio=auto\n\twhite_flour1[label=<white flour<br /> <font color=\"darkorchid\" point-size=\"10\">flour</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\twhite_flour2[label=<white flour<br /> <font color=\"darkorchid\" point-size=\"10\">flour</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\tbaking_powder[label=<baking powder<br /> <font color=\"darkorchid\" point-size=\"10\">leavening agent</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font>> shape=box]\n\tsalt[label=<salt<br /> <font color=\"darkorchid\" point-size=\"10\">salt</font>> shape=box]\n\tshortening[label=<shortening<br /> <font color=\"darkorchid\" point-size=\"10\">fat</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font>> shape=box]\n\ti1[label=<place<br /> <font color=\"springgreen4\" point-size=\"10\">place</font>>]\n\ti2[label=<mix<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti3[label=<cut<br /> <font color=\"springgreen4\" point-size=\"10\">cut</font>>]\n\ti4[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti5[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti6[label=<roll<br /> <font color=\"springgreen4\" point-size=\"10\">shape</font>>]\n\ti7[label=<cut<br /> <font color=\"springgreen4\" point-size=\"10\">cut</font>>]\n\n\twhite_flour1 -> i1\n\tbaking_powder -> i1\n\tsalt -> i1 # dry ingredients are ready\n\ti1 -> i2 # mix dry ingredients\n\tshortening -> i3\n\ti2 -> i3 # cut in shortening\n\ti3 -> i4 # dough is formed\n\ti4 -> i5 # adjust dough consistency\n\twhite_flour2 -> i5 # add flour if tacky\n\ti5 -> i6 # roll dough\n\ti6 -> i7 # cut into squares\n}",
+            "tree_dict": {
+                "baking_powder": {
+                    "label": "baking powder",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "leavening agent",
+                    "extra_info": [
+                        "structure"
+                    ],
+                    "parent": "i1",
+                    "children": []
+                },
+                "salt": {
+                    "label": "salt",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "salt",
+                    "parent": "i1",
+                    "children": []
+                },
+                "shortening": {
+                    "label": "shortening",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "fat",
+                    "extra_info": [
+                        "structure"
+                    ],
+                    "parent": "i3",
+                    "children": []
+                },
+                "i1": {
+                    "label": "place",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "place",
+                    "parent": "i2",
+                    "children": [
+                        "baking_powder",
+                        "salt",
+                        "white_flour1"
+                    ]
+                },
+                "i2": {
+                    "label": "mix",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i3",
+                    "children": [
+                        "i1"
+                    ]
+                },
+                "i3": {
+                    "label": "cut",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "cut",
+                    "parent": "i4",
+                    "children": [
+                        "shortening",
+                        "i2"
+                    ]
+                },
+                "i4": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i5",
+                    "children": [
+                        "i3"
+                    ]
+                },
+                "i5": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i6",
+                    "children": [
+                        "i4",
+                        "white_flour2"
+                    ]
+                },
+                "i6": {
+                    "label": "roll",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "shape",
+                    "parent": "i7",
+                    "children": [
+                        "i5"
+                    ]
+                },
+                "i7": {
+                    "label": "cut",
+                    "root": true,
+                    "type": "action",
+                    "abstr": "cut",
+                    "parent": null,
+                    "children": [
+                        "i6"
+                    ]
+                },
+                "white_flour1": {
+                    "label": "white flour",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "flour",
+                    "extra_info": [
+                        "structure",
+                        "core"
+                    ],
+                    "parent": "i1",
+                    "children": []
+                },
+                "white_flour2": {
+                    "label": "white flour",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "flour",
+                    "extra_info": [
+                        "structure",
+                        "core"
+                    ],
+                    "parent": "i5",
+                    "children": []
+                }
+            },
+            "is_tree": true
+        },
+        "493108": {
+            "title": "Prune dumplings (pierogi) recipe",
+            "ingredient_list": [
+                "3 tbsp butter, for melting and pouring over dumplings",
+                "4 prunes, sliced, to decorate",
+                "1 handful sprigs of thyme, to decorate",
+                "200 g (7.1oz) plain flour",
+                "150 g (5.3oz) buttermilk",
+                "1 pinch salt",
+                "100 g (3.5oz) pearl barley",
+                "100 g (3.5oz) prunes",
+                "120 g (4.2oz) cottage cheese",
+                "1 tbsp finely chopped fresh thyme"
+            ],
+            "instruction_list": [
+                "Mix the flour with buttermilk and knead together until its combined.",
+                "Let it rest for 30 minutes.",
+                "Cook the pearl barley according to the instructions on the box or packet (it should double its volume after cooking).",
+                "Chop the prunes.",
+                "Chop fresh thyme very finely.",
+                "Mix the two together and then add the cottage cheese.",
+                "The filling can be sprinkled with salt, keeping in mind that cottage cheese is naturally slightly salty in taste.",
+                "The dough with this recipe is flexible and can easily be rolled out very thinly.",
+                "Even when the dough is rolled out thinly, the dumplings remain flexible.",
+                "For one dumpling, use one teaspoon of filling.",
+                "Boil a pan of lightly salted water and put the dumplings in, cooking for 2 minutes until the dumplings float and are no longer doughy.",
+                "Serve the dumplings on a plate, pour on the melted butter and decorate with pieces of prunes and fresh thyme.",
+                "Enjoy your meal!"
+            ],
+            "parsed_ingredients": {
+                "butter": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "fat"
+                },
+                "prunes": {
+                    "ref": "taste",
+                    "core": true,
+                    "abstr": "fruit"
+                },
+                "thyme": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "herb"
+                },
+                "plain flour": {
+                    "ref": "structure",
+                    "core": true,
+                    "abstr": "flour"
+                },
+                "buttermilk": {
+                    "ref": "structure",
+                    "core": false,
+                    "abstr": "dairy"
+                },
+                "salt": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "salt"
+                },
+                "pearl barley": {
+                    "ref": "structure",
+                    "core": false,
+                    "abstr": "grain"
+                },
+                "cottage cheese": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "dairy"
+                }
+            },
+            "parsed_instructions": "Mix flour and buttermilk. Knead. Rest. Cook barley. Chop prunes. Chop thyme. Mix with cottage cheese. Sprinkle salt. Roll out dough. Use filling for dumplings. Boil water. Cook dumplings. Serve with butter, prunes, and thyme.",
+            "tree_dot_code": "digraph dumplings_493108 {\n\trankdir=BT ratio=auto\n\tbutter[label=<butter<br /> <font color=\"darkorchid\" point-size=\"10\">fat</font>> shape=box]\n\tprunes1[label=<prunes1<br /> <font color=\"darkorchid\" point-size=\"10\">fruit</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\tprunes2[label=<prunes2<br /> <font color=\"darkorchid\" point-size=\"10\">fruit</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\tthyme1[label=<thyme1<br /> <font color=\"darkorchid\" point-size=\"10\">herb</font>> shape=box]\n\tthyme2[label=<thyme2<br /> <font color=\"darkorchid\" point-size=\"10\">herb</font>> shape=box]\n\tplain_flour[label=<plain flour<br /> <font color=\"darkorchid\" point-size=\"10\">flour</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\tbuttermilk[label=<buttermilk<br /> <font color=\"darkorchid\" point-size=\"10\">dairy</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font>> shape=box]\n\tsalt[label=<salt<br /> <font color=\"darkorchid\" point-size=\"10\">salt</font>> shape=box]\n\tpearl_barley[label=<pearl barley<br /> <font color=\"darkorchid\" point-size=\"10\">grain</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font>> shape=box]\n\tcottage_cheese[label=<cottage cheese<br /> <font color=\"darkorchid\" point-size=\"10\">dairy</font>> shape=box]\n\ti1[label=<mix<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti2[label=<knead<br /> <font color=\"springgreen4\" point-size=\"10\">combine / modify</font>>]\n\ti3[label=<rest<br /> <font color=\"springgreen4\" point-size=\"10\">rest</font>>]\n\ti4[label=<cook<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti5[label=<chop<br /> <font color=\"springgreen4\" point-size=\"10\">cut</font>>]\n\ti6[label=<chop<br /> <font color=\"springgreen4\" point-size=\"10\">cut</font>>]\n\ti7[label=<mix<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti8[label=<sprinkle<br /> <font color=\"springgreen4\" point-size=\"10\">garnish</font>>]\n\ti9[label=<roll<br /> <font color=\"springgreen4\" point-size=\"10\">shape</font>>]\n\ti10[label=<use<br /> <font color=\"springgreen4\" point-size=\"10\">use</font>>]\n\ti11[label=<boil<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti12[label=<cook<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti13[label=<serve<br /> <font color=\"springgreen4\" point-size=\"10\">finish</font>>]\n\n\tplain_flour -> i1\n\tbuttermilk -> i1\n\ti1 -> i2 # knead dough\n\ti2 -> i3 # rest dough\n\tpearl_barley -> i4 # cook barley\n\tprunes1 -> i5 # chop prunes\n\tthyme1 -> i6 # chop thyme\n\tcottage_cheese -> i7\n\ti5 -> i7 # add prunes to filling\n\ti6 -> i7 # add thyme to filling\n\ti7 -> i8 # sprinkle salt\n\tsalt -> i8\n\ti3 -> i9 # roll out dough\n\ti8 -> i10 # use filling\n\ti9 -> i10 # use dough\n\ti10 -> i11 # prepare dumplings\n\ti11 -> i12 # boil water\n\ti12 -> i13 # cook dumplings\n\tbutter -> i13 # serve with butter\n\tprunes2 -> i13 # serve with prunes\n\tthyme2 -> i13 # serve with thyme\n\ti4 -> i10 # use cooked barley in filling\n}",
+            "tree_dict": {
+                "butter": {
+                    "label": "butter",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "fat",
+                    "parent": "i13",
+                    "children": []
+                },
+                "plain_flour": {
+                    "label": "plain flour",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "flour",
+                    "extra_info": [
+                        "structure",
+                        "core"
+                    ],
+                    "parent": "i1",
+                    "children": []
+                },
+                "buttermilk": {
+                    "label": "buttermilk",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "dairy",
+                    "extra_info": [
+                        "structure"
+                    ],
+                    "parent": "i1",
+                    "children": []
+                },
+                "salt": {
+                    "label": "salt",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "salt",
+                    "parent": "i8",
+                    "children": []
+                },
+                "pearl_barley": {
+                    "label": "pearl barley",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "grain",
+                    "extra_info": [
+                        "structure"
+                    ],
+                    "parent": "i4",
+                    "children": []
+                },
+                "cottage_cheese": {
+                    "label": "cottage cheese",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "dairy",
+                    "parent": "i7",
+                    "children": []
+                },
+                "i1": {
+                    "label": "mix",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i2",
+                    "children": [
+                        "plain_flour",
+                        "buttermilk"
+                    ]
+                },
+                "i2": {
+                    "label": "knead",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "combine / modify",
+                    "parent": "i3",
+                    "children": [
+                        "i1"
+                    ]
+                },
+                "i3": {
+                    "label": "rest",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "rest",
+                    "parent": "i9",
+                    "children": [
+                        "i2"
+                    ]
+                },
+                "i4": {
+                    "label": "cook",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i10",
+                    "children": [
+                        "pearl_barley"
+                    ]
+                },
+                "i5": {
+                    "label": "chop",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "cut",
+                    "parent": "i7",
+                    "children": [
+                        "prunes1"
+                    ]
+                },
+                "i6": {
+                    "label": "chop",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "cut",
+                    "parent": "i7",
+                    "children": [
+                        "thyme1"
+                    ]
+                },
+                "i7": {
+                    "label": "mix",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i8",
+                    "children": [
+                        "cottage_cheese",
+                        "i5",
+                        "i6"
+                    ]
+                },
+                "i8": {
+                    "label": "sprinkle",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "garnish",
+                    "parent": "i10",
+                    "children": [
+                        "salt",
+                        "i7"
+                    ]
+                },
+                "i9": {
+                    "label": "roll",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "shape",
+                    "parent": "i10",
+                    "children": [
+                        "i3"
+                    ]
+                },
+                "i10": {
+                    "label": "use",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "use",
+                    "parent": "i11",
+                    "children": [
+                        "i4",
+                        "i8",
+                        "i9"
+                    ]
+                },
+                "i11": {
+                    "label": "boil",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i12",
+                    "children": [
+                        "i10"
+                    ]
+                },
+                "i12": {
+                    "label": "cook",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i13",
+                    "children": [
+                        "i11"
+                    ]
+                },
+                "i13": {
+                    "label": "serve",
+                    "root": true,
+                    "type": "action",
+                    "abstr": "finish",
+                    "parent": null,
+                    "children": [
+                        "butter",
+                        "i12",
+                        "prunes2",
+                        "thyme2"
+                    ]
+                },
+                "prunes1": {
+                    "label": "prunes",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "fruit",
+                    "extra_info": [
+                        "core"
+                    ],
+                    "parent": "i5",
+                    "children": []
+                },
+                "prunes2": {
+                    "label": "prunes",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "fruit",
+                    "extra_info": [
+                        "core"
+                    ],
+                    "parent": "i13",
+                    "children": []
+                },
+                "thyme1": {
+                    "label": "thyme",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "herb",
+                    "parent": "i6",
+                    "children": []
+                },
+                "thyme2": {
+                    "label": "thyme",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "herb",
+                    "parent": "i13",
+                    "children": []
+                }
+            },
+            "is_tree": true
+        }
+    },
+    "risotto": {
+        "114293": {
+            "title": "Risotto",
+            "ingredient_list": [
+                "2 to 3 tbsp. olive oil",
+                "1 onion, chopped",
+                "3/4 cup Arborio rice",
+                "1/2 cup white wine",
+                "2 cups chicken stock",
+                "2 to 3 tbsp. butter",
+                "4 tbsp. grated Parmigiano Reggiano cheesegrated Parmigiano-Reggiano cheese",
+                "Salt and pepper to taste"
+            ],
+            "instruction_list": [
+                "Saute onion in oil for a couple of minutes.",
+                "Add rice an cook until transparent.",
+                "Add wine and cook till it is absorbed.",
+                "Gradually add stock to cover the rice as it evaporates and cook till rice is al dente.",
+                "Add butter and cheese and mix well.",
+                "Season with salt and pepper."
+            ],
+            "parsed_ingredients": {
+                "olive oil": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "oil"
+                },
+                "onion": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "vegetable"
+                },
+                "arborio rice": {
+                    "ref": "structure",
+                    "core": true,
+                    "abstr": "rice"
+                },
+                "white wine": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "wine"
+                },
+                "chicken stock": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "broth"
+                },
+                "butter": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "fat"
+                },
+                "parmigiano reggiano": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "cheese"
+                },
+                "salt": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "salt"
+                },
+                "pepper": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "spice"
+                }
+            },
+            "parsed_instructions": "Saute onion in oil. Add rice. Cook until transparent. Add wine. Cook until absorbed. Add stock gradually. Cook until al dente. Add butter and cheese. Mix. Season.",
+            "tree_dot_code": "digraph risotto_114293 {\n\trankdir=BT ratio=auto\n\tolive_oil[label=<olive oil<br /> <font color=\"darkorchid\" point-size=\"10\">oil</font>> shape=box]\n\tonion[label=<onion<br /> <font color=\"darkorchid\" point-size=\"10\">vegetable</font>> shape=box]\n\tarborio_rice[label=<arborio rice<br /> <font color=\"darkorchid\" point-size=\"10\">rice</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\twhite_wine[label=<white wine<br /> <font color=\"darkorchid\" point-size=\"10\">wine</font>> shape=box]\n\tchicken_stock[label=<chicken stock<br /> <font color=\"darkorchid\" point-size=\"10\">broth</font>> shape=box]\n\tbutter[label=<butter<br /> <font color=\"darkorchid\" point-size=\"10\">fat</font>> shape=box]\n\tparmigiano_reggiano[label=<parmigiano reggiano<br /> <font color=\"darkorchid\" point-size=\"10\">cheese</font>> shape=box]\n\tsalt[label=<salt<br /> <font color=\"darkorchid\" point-size=\"10\">salt</font>> shape=box]\n\tpepper[label=<pepper<br /> <font color=\"darkorchid\" point-size=\"10\">spice</font>> shape=box]\n\ti1[label=<saute<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti2[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti3[label=<cook<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti4[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti5[label=<cook<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti6[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti7[label=<cook<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti8[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti9[label=<mix<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti10[label=<season<br /> <font color=\"springgreen4\" point-size=\"10\">enhance flavor</font>>]\n\n\tolive_oil -> i1\n\tonion -> i1 # saute onion in oil\n\ti1 -> i2\n\tarborio_rice -> i2 # add rice\n\ti2 -> i3 # cook until transparent\n\ti3 -> i4\n\twhite_wine -> i4 # add wine\n\ti4 -> i5 # cook until absorbed\n\ti5 -> i6\n\tchicken_stock -> i6 # add stock gradually\n\ti6 -> i7 # cook until al dente\n\ti7 -> i8\n\tbutter -> i8\n\tparmigiano_reggiano -> i8 # add butter and cheese\n\ti8 -> i9 # mix\n\ti9 -> i10\n\tsalt -> i10\n\tpepper -> i10 # season\n}",
+            "tree_dict": {
+                "olive_oil": {
+                    "label": "olive oil",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "oil",
+                    "parent": "i1",
+                    "children": []
+                },
+                "onion": {
+                    "label": "onion",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "vegetable",
+                    "parent": "i1",
+                    "children": []
+                },
+                "arborio_rice": {
+                    "label": "arborio rice",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "rice",
+                    "extra_info": [
+                        "structure",
+                        "core"
+                    ],
+                    "parent": "i2",
+                    "children": []
+                },
+                "white_wine": {
+                    "label": "white wine",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "wine",
+                    "parent": "i4",
+                    "children": []
+                },
+                "chicken_stock": {
+                    "label": "chicken stock",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "broth",
+                    "parent": "i6",
+                    "children": []
+                },
+                "butter": {
+                    "label": "butter",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "fat",
+                    "parent": "i8",
+                    "children": []
+                },
+                "parmigiano_reggiano": {
+                    "label": "parmigiano reggiano",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "cheese",
+                    "parent": "i8",
+                    "children": []
+                },
+                "salt": {
+                    "label": "salt",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "salt",
+                    "parent": "i10",
+                    "children": []
+                },
+                "pepper": {
+                    "label": "pepper",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "spice",
+                    "parent": "i10",
+                    "children": []
+                },
+                "i1": {
+                    "label": "saute",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i2",
+                    "children": [
+                        "olive_oil",
+                        "onion"
+                    ]
+                },
+                "i2": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i3",
+                    "children": [
+                        "arborio_rice",
+                        "i1"
+                    ]
+                },
+                "i3": {
+                    "label": "cook",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i4",
+                    "children": [
+                        "i2"
+                    ]
+                },
+                "i4": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i5",
+                    "children": [
+                        "white_wine",
+                        "i3"
+                    ]
+                },
+                "i5": {
+                    "label": "cook",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i6",
+                    "children": [
+                        "i4"
+                    ]
+                },
+                "i6": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i7",
+                    "children": [
+                        "chicken_stock",
+                        "i5"
+                    ]
+                },
+                "i7": {
+                    "label": "cook",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i8",
+                    "children": [
+                        "i6"
+                    ]
+                },
+                "i8": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i9",
+                    "children": [
+                        "butter",
+                        "parmigiano_reggiano",
+                        "i7"
+                    ]
+                },
+                "i9": {
+                    "label": "mix",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i10",
+                    "children": [
+                        "i8"
+                    ]
+                },
+                "i10": {
+                    "label": "season",
+                    "root": true,
+                    "type": "action",
+                    "abstr": "enhance flavor",
+                    "parent": null,
+                    "children": [
+                        "salt",
+                        "pepper",
+                        "i9"
+                    ]
+                }
+            },
+            "is_tree": true
+        },
+        "884507": {
+            "title": "Spanakopita Risotto",
+            "ingredient_list": [
+                "6 cups chicken stock",
+                "14 cup olive oil",
+                "4 scallions, green & white parts chopped",
+                "2 garlic cloves, minced",
+                "1 cup arborio rice or 1 cup carnaroli rice",
+                "12 cup dry white wine",
+                "1 teaspoon dried dill",
+                "6 ounces fresh Baby Spinach",
+                "12 cup feta cheese, crumbled (plus extra)",
+                "1 tablespoon lemon juice",
+                "salt & pepper"
+            ],
+            "instruction_list": [
+                "Heat stock in a saucepan over medium heat; keep at a low simmer.",
+                "Heat olive oil in a heavy bottomed saucepan over medium heat.",
+                "Saute scallions until soft.",
+                "Add garlic and cook another 2 minutes.",
+                "Add rice and cook, stirring constantly, until rice begins to make a clicking sound like glass beads (about 3-4 minutes).",
+                "Add wine and dill to the rice mixture, and stir until the wine is absorbed.",
+                "Using a ladle, add 3/4 cup hot stock to the rice.",
+                "Stir constantly at a moderate speed.",
+                "When rice mixture is just thick enough to leave a clear wake behind the spoon, add another 3/4 cup stock.",
+                "Continue adding stock 3/4 cup at a time until all 6 cups have been added.",
+                "The final mixture should be thick enough that the grains of rice are suspended in liquid the consistency of heavy cream.",
+                "It will thicken upon standing.",
+                "Remove from heat.",
+                "Stir in spinach, feta, and lemon juice, mixing until the spinach is wilted and the feta is melty.",
+                "Season to taste with salt and pepper.",
+                "Top individual servings with extra feta if desired."
+            ],
+            "parsed_ingredients": {
+                "chicken stock": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "broth"
+                },
+                "olive oil": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "oil"
+                },
+                "scallions": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "vegetable"
+                },
+                "garlic": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "vegetable"
+                },
+                "arborio rice": {
+                    "ref": "structure",
+                    "core": true,
+                    "abstr": "rice"
+                },
+                "white wine": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "wine"
+                },
+                "dill": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "herb"
+                },
+                "baby spinach": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "vegetable"
+                },
+                "feta cheese": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "cheese"
+                },
+                "lemon juice": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "citrus"
+                },
+                "salt": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "salt"
+                },
+                "pepper": {
+                    "ref": "taste",
+                    "core": false,
+                    "abstr": "spice"
+                }
+            },
+            "parsed_instructions": "Heat stock. Simmer. Heat oil. Saute scallions. Add garlic. Cook. Add rice. Cook until clicking. Add wine and dill. Stir until absorbed. Add stock gradually. Stir constantly. Remove from heat. Stir in spinach, feta, and lemon juice. Mix. Season. Top with feta.",
+            "tree_dot_code": "digraph risotto_884507 {\n\trankdir=BT ratio=auto\n\tchicken_stock[label=<chicken stock<br /> <font color=\"darkorchid\" point-size=\"10\">broth</font>> shape=box]\n\tolive_oil[label=<olive oil<br /> <font color=\"darkorchid\" point-size=\"10\">oil</font>> shape=box]\n\tscallions[label=<scallions<br /> <font color=\"darkorchid\" point-size=\"10\">vegetable</font>> shape=box]\n\tgarlic[label=<garlic<br /> <font color=\"darkorchid\" point-size=\"10\">vegetable</font>> shape=box]\n\tarborio_rice[label=<arborio rice<br /> <font color=\"darkorchid\" point-size=\"10\">rice</font><br /> <font color=\"deeppink3\" point-size=\"10\">(structure)</font><br /> <font color=\"dodgerblue4\" point-size=\"10\">(core)</font>> shape=box]\n\twhite_wine[label=<white wine<br /> <font color=\"darkorchid\" point-size=\"10\">wine</font>> shape=box]\n\tdill[label=<dill<br /> <font color=\"darkorchid\" point-size=\"10\">herb</font>> shape=box]\n\tbaby_spinach[label=<baby spinach<br /> <font color=\"darkorchid\" point-size=\"10\">vegetable</font>> shape=box]\n\tfeta_cheese1[label=<feta cheese<br /> <font color=\"darkorchid\" point-size=\"10\">cheese</font>> shape=box]\n\tfeta_cheese2[label=<feta cheese<br /> <font color=\"darkorchid\" point-size=\"10\">cheese</font>> shape=box]\n\tlemon_juice[label=<lemon juice<br /> <font color=\"darkorchid\" point-size=\"10\">citrus</font>> shape=box]\n\tsalt[label=<salt<br /> <font color=\"darkorchid\" point-size=\"10\">salt</font>> shape=box]\n\tpepper[label=<pepper<br /> <font color=\"darkorchid\" point-size=\"10\">spice</font>> shape=box]\n\ti1[label=<heat<br /> <font color=\"springgreen4\" point-size=\"10\">surface heat</font>>]\n\ti2[label=<simmer<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti3[label=<heat<br /> <font color=\"springgreen4\" point-size=\"10\">surface heat</font>>]\n\ti4[label=<saute<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti5[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti6[label=<cook<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti7[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti8[label=<cook<br /> <font color=\"springgreen4\" point-size=\"10\">heat</font>>]\n\ti9[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti10[label=<stir<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti11[label=<add<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti12[label=<stir<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti13[label=<remove<br /> <font color=\"springgreen4\" point-size=\"10\">separate</font>>]\n\ti14[label=<stir<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti15[label=<mix<br /> <font color=\"springgreen4\" point-size=\"10\">mix</font>>]\n\ti16[label=<season<br /> <font color=\"springgreen4\" point-size=\"10\">enhance flavor</font>>]\n\ti17[label=<top<br /> <font color=\"springgreen4\" point-size=\"10\">garnish</font>>]\n\n\tchicken_stock -> i1\n\ti1 -> i2 # stock is simmering\n\tolive_oil -> i3\n\ti3 -> i4 # oil is heated\n\tscallions -> i4\n\ti4 -> i5 # scallions are sautéed\n\tgarlic -> i5\n\ti5 -> i6 # garlic is added\n\ti6 -> i7 # garlic is cooked\n\tarborio_rice -> i7\n\ti7 -> i8 # rice is added\n\ti8 -> i9 # rice is cooked until clicking\n\twhite_wine -> i9\n\tdill -> i9\n\ti9 -> i10 # wine and dill are added\n\ti10 -> i11 # wine is absorbed\n\ti2 -> i11 # use simmering stock\n\ti11 -> i12 # stock is added gradually\n\ti12 -> i13 # rice is cooked\n\ti13 -> i14 # remove from heat\n\tbaby_spinach -> i14\n\tfeta_cheese1 -> i14\n\tlemon_juice -> i14\n\ti14 -> i15 # spinach, feta, and lemon juice are stirred in\n\ti15 -> i16 # mixture is ready\n\tsalt -> i16\n\tpepper -> i16\n\ti16 -> i17 # seasoning is done\n\tfeta_cheese2 -> i17 # top with feta\n}",
+            "tree_dict": {
+                "chicken_stock": {
+                    "label": "chicken stock",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "broth",
+                    "parent": "i1",
+                    "children": []
+                },
+                "olive_oil": {
+                    "label": "olive oil",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "oil",
+                    "parent": "i3",
+                    "children": []
+                },
+                "scallions": {
+                    "label": "scallions",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "vegetable",
+                    "parent": "i4",
+                    "children": []
+                },
+                "garlic": {
+                    "label": "garlic",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "vegetable",
+                    "parent": "i5",
+                    "children": []
+                },
+                "arborio_rice": {
+                    "label": "arborio rice",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "rice",
+                    "extra_info": [
+                        "structure",
+                        "core"
+                    ],
+                    "parent": "i7",
+                    "children": []
+                },
+                "white_wine": {
+                    "label": "white wine",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "wine",
+                    "parent": "i9",
+                    "children": []
+                },
+                "dill": {
+                    "label": "dill",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "herb",
+                    "parent": "i9",
+                    "children": []
+                },
+                "baby_spinach": {
+                    "label": "baby spinach",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "vegetable",
+                    "parent": "i14",
+                    "children": []
+                },
+                "lemon_juice": {
+                    "label": "lemon juice",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "citrus",
+                    "parent": "i14",
+                    "children": []
+                },
+                "salt": {
+                    "label": "salt",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "salt",
+                    "parent": "i16",
+                    "children": []
+                },
+                "pepper": {
+                    "label": "pepper",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "spice",
+                    "parent": "i16",
+                    "children": []
+                },
+                "i1": {
+                    "label": "heat",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "surface heat",
+                    "parent": "i2",
+                    "children": [
+                        "chicken_stock"
+                    ]
+                },
+                "i2": {
+                    "label": "simmer",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i11",
+                    "children": [
+                        "i1"
+                    ]
+                },
+                "i3": {
+                    "label": "heat",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "surface heat",
+                    "parent": "i4",
+                    "children": [
+                        "olive_oil"
+                    ]
+                },
+                "i4": {
+                    "label": "saute",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i5",
+                    "children": [
+                        "scallions",
+                        "i3"
+                    ]
+                },
+                "i5": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i6",
+                    "children": [
+                        "garlic",
+                        "i4"
+                    ]
+                },
+                "i6": {
+                    "label": "cook",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i7",
+                    "children": [
+                        "i5"
+                    ]
+                },
+                "i7": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i8",
+                    "children": [
+                        "arborio_rice",
+                        "i6"
+                    ]
+                },
+                "i8": {
+                    "label": "cook",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "heat",
+                    "parent": "i9",
+                    "children": [
+                        "i7"
+                    ]
+                },
+                "i9": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i10",
+                    "children": [
+                        "white_wine",
+                        "dill",
+                        "i8"
+                    ]
+                },
+                "i10": {
+                    "label": "stir",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i11",
+                    "children": [
+                        "i9"
+                    ]
+                },
+                "i11": {
+                    "label": "add",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i12",
+                    "children": [
+                        "i2",
+                        "i10"
+                    ]
+                },
+                "i12": {
+                    "label": "stir",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i13",
+                    "children": [
+                        "i11"
+                    ]
+                },
+                "i13": {
+                    "label": "remove",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "separate",
+                    "parent": "i14",
+                    "children": [
+                        "i12"
+                    ]
+                },
+                "i14": {
+                    "label": "stir",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i15",
+                    "children": [
+                        "baby_spinach",
+                        "lemon_juice",
+                        "i13",
+                        "feta_cheese1"
+                    ]
+                },
+                "i15": {
+                    "label": "mix",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "mix",
+                    "parent": "i16",
+                    "children": [
+                        "i14"
+                    ]
+                },
+                "i16": {
+                    "label": "season",
+                    "root": false,
+                    "type": "action",
+                    "abstr": "enhance flavor",
+                    "parent": "i17",
+                    "children": [
+                        "salt",
+                        "pepper",
+                        "i15"
+                    ]
+                },
+                "i17": {
+                    "label": "top",
+                    "root": true,
+                    "type": "action",
+                    "abstr": "garnish",
+                    "parent": null,
+                    "children": [
+                        "i16",
+                        "feta_cheese2"
+                    ]
+                },
+                "feta_cheese1": {
+                    "label": "feta cheese",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "cheese",
+                    "parent": "i14",
+                    "children": []
+                },
+                "feta_cheese2": {
+                    "label": "feta cheese",
+                    "root": false,
+                    "type": "ingredient",
+                    "abstr": "cheese",
+                    "parent": "i17",
+                    "children": []
+                }
+            },
+            "is_tree": true
+        }
+    }
+}

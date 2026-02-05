@@ -12,7 +12,7 @@ from cooking_up_creativity.src.constants import INGR_TYPE, ACTION_TYPE, INGR_ABS
 
 
 # A collection of 250 most common action verbs grouped into categories:
-with open("cooking_verbs_to_categories.json", 'r') as f:
+with open("../resources/cooking_verbs_to_categories.json", 'r') as f:
     all_cooking_verbs = json.load(f)
 
 
@@ -668,7 +668,7 @@ def translate_recipes_to_trees(sampled_recipes: dict, tries: int = 3) -> dict:
 
 if __name__ == '__main__':
 
-    sampled_recipes_path = "sampled_recipes_tiny.json"
+    sampled_recipes_path = "../toy_example_files/sampled_recipes_tiny.json"
 
     # Load sampled recipes:
     with open(sampled_recipes_path, 'r', encoding='utf8') as f:

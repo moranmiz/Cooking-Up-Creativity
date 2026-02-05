@@ -269,7 +269,7 @@ def translate_trees_into_recipes(tree_ideas: dict, tries: int = 3) -> dict:
 
 if __name__ == '__main__':
 
-    generated_ideas_path = "generated_recipes_tiny_best_ideas.json"
+    generated_ideas_path = "../toy_example_files/generated_recipes_tiny_best_ideas.json"
 
     # Load generated ideas:
     with open(generated_ideas_path, 'r') as f:
@@ -279,7 +279,7 @@ if __name__ == '__main__':
     updated_generated_ideas = translate_trees_into_recipes(generated_ideas, tries=3)
 
     # Save updated generated ideas into a new JSON file:
-    with open("generated_recipes_final.json", 'w', encoding='utf8') as f:
+    with open("../toy_example_files/generated_recipes_final.json", 'w', encoding='utf8') as f:
         json.dump(updated_generated_ideas, f, indent=4)
 
 

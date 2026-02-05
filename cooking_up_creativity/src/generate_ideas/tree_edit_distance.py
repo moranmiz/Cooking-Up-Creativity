@@ -8,7 +8,7 @@ from cooking_up_creativity.src.constants import INGR_ABSTR_COLOR, INGR_STRUCTURE
     ACTION_ABSTR_COLOR, INFTY, UPDATE, MATCH, REMOVE, INSERT
 
 
-with open("../text_to_tree/cooking_verbs_to_categories.json", "r") as f:
+with open("../resources/cooking_verbs_to_categories.json", "r") as f:
     cooking_verbs_to_categories = json.load(f)
 
 
@@ -1284,7 +1284,7 @@ def combine_two_dishes(sampled_recipes_parsed: dict, dish1: str, dish2: str, rev
 if __name__ == '__main__':
 
     # Load sampled recipes data (with parsed ingredients and tree dicts):
-    with open("sampled_recipes_tiny_parsed.json", "r", encoding="utf8") as f:
+    with open("../toy_example_files/sampled_recipes_tiny_parsed.json", "r", encoding="utf8") as f:
         sampled_recipes_parsed = json.load(f)
 
     generated_trees = {}
@@ -1298,5 +1298,5 @@ if __name__ == '__main__':
         generated_trees[pair[0].replace(" ", "_") + "_to_" + pair[1].replace(" ", "_")] = combinations_dict
 
     # Save generated idea trees to a JSON file:
-    with open("generated_recipes_tiny.json", "w", encoding="utf8") as f:
+    with open("../toy_example_files/generated_recipes_tiny.json", "w", encoding="utf8") as f:
         json.dump(generated_trees, f, indent=4)

@@ -13,7 +13,7 @@ HIGHEST_RANKED_K = 5
 This dictionary maps each of the 100 most common dishes in Recipe1M to its essential ingredients (e.g., for the 
 dish "apple pie", the essential ingredient is "apple").
 """
-with open("dish_to_essential_ingrs.json", 'r') as f:
+with open("../resources/dish_to_essential_ingrs.json", 'r') as f:
     dish_to_essential_ingrs = json.load(f)
 
 """
@@ -379,7 +379,7 @@ def pick_top_k_ideas(ranked_ideas: dict, top_k: int = HIGHEST_RANKED_K, method: 
 
 if __name__ == '__main__':
 
-    generated_ideas_path = "generated_recipes_tiny.json"
+    generated_ideas_path = "../toy_example_files/generated_recipes_tiny.json"
 
     with open(generated_ideas_path, 'r') as f:
         generated_ideas_dict = json.load(f)
