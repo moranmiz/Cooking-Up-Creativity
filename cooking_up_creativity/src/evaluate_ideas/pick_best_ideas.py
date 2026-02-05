@@ -379,7 +379,6 @@ def pick_top_k_ideas(ranked_ideas: dict, top_k: int = HIGHEST_RANKED_K, method: 
 
 if __name__ == '__main__':
 
-    # generated_ideas_path = "apple_cake_to_chicken_breast.json"
     generated_ideas_path = "generated_recipes_tiny.json"
 
     with open(generated_ideas_path, 'r') as f:
