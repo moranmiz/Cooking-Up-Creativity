@@ -152,7 +152,7 @@ graph.render(filename=file_name, directory=file_path, format='png', cleanup=True
 ### Generate Ideas 
 To generate new recipe ideas, we **recombine existing recipe trees** using a tree edit-distance framework. Specifically, we apply the **Zhang–Shasha tree edit-distance algorithm** and extract **intermediate representations** that arise during the transformation between two recipe trees. Rather than using only the final transformed tree, we focus on trees that appear **midway through the edit sequence**, which combine structural and semantic elements from both source recipes.
 
-The folder `src/generate_ideas` contains the code for generating novel recipe trees (`tree_edit_distance.py`) for given pairs of dishes. For each pair of dishes (e.g., _chocolate pie_ and _lasagna_), the function `combine_two_dishes`retrieves the trees of the sampled recipes for each dish, computes tree edit-distance transformations between all recipe pairs, and generates multiple intermediate trees by shuffling edit operations and stopping at different points along the transformation process. This results in multiple structurally distinct recombinations for each recipe pair.
+The folder `src/generate_ideas` contains the code for generating novel recipe trees (`tree_edit_distance.py`) for given pairs of dishes. For each pair of dishes (e.g., _chocolate pie_ and _lasagna_), the function `combine_two_dishes` retrieves the trees of the sampled recipes for each dish, computes tree edit-distance transformations between all recipe pairs, and generates multiple intermediate trees by shuffling edit operations and stopping at different points along the transformation process. This results in multiple structurally distinct recombinations for each recipe pair.
 
 The output of this step is a JSON file containing all generated tree ideas, structured as follows:
 ```json
@@ -170,13 +170,15 @@ Where:
 * `tree_dot_code` is the DOT code that represents the generated tree
 
 ### Evaluate Ideas 
-[TBD] 
+To evaluate the generated idea candidates, we enforce **value** (taste coherence) as a constraint, then rank the remaining candidates by **novelty** (surprise) and **keep the top ideas**.
+The folder `src/evaluate_ideas` contains the evaluation code (`pick_best_ideas.py`). Specifically, `evaluate_taste.py` computes ingredient pairing / test-coherence signals, and `compute_novelty.py` computes an IDF-style novelty score over idea elements (ingredients + actions). 
 
 ### Tree to Text 
-[TBD] 
+Finally, we translate the top tree ideas into natural-language recipes using an LLM. We note that the LLM plays a key role in _surface realization_. Specifically, it draws on commonsense and somain knowledge to fill in missing details (e.g., ingredient quantities, cooking times), and correct inconsistencies introduced during recombination (e.g., restoring a missing step for cooking raw chicken). 
+The file `src/tree_to_text/translate_tree_to_recipes.py` contains the code for translating recipe tree ideas into coherent recipes.
 
 ### Run Full Pipeline
-[TBD]
+For running the full pipeline end-to-end for a specific pair of dishes, see `run_all.py`.
 
 ## DATA 
 
