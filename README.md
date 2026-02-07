@@ -17,7 +17,6 @@ Authors: **Moran Mizrahi**, **Chen Shani**, **Gabriel Stanovsky**, **Dan Jurafsk
   - [Generate Ideas](#generate-ideas) (Step III)
   - [Evaluate Ideas](#evaluate-ideas) (Step IV)
   - [Tree to Text](#tree-to-text) (Step V)
-  - [Run Full Pipeline](#run-full-pipeline)
 - [DATA](#data)
   - [DishCOVER Dataset](#dishcover-dataset)
   - [Other Data Files](#other-data-files)
@@ -41,7 +40,6 @@ The project pipeline is composed of several **modular components**:
 
 * Each component can be executed **independently** for experimentation.  
 * Each component includes a small `main` section with a simple usage example.  
-* A separate script (`run_all.py`) is provided to run the full pipeline **end-to-end**.
 
 ### Fine-Tuned SBERT Model on Recipes
 
@@ -177,8 +175,6 @@ The folder `src/evaluate_ideas` contains the evaluation code (`pick_best_ideas.p
 Finally, we translate the top tree ideas into natural-language recipes using an LLM. We note that the LLM plays a key role in _surface realization_. Specifically, it draws on commonsense and somain knowledge to fill in missing details (e.g., ingredient quantities, cooking times), and correct inconsistencies introduced during recombination (e.g., restoring a missing step for cooking raw chicken). 
 The file `src/tree_to_text/translate_tree_to_recipes.py` contains the code for translating recipe tree ideas into coherent recipes.
 
-### Run Full Pipeline
-For running the full pipeline end-to-end for a specific pair of dishes, see `run_all.py`.
 
 ## DATA 
 
