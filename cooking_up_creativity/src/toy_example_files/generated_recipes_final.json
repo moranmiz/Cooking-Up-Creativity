@@ -47,41 +47,8 @@
                 4.282523510229965
             ]
         ],
-        "raw_recipe_text": "**Chocolate Coconut Pecan Delight**\n\n**Ingredients:**\n- 1 cup coconut\n- 1 cup pecans\n- 1/2 cup butter\n- 1 cup sweet chocolate\n- 2 cups marshmallows\n- 1/4 teaspoon salt\n- 1 teaspoon vanilla extract\n- 1 cup cool whip\n- 1/2 cup lasagna noodles (for garnish)\n- 1 tablespoon olive oil\n- 2 cloves garlic\n- 1/2 cup tomato paste\n- 1 cup tomato sauce\n\n**Instructions:**\n\n1. Preheat your oven to 350\u00b0F (175\u00b0C).\n2. In a mixing bowl, combine coconut, pecans, and butter. Press the mixture into a baking dish to form a crust.\n3. Bake the crust in the preheated oven for 10 minutes. Remove and let it cool.\n4. In a saucepan, melt marshmallows, sweet chocolate, and a pinch of salt over low heat, stirring constantly until smooth.\n5. Remove the melted mixture from heat and let it cool slightly.\n6. In a separate bowl, beat together the cooled chocolate mixture and vanilla extract until well combined.\n7. In another bowl, beat the cool whip until fluffy.\n8. Fold the beaten cool whip into the chocolate mixture gently until fully incorporated.\n9. Pour the chocolate mixture over the cooled crust in the baking dish.\n10. Grate the lasagna noodles and sprinkle them over the top as a garnish.\n11. Refrigerate the dessert for at least 2 hours before serving.\n\n**Note:** The garlic, olive oil, tomato paste, and tomato sauce are not used in this dessert recipe.",
-        "recipe_issues": "1. **Ingredient List Issues:**\n   - The inclusion of lasagna noodles as a garnish is unconventional and may not be suitable for a dessert.\n   - Garlic, olive oil, tomato paste, and tomato sauce are listed in the ingredients but are not used in the recipe, as noted.\n\n2. **Instruction Issues:**\n   - There is no step that involves the use of garlic, olive oil, tomato paste, or tomato sauce, which are listed in the ingredients.\n   - The instruction to \"Grate the lasagna noodles\" is unusual and may not be practical or appropriate for a dessert.\n\n3. **General Clarity:**\n   - The recipe does not specify the type of \"sweet chocolate\" (e.g., milk chocolate, dark chocolate), which could affect the final taste.\n   - The term \"cool whip\" is used, which is a brand name; specifying \"whipped topping\" might be clearer for those in regions where Cool Whip is not available.",
-        "corrected_recipe": "Chocolate Coconut Pecan Delight\n\nIngredients:\n- 1 cup coconut\n- 1 cup pecans\n- 1/2 cup butter\n- 1 cup milk chocolate (or sweet chocolate of choice)\n- 2 cups marshmallows\n- 1/4 teaspoon salt\n- 1 teaspoon vanilla extract\n- 1 cup whipped topping\n\nInstructions:\n\nPreheat your oven to 350\u00b0F (175\u00b0C).\nIn a mixing bowl, combine coconut, pecans, and butter. Press the mixture into a baking dish to form a crust.\nBake the crust in the preheated oven for 10 minutes. Remove and let it cool.\nIn a saucepan, melt marshmallows, milk chocolate, and a pinch of salt over low heat, stirring constantly until smooth.\nRemove the melted mixture from heat and let it cool slightly.\nIn a separate bowl, beat together the cooled chocolate mixture and vanilla extract until well combined.\nIn another bowl, beat the whipped topping until fluffy.\nFold the beaten whipped topping into the chocolate mixture gently until fully incorporated.\nPour the chocolate mixture over the cooled crust in the baking dish.\nRefrigerate the dessert for at least 2 hours before serving.\n",
-        "recipe_summary": "The Chocolate Coconut Pecan Delight is a layered dessert featuring a crust made from coconut, pecans, and butter, baked until set. A smooth filling is created by melting marshmallows, milk chocolate, and salt, then combining it with vanilla extract and fluffy whipped topping. This chocolate mixture is poured over the cooled crust and refrigerated for at least two hours before serving.",
-        "review_ingrs_dict": {
-            "dish_ingredients": [
-                "coconut",
-                "pecans",
-                "butter",
-                "marshmallows",
-                "milk chocolate",
-                "salt",
-                "vanilla extract",
-                "whipped topping"
-            ],
-            "creative_ingrs": [
-                "coconut",
-                "pecans",
-                "marshmallows"
-            ],
-            "flavor_clashes": [
-                [
-                    "salt",
-                    "vanilla extract"
-                ]
-            ],
-            "removals": [],
-            "substitutions": [
-                [
-                    "salt",
-                    "a pinch of sea salt"
-                ]
-            ]
-        },
-        "more_readable_text": "**Chocolate Coconut Pecan Delight**\n\n**Ingredients:**\n\n- 1 cup coconut\n- 1 cup pecans\n- 1/2 cup butter\n- 1 cup milk chocolate (or sweet chocolate of choice)\n- 2 cups marshmallows\n- 1 teaspoon vanilla extract\n- 1 cup whipped topping\n- A pinch of sea salt\n\n**Instructions:**\n\n1. **Prepare the Crust:**\n   - Preheat your oven to 350\u00b0F (175\u00b0C).\n   - In a mixing bowl, combine coconut, pecans, and butter.\n   - Press the mixture into a baking dish to form a crust.\n   - Bake the crust in the preheated oven for 10 minutes.\n   - Remove from oven and let it cool.\n\n2. **Make the Chocolate Mixture:**\n   - In a saucepan, melt marshmallows, milk chocolate, and a pinch of sea salt over low heat, stirring constantly until smooth.\n   - Remove the melted mixture from heat and let it cool slightly.\n\n3. **Combine Ingredients:**\n   - In a separate bowl, beat together the cooled chocolate mixture and vanilla extract until well combined.\n\n4. **Prepare the Whipped Topping:**\n   - In another bowl, beat the whipped topping until fluffy.\n   - Fold the beaten whipped topping into the chocolate mixture gently until fully incorporated.\n\n5. **Assemble the Dessert:**\n   - Pour the chocolate mixture over the cooled crust in the baking dish.\n\n6. **Chill and Serve:**\n   - Refrigerate the dessert for at least 2 hours before serving."
+        "full_recipe_text": "# Chocolate Coconut Pecan Delight\n\n## Ingredients:\n- 1 cup shredded coconut\n- 1 cup chopped pecans\n- 1/2 cup butter\n- 1 cup sweet chocolate\n- 2 cups marshmallows\n- 1 teaspoon vanilla extract\n- 1 cup Cool Whip, thawed\n\n## Instructions:\n\n### Preparing the Crust\n1. Preheat your oven to 350\u00b0F (175\u00b0C).\n2. In a mixing bowl, combine shredded coconut, chopped pecans, and butter.\n3. Press the mixture into a baking dish to form a crust.\n4. Bake the crust in the preheated oven for 10 minutes. Remove and let it cool.\n\n### Preparing the Chocolate Mixture\n1. In a saucepan, melt marshmallows and sweet chocolate over low heat, stirring constantly until smooth.\n2. Remove the melted mixture from heat and let it cool slightly.\n3. Add vanilla extract to the cooled chocolate mixture and stir to combine.\n\n### Assembling the Dessert\n1. In another bowl, beat Cool Whip until fluffy.\n2. Fold the whipped topping into the chocolate mixture gently.\n3. Spread the chocolate mixture over the cooled crust in the baking dish.\n\n### Final Steps\n1. Refrigerate the dessert for at least 2 hours before serving.",
+        "recipe_summary": "The Chocolate Coconut Pecan Delight is a layered dessert featuring a crust made from shredded coconut, chopped pecans, and butter, baked until golden. A smooth chocolate mixture is prepared by melting sweet chocolate and marshmallows, then combined with vanilla extract. This chocolate blend is gently folded with fluffy Cool Whip and spread over the cooled crust. The dessert is chilled in the refrigerator for at least two hours before serving."
     },
     "dumplings_493108_to_apple_salad_337770_v2": {
         "dish_pair": "apple_salad_to_dumplings",
@@ -131,53 +98,8 @@
                 3.7737023921178694
             ]
         ],
-        "raw_recipe_text": "Title: Fruit and Nut Medley with Barley and Whipped Topping\n\nIngredients:\n- 1 cup plain flour\n- 1 cup buttermilk\n- 1/2 cup pearl barley\n- 1/2 cup prunes\n- 1 teaspoon thyme\n- 2 apples, chopped\n- 1 cup grapes, halved\n- 1/2 cup peanuts, chopped\n- 1/2 cup maraschino cherries, halved\n- 1 cup cool whip\n- 1/4 cup sugar\n\nInstructions:\n1. In a large mixing bowl, combine the plain flour, buttermilk, chopped apples, halved grapes, chopped peanuts, and halved maraschino cherries. Mix well until all ingredients are evenly incorporated.\n2. Cook the pearl barley according to package instructions until tender.\n3. Chop the prunes into small pieces.\n4. In a separate bowl, mix the chopped prunes with cool whip and sugar until well combined.\n5. Stir the prune mixture into the cooked barley.\n6. Add the thyme to the barley mixture and stir gently.\n7. Serve the mixed fruit and nut medley with the barley and whipped topping mixture.",
-        "recipe_issues": "1. The recipe includes plain flour in the ingredients list, but there is no clear purpose or step in the instructions that explains how or why it is used. This could lead to confusion for someone trying to follow the recipe.\n\n2. The instructions do not specify when or how to incorporate the cooked barley into the fruit and nut medley. It is unclear if the barley should be mixed with the fruit and nut mixture or served separately.\n\n3. The recipe does not mention any cooking or preparation time for the fruit and nut medley, which could be important for planning purposes.\n\n4. The use of thyme is not explained in terms of its role in the flavor profile or how it complements the other ingredients. Additionally, the amount of thyme (1 teaspoon) might be too strong for a sweet dish, but this is subjective and not necessarily a technical issue.\n\n5. The recipe does not specify whether the cool whip should be thawed before use, which could affect the texture of the final dish.\n\n6. There is no mention of serving size or how many servings the recipe yields, which could be useful information for those preparing the dish.",
-        "corrected_recipe": "Title: Fruit and Nut Medley with Barley and Whipped Topping\n\nIngredients:\n- 1/2 cup pearl barley\n- 1/2 cup prunes\n- 1 teaspoon thyme\n- 2 apples, chopped\n- 1 cup grapes, halved\n- 1/2 cup peanuts, chopped\n- 1/2 cup maraschino cherries, halved\n- 1 cup cool whip, thawed\n- 1/4 cup sugar\n\nInstructions:\nCook the pearl barley according to package instructions until tender. Set aside to cool.\nChop the prunes into small pieces.\nIn a separate bowl, mix the chopped prunes with the thawed cool whip and sugar until well combined.\nStir the prune mixture into the cooled barley.\nAdd the thyme to the barley mixture and stir gently.\nIn a large mixing bowl, combine the chopped apples, halved grapes, chopped peanuts, and halved maraschino cherries. Mix well until all ingredients are evenly incorporated.\nGently fold the fruit and nut mixture into the barley and whipped topping mixture.\nServe immediately or chill before serving.\n\nNote: This recipe yields approximately 4 servings.\n",
-        "recipe_summary": "The Fruit and Nut Medley with Barley and Whipped Topping is a refreshing dish that combines pearl barley, prunes, thyme, apples, grapes, peanuts, maraschino cherries, cool whip, and sugar. Begin by cooking the barley and allowing it to cool. Mix chopped prunes with thawed cool whip and sugar, then combine with the barley and thyme. In a separate bowl, mix apples, grapes, peanuts, and cherries, and fold this fruit and nut mixture into the barley blend. Serve immediately or chilled for a delightful treat.",
-        "review_ingrs_dict": {
-            "dish_ingredients": [
-                "pearl barley",
-                "prunes",
-                "thyme",
-                "apples",
-                "grapes",
-                "peanuts",
-                "maraschino cherries",
-                "cool whip",
-                "sugar"
-            ],
-            "creative_ingrs": [
-                "pearl barley",
-                "prunes",
-                "thyme",
-                "maraschino cherries",
-                "cool whip"
-            ],
-            "flavor_clashes": [
-                [
-                    "thyme",
-                    "maraschino cherries"
-                ],
-                [
-                    "thyme",
-                    "cool whip"
-                ],
-                [
-                    "thyme",
-                    "sugar"
-                ],
-                [
-                    "peanuts",
-                    "maraschino cherries"
-                ]
-            ],
-            "removals": [
-                "peanuts"
-            ],
-            "substitutions": []
-        },
-        "more_readable_text": "**Title: Fruit and Nut Medley with Barley and Whipped Topping**\n\n**Ingredients:**\n\n- 1/2 cup pearl barley\n- 1/2 cup prunes\n- 1 teaspoon thyme\n- 2 apples, chopped\n- 1 cup grapes, halved\n- 1/2 cup maraschino cherries, halved\n- 1 cup cool whip, thawed\n- 1/4 cup sugar\n\n**Instructions:**\n\n*Prepare Barley:*\n\n1. Cook the pearl barley according to package instructions until tender. Set aside to cool.\n\n*Prepare Prune Mixture:*\n\n2. Chop the prunes into small pieces.\n3. In a separate bowl, mix the chopped prunes with the thawed cool whip and sugar until well combined.\n\n*Combine Ingredients:*\n\n4. Stir the prune mixture into the cooled barley.\n5. Add the thyme to the barley mixture and stir gently.\n\n*Prepare Fruit Mixture:*\n\n6. In a large mixing bowl, combine the chopped apples, halved grapes, and halved maraschino cherries. Mix well until all ingredients are evenly incorporated.\n\n*Assemble:*\n\n7. Gently fold the fruit mixture into the barley and whipped topping mixture.\n\n*Serve:*\n\n8. Serve immediately or chill before serving.\n\n**Note:** This recipe yields approximately 4 servings."
+        "full_recipe_text": "Title: Fruit and Nut Medley with Barley and Whipped Topping\n\n**Ingredients:**\n\n**For the Fruit and Nut Medley:**\n- 1 cup plain flour\n- 1 cup buttermilk\n- 1 cup apples, chopped\n- 1 cup grapes, halved\n- 1/2 cup maraschino cherries, halved\n- 1/4 cup sugar\n\n**For the Barley Mixture:**\n- 1/2 cup pearl barley\n- 1/2 cup prunes\n\n**For the Whipped Topping:**\n- 1 cup whipped cream\n\n**Instructions:**\n\n**Prepare the Oven:**\n1. Preheat the oven to 350\u00b0F (175\u00b0C).\n\n**Mix Dry and Wet Ingredients:**\n1. In a large mixing bowl, combine the plain flour, buttermilk, chopped apples, halved grapes, and halved maraschino cherries. Mix well to form a batter.\n2. Pour the batter into a greased baking dish.\n\n**Bake:**\n1. Bake for 25-30 minutes, or until the top is golden brown and a toothpick inserted into the center comes out clean.\n2. Allow to cool.\n\n**Cook the Barley:**\n1. Cook the pearl barley according to package instructions until tender.\n\n**Prepare the Prunes:**\n1. Chop the prunes into small pieces.\n\n**Mix the Barley and Prunes:**\n1. In a separate bowl, mix the chopped prunes with the whipped cream and sugar until well combined.\n2. Stir the prune mixture into the cooked barley.\n\n**Serve:**\n1. To serve, cut the baked fruit and nut mixture into squares.\n2. Serve alongside the barley and prune mixture, or layer them as desired.",
+        "recipe_summary": "The Fruit and Nut Medley with Barley and Whipped Topping recipe involves creating a baked fruit mixture and a barley side. For the medley, combine plain flour, buttermilk, chopped apples, halved grapes, halved maraschino cherries, and sugar to form a batter, then bake until golden brown. Separately, cook pearl barley and mix it with chopped prunes, whipped cream, and sugar. Serve the baked fruit squares alongside or layered with the barley and prune mixture."
     },
     "dumplings_689101_to_apple_salad_759766_v4": {
         "dish_pair": "apple_salad_to_dumplings",
@@ -227,50 +149,7 @@
                 2.9803121618432247
             ]
         ],
-        "raw_recipe_text": "**Title: Apple and Celery Root Pastry with Chive Garnish**\n\n**Ingredients:**\n- 1 tablespoon baking powder\n- 1/2 cup shortening\n- 2 cups white flour\n- 2 apples\n- 1 celery root\n- 1 tablespoon cider vinegar\n- 1 teaspoon black pepper\n- 1 teaspoon kosher salt\n- 1 tablespoon mustard\n- 2 tablespoons chives, chopped\n- Water, as needed\n\n**Instructions:**\n\n1. **Prepare the Dough:**\n   - Place 1 tablespoon of baking powder in a mixing bowl.\n   - Add 1/2 cup of shortening to the bowl.\n   - Cut the shortening into the baking powder until the mixture is crumbly.\n   - Add 2 cups of white flour to the mixture and toss to combine.\n   - Roll the dough out on a floured surface to your desired thickness.\n   - Cut the rolled dough into desired shapes.\n\n2. **Prepare the Filling:**\n   - Boil the celery root in water until tender.\n   - Simmer the boiled celery root until it is soft enough to pierce with a fork.\n   - Rinse 2 apples under cold water and slice them thinly.\n   - Add the sliced apples to the dough mixture.\n\n3. **Prepare the Dressing:**\n   - In a separate bowl, whisk together 1 tablespoon of cider vinegar, 1 teaspoon of black pepper, 1 teaspoon of kosher salt, and 1 tablespoon of mustard until well combined.\n\n4. **Assemble the Pastry:**\n   - Place the apple and celery root mixture onto the rolled dough.\n   - Toss the mixture gently to ensure even distribution.\n   - Sprinkle 2 tablespoons of chopped chives over the top as a garnish.\n\n5. **Final Steps:**\n   - Whisk the dressing once more and drizzle over the assembled pastry.\n   - Serve the pastry warm or at room temperature.",
-        "recipe_issues": "1. **Dough Preparation:** The instructions for preparing the dough are incomplete. There is no mention of adding water or any liquid to bring the dough together, which is typically necessary for forming a cohesive dough.\n\n2. **Filling Preparation:** The instructions mention boiling the celery root until tender and then simmering it, which is redundant. Boiling until tender should suffice.\n\n3. **Filling Integration:** The recipe instructs to add sliced apples to the dough mixture, which is unclear. It seems like the apples should be part of the filling, not mixed into the dough itself.\n\n4. **Assembly Instructions:** The step to \"toss the mixture gently to ensure even distribution\" is unclear in the context of assembling the pastry. It is not specified how the filling should be placed or enclosed within the dough shapes.\n\n5. **Baking Instructions:** There are no instructions for baking the pastry, such as oven temperature, baking time, or how to arrange the pastries on a baking sheet.\n\n6. **Dressing Application:** The instruction to \"whisk the dressing once more and drizzle over the assembled pastry\" is unusual for a pastry recipe, as dressings are typically not drizzled over pastries before or after baking.",
-        "corrected_recipe": "Title: Apple and Celery Root Pastry with Chive Garnish\n\nIngredients:\n- 1 tablespoon baking powder\n- 1/2 cup shortening\n- 2 cups white flour\n- 2 apples\n- 1 celery root\n- 1 tablespoon cider vinegar\n- 1 teaspoon black pepper\n- 1 teaspoon kosher salt\n- 1 tablespoon mustard\n- 2 tablespoons chives, chopped\n- Water, as needed\n\nInstructions:\n\nPrepare the Dough:\n- Place 1 tablespoon of baking powder in a mixing bowl.\n- Add 1/2 cup of shortening to the bowl.\n- Cut the shortening into the baking powder until the mixture is crumbly.\n- Add 2 cups of white flour to the mixture and toss to combine.\n- Gradually add water, a tablespoon at a time, mixing until the dough comes together and is smooth.\n- Roll the dough out on a floured surface to your desired thickness.\n- Cut the rolled dough into desired shapes.\n\nPrepare the Filling:\n- Peel and dice the celery root.\n- Boil the celery root in water until tender, then drain and set aside.\n- Rinse 2 apples under cold water, core, and slice them thinly.\n- Combine the sliced apples and boiled celery root in a bowl.\n\nPrepare the Dressing:\n- In a separate bowl, whisk together 1 tablespoon of cider vinegar, 1 teaspoon of black pepper, 1 teaspoon of kosher salt, and 1 tablespoon of mustard until well combined.\n\nAssemble the Pastry:\n- Place a portion of the apple and celery root mixture onto each piece of rolled dough.\n- Fold the dough over the filling and seal the edges by pressing with a fork or your fingers.\n- Place the assembled pastries on a baking sheet lined with parchment paper.\n- Sprinkle 2 tablespoons of chopped chives over the top as a garnish.\n\nBake the Pastry:\n- Preheat the oven to 375\u00b0F (190\u00b0C).\n- Bake the pastries for 20-25 minutes, or until golden brown.\n\nFinal Steps:\n- Serve the pastry warm or at room temperature.\n",
-        "recipe_summary": "The Apple and Celery Root Pastry with Chive Garnish recipe involves making a dough with baking powder, shortening, white flour, and water. The filling consists of boiled celery root and thinly sliced apples. A dressing made from cider vinegar, black pepper, kosher salt, and mustard is mixed with the filling. The dough is rolled out, filled with the apple and celery root mixture, and sealed. The pastries are garnished with chopped chives and baked until golden brown. They can be served warm or at room temperature.",
-        "review_ingrs_dict": {
-            "dish_ingredients": [
-                "baking powder",
-                "shortening",
-                "white flour",
-                "water",
-                "celery root",
-                "apples",
-                "cider vinegar",
-                "black pepper",
-                "kosher salt",
-                "mustard",
-                "chives"
-            ],
-            "creative_ingrs": [
-                "celery root",
-                "apples",
-                "cider vinegar",
-                "chives"
-            ],
-            "flavor_clashes": [
-                [
-                    "shortening",
-                    "cider vinegar"
-                ],
-                [
-                    "shortening",
-                    "mustard"
-                ]
-            ],
-            "removals": [
-                "shortening"
-            ],
-            "substitutions": [
-                [
-                    "shortening",
-                    "butter"
-                ]
-            ]
-        },
-        "more_readable_text": "Title: Apple and Celery Root Pastry with Chive Garnish\n\nIngredients:\n- 1 tablespoon baking powder\n- 1/2 cup butter\n- 2 cups white flour\n- 2 apples\n- 1 celery root\n- 1 tablespoon cider vinegar\n- 1 teaspoon black pepper\n- 1 teaspoon kosher salt\n- 1 tablespoon mustard\n- 2 tablespoons chives, chopped\n- Water, as needed\n\nInstructions:\n\nPrepare the Dough:\n- Place 1 tablespoon of baking powder in a mixing bowl.\n- Add 1/2 cup of butter to the bowl.\n- Cut the butter into the baking powder until the mixture is crumbly.\n- Add 2 cups of white flour to the mixture and toss to combine.\n- Gradually add water, a tablespoon at a time, mixing until the dough comes together and is smooth.\n- Roll the dough out on a floured surface to your desired thickness.\n- Cut the rolled dough into desired shapes.\n\nPrepare the Filling:\n- Peel and dice the celery root.\n- Boil the celery root in water until tender, then drain and set aside.\n- Rinse 2 apples under cold water, core, and slice them thinly.\n- Combine the sliced apples and boiled celery root in a bowl.\n\nPrepare the Dressing:\n- In a separate bowl, whisk together 1 tablespoon of cider vinegar, 1 teaspoon of black pepper, 1 teaspoon of kosher salt, and 1 tablespoon of mustard until well combined.\n\nAssemble the Pastry:\n- Place a portion of the apple and celery root mixture onto each piece of rolled dough.\n- Fold the dough over the filling and seal the edges by pressing with a fork or your fingers.\n- Place the assembled pastries on a baking sheet lined with parchment paper.\n- Sprinkle 2 tablespoons of chopped chives over the top as a garnish.\n\nBake the Pastry:\n- Preheat the oven to 375\u00b0F (190\u00b0C).\n- Bake the pastries for 20-25 minutes, or until golden brown.\n\nFinal Steps:\n- Serve the pastry warm or at room temperature."
+        "full_recipe_text": "Title: Apple and Celery Root Salad with Biscuits\n\n**Ingredients for Biscuits:**\n- 1 tablespoon baking powder\n- 1/2 cup butter\n- 2 cups white flour\n- Water (as needed)\n\n**Ingredients for Salad:**\n- 2 apples (preferably a crisp variety like Granny Smith or Honeycrisp)\n- 1 celery root, peeled\n- 1/4 cup cider vinegar\n- 1 tablespoon mustard\n- 1 teaspoon kosher salt\n- 1/2 teaspoon black pepper\n- 2 tablespoons chives, chopped\n- Additional water for boiling celery root\n\n---\n\n**Instructions:**\n\n*Prepare the Biscuits:*\n1. Preheat the oven to 425\u00b0F (220\u00b0C).\n2. Place the baking powder in a mixing bowl.\n3. Cut the butter into the baking powder until the mixture resembles coarse crumbs.\n4. Add the white flour to the mixture and toss to combine.\n5. Gradually add water, a tablespoon at a time, until the dough comes together and is slightly sticky.\n6. Roll the dough out on a floured surface to your desired thickness.\n7. Cut the dough into biscuit shapes.\n8. Place the biscuits on a baking sheet and bake in the preheated oven for 10-12 minutes, or until golden brown.\n\n*Prepare the Salad:*\n1. Boil the peeled celery root in water until tender, about 15-20 minutes.\n2. Drain the celery root and let it cool slightly.\n3. Rinse the apples thoroughly and slice them.\n4. In a separate bowl, whisk together the cider vinegar, mustard, kosher salt, and black pepper.\n5. Toss the whisked dressing with the sliced apples and cooled celery root.\n6. Sprinkle chopped chives over the salad as a garnish.\n\n*Serve:*\n- Serve the salad alongside the freshly baked biscuits.",
+        "recipe_summary": "This recipe for Apple and Celery Root Salad with Biscuits includes making biscuits with baking powder, butter, white flour, and water. The salad features apples, celery root, cider vinegar, mustard, kosher salt, black pepper, and chives. The biscuits are baked until golden brown, while the salad is prepared by boiling the celery root, slicing the apples, and tossing them with a vinegar-mustard dressing, then garnished with chives. Serve the salad alongside the warm biscuits."
     }
 }

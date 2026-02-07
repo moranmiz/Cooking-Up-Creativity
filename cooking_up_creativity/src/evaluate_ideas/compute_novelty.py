@@ -156,6 +156,7 @@ def get_recipe_novelty_score(elements_in_recipe: list, score_only: bool = True) 
 
 if __name__ == '__main__':
 
+    print()
     print("Idf score examples (the higher the score the more novel the element is in respect to the fixed element):")
     print("-------------------------------------------------------------------------------------------------------")
     print()

@@ -5,6 +5,11 @@ from sentence_transformers import SentenceTransformer, util
 import numpy as np
 
 
+# The following JSON file contains all the words that appear in dish names on Allrecipes.com
+with open("../resources/words_in_dish_names_all_recipes_site.json", 'r') as f:
+    relevant_words = set(json.load(f))
+
+
 def organize_1M_recipes_dataset(data_path: str) -> dict:
     """
     Organize the Recipe1M dataset into a dictionary format.
@@ -30,11 +35,6 @@ def organize_1M_recipes_dataset(data_path: str) -> dict:
         item_id += 1
 
     return organized_data
-
-
-# The following JSON file contains all the words that appear in dish names on Allrecipes.com
-with open("../resources/words_in_dish_names_all_recipes_site.json", 'r') as f:
-    relevant_words = set(json.load(f))
 
 
 def shorten_title(title: str) -> str:

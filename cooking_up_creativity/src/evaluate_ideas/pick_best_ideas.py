@@ -2,8 +2,8 @@ import json
 from tqdm import tqdm
 import os
 
-from src.evaluate_ideas.compute_novelty import get_recipe_novelty_score
-from src.evaluate_ideas.evaluate_taste import get_raw_ingredients, clean_ingredient, cause_taste_collisions
+from cooking_up_creativity.src.evaluate_ideas.compute_novelty import get_recipe_novelty_score
+from cooking_up_creativity.src.evaluate_ideas.evaluate_taste import cause_taste_collisions, clean_ingredient
 
 MIN_ELEMENT_RATIO = 0.3
 HIGHEST_RANKED_K = 5
@@ -390,5 +390,5 @@ if __name__ == '__main__':
 
     best_ideas = pick_top_k_ideas(valuable_ranked_ideas, top_k=3, method="different_origin")
 
-    with open(generated_ideas_path.replace(".json", "_best_ideas.json"), 'w') as f:
+    with open(generated_ideas_path.replace(".json", "_best_ideas_new.json"), 'w') as f:
         json.dump(best_ideas, f, indent=4)

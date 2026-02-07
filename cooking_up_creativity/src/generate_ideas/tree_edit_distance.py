@@ -1183,6 +1183,10 @@ def create_dot_code_for_tree(tree_dict: dict, file_path: str = None) -> str:
     return dot_code_str
 
 
+def get_children_ordered(node):
+    return sorted(node.children, key=lambda x: x.label)
+
+
 def create_single_combination(sampled_recipes: dict, dish_name1: str, recipe_id1: str, dish_name2: str, recipe_id2: str) -> dict:
     """
     Creates a single combination of two specific recipe trees by computing the tree edit distance between them, and
@@ -1208,7 +1212,7 @@ def create_single_combination(sampled_recipes: dict, dish_name1: str, recipe_id1
     T1 = create_zss_tree_from_tree_dict(t1_tree_dict, cooking_verbs_to_categories)
     T2 = create_zss_tree_from_tree_dict(t2_tree_dict, cooking_verbs_to_categories)
 
-    dist, operations = distance(T1, T2, get_children=Node.get_children_ordered,
+    dist, operations = distance(T1, T2, get_children=get_children_ordered,
                                 insert_cost=lambda n: insertion_cost(n),
                                 remove_cost=lambda n: remove_cost(n),
                                 update_cost=lambda n1, n2: update_cost(n1, n2),
@@ -1298,5 +1302,5 @@ if __name__ == '__main__':
         generated_trees[pair[0].replace(" ", "_") + "_to_" + pair[1].replace(" ", "_")] = combinations_dict
 
     # Save generated idea trees to a JSON file:
-    with open("../toy_example_files/generated_recipes_tiny.json", "w", encoding="utf8") as f:
+    with open("../toy_example_files/generated_recipes_tiny_new.json", "w", encoding="utf8") as f:
         json.dump(generated_trees, f, indent=4)

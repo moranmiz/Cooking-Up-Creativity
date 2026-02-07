@@ -4,9 +4,8 @@ from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from nltk.corpus import wordnet
 
-from src.evaluate_ideas.compute_novelty import get_element_pair_occurrences_1M_recipes, SEPERATION_STR, \
-    ingr_counts_1M_recipes
-
+from cooking_up_creativity.src.evaluate_ideas.compute_novelty import SEPERATION_STR, \
+    get_element_pair_occurrences_1M_recipes, ingr_counts_1M_recipes
 
 PAIRS_OCCURRENCES_IN_DATA_THRESHOLD = 50
 FLAVOR_PAIRING_SCORE_THRESHOLD = 0.3

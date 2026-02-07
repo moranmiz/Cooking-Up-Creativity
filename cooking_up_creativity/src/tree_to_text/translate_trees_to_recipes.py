@@ -3,7 +3,7 @@ import traceback
 import re
 from tqdm import tqdm
 
-from src.call_model import call_model
+from cooking_up_creativity.src.call_model import call_model
 
 MODEL_NAME = "gpt-4o-2024-08-06"
 MODEL_EXPERTISE_COOKING_EXPERT = "You are a cooking recipes expert."
@@ -256,13 +256,10 @@ def translate_trees_into_recipes(tree_ideas: dict, tries: int = 3) -> dict:
         review_ingrs_dict = review_ingredients(recipe_summary, tries=tries)
         more_readable_text = increase_readability(corrected_recipe, review_ingrs_dict["removals"],
                                                   review_ingrs_dict["substitutions"], tries=tries)
+        final_recipe_summary = summarize_recipe(more_readable_text, tries=tries)
 
-        tree_ideas[idea_id]["raw_recipe_text"] = raw_recipe_text
-        tree_ideas[idea_id]["recipe_issues"] = recipe_issues
-        tree_ideas[idea_id]["corrected_recipe"] = corrected_recipe
-        tree_ideas[idea_id]["recipe_summary"] = recipe_summary
-        tree_ideas[idea_id]["review_ingrs_dict"] = review_ingrs_dict
-        tree_ideas[idea_id]["more_readable_text"] = more_readable_text
+        tree_ideas[idea_id]["full_recipe_text"] = more_readable_text
+        tree_ideas[idea_id]["recipe_summary"] = final_recipe_summary
 
     return tree_ideas
 
@@ -279,7 +276,7 @@ if __name__ == '__main__':
     updated_generated_ideas = translate_trees_into_recipes(generated_ideas, tries=3)
 
     # Save updated generated ideas into a new JSON file:
-    with open("../toy_example_files/generated_recipes_final.json", 'w', encoding='utf8') as f:
+    with open("../toy_example_files/generated_recipes_final_new.json", 'w', encoding='utf8') as f:
         json.dump(updated_generated_ideas, f, indent=4)
 
 

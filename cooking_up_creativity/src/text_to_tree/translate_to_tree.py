@@ -678,7 +678,7 @@ if __name__ == '__main__':
     sampled_recipes_trees = translate_recipes_to_trees(sampled_recipes, tries=3)
 
     # Save parsed outputs into a new JSON file:
-    out_path = sampled_recipes_path.replace(".json", "_parsed.json")
+    out_path = sampled_recipes_path.replace(".json", "_parsed_new.json")
     with open(out_path, 'w', encoding='utf8') as f:
         json.dump(sampled_recipes_trees, f, indent=4, ensure_ascii=False)
 
